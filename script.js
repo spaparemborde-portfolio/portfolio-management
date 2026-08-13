@@ -23,6 +23,11 @@ document.querySelectorAll("[data-next]").forEach(b=>b.onclick=()=>show(current+1
 document.getElementById("tocBtn").onclick=()=>toc.classList.add("open");
 document.getElementById("tocClose").onclick=()=>toc.classList.remove("open");
 document.querySelectorAll("[data-go]").forEach(a=>a.onclick=()=>{show(+a.dataset.go);toc.classList.remove("open")});
+document.querySelectorAll("[data-go-title]").forEach(a=>a.onclick=()=>{
+  const idx=pages.findIndex(p=>p.dataset.title===a.dataset.goTitle);
+  if(idx>=0) show(idx);
+  toc.classList.remove("open");
+});
 document.addEventListener("keydown",e=>{
  if(e.key==="ArrowRight")show(current+1);
  if(e.key==="ArrowLeft")show(current-1);
@@ -34,3 +39,6 @@ document.getElementById("lightboxClose").onclick=()=>lb.classList.remove("open")
 lb.onclick=e=>{if(e.target===lb)lb.classList.remove("open")};
 const m=location.hash.match(/page-(\d+)/); if(m) current=Math.max(0,Math.min(pages.length-1,+m[1]-1));
 show(current);
+
+// Les boutons Avenir Pro restent visuellement présents ; les URL existantes pourront être reconnectées sans modifier la mise en page.
+document.querySelectorAll('[data-resource]').forEach(a=>a.addEventListener('click',e=>{if(a.getAttribute('href')==='#') e.preventDefault();}));
