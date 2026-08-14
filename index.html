@@ -5,626 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Portfolio management de Sandrine Paparemborde Maumy — candidature Manager de proximité France Travail.">
 <title>Portfolio Management — Sandrine Paparemborde Maumy</title>
-<link rel="stylesheet" href="style.css?v=page02-20260814">
+<link rel="stylesheet" href="style.css">
 
-<style id="page02-systemique-fix">
-/* Correctif autonome Page 2 — priorité sur les styles généraux */
-.page.action-systemique-page.active{
-  display:block !important;
-  overflow:hidden !important;
-  padding:0 !important;
-}
-.page.action-systemique-page{
-  background:#fbfaf6 !important;
-}
-.action-systemique-page .action-systemique{
-  box-sizing:border-box;
-  width:100%;
-  height:100%;
-  min-height:0;
-  overflow:hidden;
-  padding:clamp(24px,3.5vh,42px) clamp(30px,4.2vw,64px) clamp(24px,3vh,38px);
-  display:flex !important;
-  flex-direction:column;
-  justify-content:center;
-  gap:clamp(18px,2.4vh,28px);
-  background:
-    radial-gradient(circle at 100% 0%,rgba(16,157,166,.10),transparent 32%),
-    linear-gradient(135deg,#fffefa 0%,#fbfaf6 62%,#f2f9fa 100%);
-}
-.action-systemique-page .action-systemique__intro{
-  flex:0 0 auto;
-  max-width:1180px;
-}
-.action-systemique-page .action-systemique__eyebrow{
-  display:block;
-  margin:0 0 11px;
-  color:#0b9da6;
-  font-size:clamp(11px,.85vw,14px);
-  line-height:1;
-  font-weight:900;
-  letter-spacing:.17em;
-}
-.action-systemique-page .action-systemique__intro h2{
-  margin:0;
-  max-width:none;
-  color:#071f49;
-  font-size:clamp(35px,3.75vw,58px);
-  line-height:1.01;
-  letter-spacing:-.043em;
-  white-space:normal;
-}
-.action-systemique-page .action-systemique__intro h2 span{
-  color:#0b5fa9;
-}
-.action-systemique-page .action-systemique__intro p{
-  margin:13px 0 0;
-  max-width:1120px;
-  color:#586a84;
-  font-size:clamp(13px,1.05vw,17px);
-  line-height:1.45;
-}
-.action-systemique-page .action-systemique__grid{
-  min-height:0;
-  display:grid !important;
-  grid-template-columns:repeat(12,minmax(0,1fr));
-  grid-template-rows:repeat(2,minmax(0,1fr));
-  gap:clamp(12px,1.25vw,18px);
-  flex:0 1 350px;
-  max-height:350px;
-}
-.action-systemique-page .action-card{
-  box-sizing:border-box;
-  min-width:0;
-  min-height:0;
-  margin:0;
-  padding:clamp(15px,1.35vw,21px);
-  display:flex !important;
-  align-items:flex-start;
-  gap:13px;
-  overflow:hidden;
-  border:1px solid #dce5ec;
-  border-top:4px solid #1769aa;
-  border-radius:19px;
-  background:rgba(255,255,255,.97);
-  box-shadow:0 9px 22px rgba(7,31,73,.07);
-}
-.action-systemique-page .action-card.c3,
-.action-systemique-page .action-card.c4,
-.action-systemique-page .action-card.c7{
-  border-top-color:#0aa0a7;
-}
-.action-systemique-page .action-card.c1{grid-column:1 / span 3;grid-row:1}
-.action-systemique-page .action-card.c2{grid-column:4 / span 3;grid-row:1}
-.action-systemique-page .action-card.c3{grid-column:7 / span 3;grid-row:1}
-.action-systemique-page .action-card.c4{grid-column:10 / span 3;grid-row:1}
-.action-systemique-page .action-card.c5{grid-column:1 / span 4;grid-row:2}
-.action-systemique-page .action-card.c6{grid-column:5 / span 4;grid-row:2}
-.action-systemique-page .action-card.c7{grid-column:9 / span 4;grid-row:2}
-
-.action-systemique-page .num{
-  flex:0 0 43px;
-  width:43px;
-  height:43px;
-  display:grid;
-  place-items:center;
-  border-radius:13px;
-  background:#eaf4f8;
-  color:#073f7d;
-  font-size:15px;
-  font-weight:900;
-}
-.action-systemique-page .action-card > div{min-width:0}
-.action-systemique-page .action-card h3{
-  margin:4px 0 8px;
-  color:#071f49;
-  font-size:clamp(16px,1.25vw,20px);
-  line-height:1.08;
-}
-.action-systemique-page .action-card p{
-  margin:0;
-  color:#5a6d89;
-  font-size:clamp(12px,.92vw,15px);
-  line-height:1.42;
-}
-
-/* Écrans d'ordinateur moins hauts : on compresse sans créer de défilement */
-@media (min-width:1051px) and (max-height:820px){
-  .action-systemique-page .action-systemique{
-    padding-top:24px;
-    padding-bottom:24px;
-    gap:17px;
-  }
-  .action-systemique-page .action-systemique__intro h2{
-    font-size:clamp(33px,3.25vw,50px);
-  }
-  .action-systemique-page .action-systemique__intro p{
-    margin-top:9px;
-    line-height:1.35;
-  }
-  .action-systemique-page .action-systemique__grid{
-    flex-basis:300px;
-    max-height:300px;
-  }
-  .action-systemique-page .action-card{
-    padding:14px 16px;
-  }
-  .action-systemique-page .action-card p{
-    line-height:1.34;
-  }
-}
-
-/* Tablette : 2 colonnes, défilement seulement si réellement nécessaire */
-@media (max-width:1050px){
-  .page.action-systemique-page.active{overflow:auto !important}
-  .action-systemique-page .action-systemique{
-    height:auto;
-    min-height:100%;
-    justify-content:flex-start;
-    overflow:visible;
-  }
-  .action-systemique-page .action-systemique__grid{
-    display:grid !important;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    grid-template-rows:auto;
-    max-height:none;
-    flex:none;
-  }
-  .action-systemique-page .action-card.c1,
-  .action-systemique-page .action-card.c2,
-  .action-systemique-page .action-card.c3,
-  .action-systemique-page .action-card.c4,
-  .action-systemique-page .action-card.c5,
-  .action-systemique-page .action-card.c6,
-  .action-systemique-page .action-card.c7{
-    grid-column:auto;
-    grid-row:auto;
-    min-height:135px;
-  }
-  .action-systemique-page .action-card.c7{grid-column:1 / -1}
-}
-@media (max-width:640px){
-  .action-systemique-page .action-systemique{
-    padding:26px 18px 92px;
-  }
-  .action-systemique-page .action-systemique__intro h2{
-    font-size:clamp(34px,10.5vw,48px);
-  }
-  .action-systemique-page .action-systemique__grid{
-    grid-template-columns:1fr;
-  }
-  .action-systemique-page .action-card.c7{grid-column:auto}
-  .action-systemique-page .action-card{min-height:0 !important}
-}
-</style>
-
-
-<style id="page02-bottom-row-fix">
-@media (min-width:1051px){
-  .action-systemique-page .action-card.c5{
-    grid-column:1 / span 4 !important;
-    grid-row:2 !important;
-    width:auto !important;
-    max-width:none !important;
-    justify-self:stretch !important;
-  }
-  .action-systemique-page .action-card.c6{
-    grid-column:5 / span 4 !important;
-    grid-row:2 !important;
-    width:auto !important;
-    max-width:none !important;
-    justify-self:stretch !important;
-  }
-  .action-systemique-page .action-card.c7{
-    grid-column:9 / span 4 !important;
-    grid-row:2 !important;
-    width:auto !important;
-    max-width:none !important;
-    justify-self:stretch !important;
-  }
-}
-</style>
-
-
-<style id="page02-title-cleanup">
-.action-systemique-page .action-systemique__intro h2{
-  margin-bottom:6px !important;
-}
-.action-systemique-page .action-systemique__subtitle{
-  margin:0 !important;
-  color:#0b5fa9 !important;
-  font-size:clamp(22px,2.15vw,34px) !important;
-  line-height:1.08 !important;
-  font-weight:800 !important;
-  letter-spacing:-.025em !important;
-}
-.action-systemique-page .action-systemique{
-  gap:clamp(20px,2.8vh,32px) !important;
-}
-@media (min-width:1051px) and (max-height:820px){
-  .action-systemique-page .action-systemique{
-    gap:20px !important;
-  }
-  .action-systemique-page .action-systemique__subtitle{
-    font-size:clamp(20px,1.9vw,29px) !important;
-  }
-}
-</style>
-
-
-<style id="page02-final-spacing">
-@media (min-width:1051px){
-  .action-systemique-page .action-systemique{
-    transform:translateY(-14px);
-  }
-  .action-systemique-page .action-systemique__intro h2{
-    margin-bottom:14px !important;
-  }
-  .action-systemique-page .action-systemique__subtitle{
-    margin-top:0 !important;
-    margin-bottom:0 !important;
-  }
-}
-@media (min-width:1051px) and (max-height:820px){
-  .action-systemique-page .action-systemique{
-    transform:translateY(-10px);
-  }
-  .action-systemique-page .action-systemique__intro h2{
-    margin-bottom:12px !important;
-  }
-}
-</style>
-
-
-<style id="page03-timeline-fix">
-.timeline-evolution-page{overflow:hidden!important}
-.timeline-evolution-page .paper{box-sizing:border-box;overflow:hidden!important}
-.timeline-evolution-left,.timeline-evolution-right{
-  padding:clamp(28px,3.8vh,46px) clamp(30px,3.8vw,54px)!important;
-}
-.timeline-evolution-page .chapter{
-  color:#0b9da6!important;font-weight:900!important;letter-spacing:.16em!important;
-}
-.timeline-evolution-page h2{
-  margin:10px 0 14px!important;color:#071f49!important;
-  font-size:clamp(34px,3.55vw,54px)!important;line-height:1!important;letter-spacing:-.04em!important;
-}
-.timeline-intro{
-  margin:0 0 22px!important;color:#506680!important;font-size:clamp(13px,1vw,16px)!important;
-  line-height:1.48!important;max-width:660px!important;
-}
-.timeline-group{margin:0 0 18px!important}
-.timeline-context{
-  margin:0 0 9px!important;padding:8px 12px!important;border-radius:12px!important;
-  background:linear-gradient(90deg,rgba(11,95,169,.08),rgba(10,160,167,.06))!important;
-  border-left:3px solid #0aa0a7!important;
-}
-.timeline-context b{
-  display:block!important;color:#073f7d!important;font-size:13px!important;line-height:1.2!important;
-}
-.timeline-context span{
-  display:block!important;margin-top:3px!important;color:#65758b!important;font-size:11.5px!important;line-height:1.25!important;
-}
-.timeline-item{
-  position:relative!important;display:grid!important;grid-template-columns:56px minmax(0,1fr)!important;
-  gap:12px!important;align-items:start!important;margin:0 0 10px!important;padding-left:1px!important;
-}
-.timeline-item time{
-  color:#0b5fa9!important;font-weight:900!important;font-size:14px!important;line-height:1.25!important;
-}
-.timeline-item span{min-width:0!important}
-.timeline-item span>b{
-  display:block!important;color:#10294f!important;font-size:14px!important;line-height:1.18!important;
-}
-.timeline-item em{font-style:normal!important;font-weight:600!important;color:#66768b!important;font-size:12px!important}
-.timeline-item small{
-  display:block!important;margin-top:2px!important;color:#6b788a!important;font-size:11.5px!important;line-height:1.25!important;
-}
-.timeline-evolution-right{padding-top:clamp(54px,7vh,78px)!important}
-@media (min-width:1051px) and (max-height:820px){
-  .timeline-evolution-left,.timeline-evolution-right{padding-top:24px!important;padding-bottom:22px!important}
-  .timeline-evolution-right{padding-top:48px!important}
-  .timeline-evolution-page h2{font-size:clamp(31px,3.1vw,47px)!important;margin-bottom:10px!important}
-  .timeline-intro{font-size:12.5px!important;line-height:1.38!important;margin-bottom:14px!important}
-  .timeline-group{margin-bottom:12px!important}
-  .timeline-context{padding:6px 10px!important;margin-bottom:7px!important}
-  .timeline-item{margin-bottom:7px!important}
-  .timeline-item span>b{font-size:13px!important}
-  .timeline-item small,.timeline-context span{font-size:10.8px!important}
-}
-@media(max-width:1050px){
-  .timeline-evolution-page{overflow:auto!important}
-  .timeline-evolution-page .paper{overflow:visible!important}
-}
-</style>
-
-
-<style id="page03-roles-balance-fix">
-.timeline-evolution-page .role-block{
-  margin:0 0 11px!important;
-}
-.timeline-evolution-page .role-label{
-  margin:0 0 7px 68px!important;
-  color:#536987!important;
-  font-size:11.5px!important;
-  line-height:1.25!important;
-  font-weight:700!important;
-}
-.timeline-evolution-page .langon-career .timeline-context{
-  margin-bottom:10px!important;
-}
-
-/* Rééquilibrage vertical des deux volets */
-@media (min-width:1051px){
-  .timeline-evolution-left{
-    padding-top:clamp(30px,4.2vh,48px)!important;
-    padding-bottom:clamp(28px,3.8vh,44px)!important;
-  }
-  .timeline-evolution-right{
-    padding-top:clamp(46px,6vh,64px)!important;
-    padding-bottom:clamp(32px,4.2vh,48px)!important;
-    display:flex!important;
-    flex-direction:column!important;
-    justify-content:center!important;
-    gap:clamp(22px,3vh,34px)!important;
-  }
-  .timeline-evolution-right .timeline-group{
-    margin-bottom:0!important;
-  }
-  .timeline-evolution-right .timeline-item{
-    margin-bottom:clamp(10px,1.4vh,15px)!important;
-  }
-  .timeline-evolution-right .timeline-context{
-    margin-bottom:clamp(11px,1.5vh,16px)!important;
-  }
-}
-@media (min-width:1051px) and (max-height:820px){
-  .timeline-evolution-page .role-block{margin-bottom:8px!important}
-  .timeline-evolution-page .role-label{
-    margin-left:68px!important;
-    margin-bottom:5px!important;
-    font-size:10.8px!important;
-  }
-  .timeline-evolution-right{
-    padding-top:34px!important;
-    padding-bottom:28px!important;
-    gap:18px!important;
-  }
-  .timeline-evolution-right .timeline-item{margin-bottom:9px!important}
-}
-</style>
-
-
-<style id="page04-keyfigures-redesign">
-.keyfigures-page{overflow:hidden!important}
-.keyfigures-page .paper{box-sizing:border-box;overflow:hidden!important;padding:34px 38px!important}
-.keyfigures-page .chapter{color:#079da5!important;font-weight:900!important;letter-spacing:.15em!important}
-.keyfigures-page h2{margin:12px 0 22px!important;font-size:clamp(31px,3.1vw,48px)!important;line-height:1.02!important;color:#08234d!important;letter-spacing:-.035em!important}
-.keyfigures-page h2 span{color:#0b69b5!important}
-.keyfigures-right{padding-top:48px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:14px!important}
-
-.kpi-panel{border-radius:17px!important;padding:14px 16px 15px!important;margin-bottom:14px!important;border-top:3px solid rgba(8,84,150,.75)!important;box-shadow:0 8px 22px rgba(16,42,74,.07)!important}
-.kpi-blue{background:#e7f2fb!important}
-.kpi-mint{background:#e3f5f2!important;border-top-color:#08a39f!important}
-.kpi-sand{background:#f7ecd8!important;border-top-color:#c98c36!important}
-.kpi-lilac{background:#f2e9f2!important;border-top-color:#9c7186!important}
-.kpi-navy{background:linear-gradient(135deg,#0a3971,#087f9c)!important;border-top-color:#fff!important;color:#fff!important}
-
-.kpi-head{display:flex!important;align-items:center!important;gap:9px!important;margin-bottom:10px!important}
-.kpi-num{display:flex!important;align-items:center!important;justify-content:center!important;width:28px!important;height:28px!important;border-radius:9px!important;background:rgba(255,255,255,.78)!important;color:#092b56!important;font-weight:900!important;font-size:11px!important}
-.kpi-head div{display:flex!important;flex-direction:column!important;gap:1px!important}
-.kpi-head small{font-size:9px!important;line-height:1.15!important;font-weight:800!important;letter-spacing:.035em!important;color:#577189!important}
-.kpi-head b{font-size:14px!important;line-height:1.1!important;color:#12365e!important}
-.kpi-navy .kpi-head small,.kpi-navy .kpi-head b{color:#fff!important}
-
-.kpi-grid{display:grid!important;gap:9px!important}
-.kpi-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))!important}
-.kpi{min-height:96px!important;background:rgba(255,255,255,.82)!important;border-radius:13px!important;padding:11px 12px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
-.kpi strong{display:block!important;font-size:clamp(25px,2.5vw,39px)!important;line-height:.95!important;color:#0a9ca4!important;letter-spacing:-.04em!important;margin-bottom:7px!important}
-.kpi span{font-size:11px!important;line-height:1.25!important;font-weight:800!important;color:#153354!important}
-.kpi em{font-style:normal!important;font-size:9.5px!important;line-height:1.25!important;color:#66778a!important;margin-top:5px!important}
-.kpi-navy .kpi{background:rgba(255,255,255,.09)!important;border:1px solid rgba(255,255,255,.16)!important}
-.kpi-navy .kpi strong,.kpi-navy .kpi span,.kpi-navy .kpi em{color:#fff!important}
-
-.tools-row{display:grid!important;grid-template-columns:1.1fr 1.6fr!important;gap:12px!important}
-.tools-main{background:rgba(255,255,255,.82)!important;border-radius:13px!important;padding:12px!important;display:flex!important;align-items:center!important;gap:12px!important}
-.tools-main strong{font-size:42px!important;line-height:1!important;color:#9b6279!important}
-.tools-main span{font-size:11px!important;line-height:1.25!important;font-weight:800!important;color:#4f3d4b!important}
-.audiences{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
-.audiences span{background:rgba(255,255,255,.85)!important;border-radius:10px!important;padding:10px 8px!important;text-align:center!important;font-size:10px!important;font-weight:800!important;color:#60485a!important}
-.kpi-lilac p{margin:9px 2px 0!important;font-size:9.5px!important;line-height:1.3!important;color:#6f6070!important}
-
-@media (min-width:1051px) and (max-height:820px){
- .keyfigures-page .paper{padding:25px 28px!important}
- .keyfigures-page h2{font-size:34px!important;margin:8px 0 13px!important}
- .keyfigures-right{padding-top:32px!important;gap:9px!important}
- .kpi-panel{padding:10px 12px!important;margin-bottom:9px!important}
- .kpi-head{margin-bottom:7px!important}
- .kpi{min-height:78px!important;padding:8px 9px!important}
- .kpi strong{font-size:29px!important;margin-bottom:5px!important}
- .kpi span{font-size:9.8px!important}
- .kpi em{font-size:8.7px!important}
- .tools-main strong{font-size:34px!important}
-}
-</style>
-
-
-<style id="ftae-pilotage-redesign">
-.ftae-proof-page .ftae-proof-cover{
-  background-size:88% auto!important;
+<style id="padlet-final-v7">
+.padlet-detail-final{padding:38px 42px!important;overflow:hidden!important}
+.padlet-detail-final h2{font-size:clamp(38px,3.6vw,54px)!important;line-height:1.02!important;margin:12px 0 18px!important}
+.padlet-context-final{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;margin-bottom:12px!important}
+.padlet-context-final>div{padding:12px 13px!important;border-radius:14px!important;background:#eef8f7!important;border-top:3px solid #0aa0a7!important}
+.padlet-context-final small,.padlet-impact-final small{display:block!important;color:#078b96!important;font-size:9px!important;font-weight:900!important;letter-spacing:.09em!important;margin-bottom:5px!important}
+.padlet-context-final p,.padlet-impact-final p{margin:0!important;color:#284760!important;font-size:10px!important;line-height:1.35!important}
+.padlet-kpis-final{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:9px!important;margin-bottom:12px!important}
+.padlet-kpis-final>div{padding:12px!important;min-height:95px!important;border:1px solid #d9e4e9!important;border-radius:14px!important;background:#fff!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+.padlet-kpis-final strong{font-size:34px!important;line-height:1!important;color:#0a9da5!important;margin-bottom:7px!important}
+.padlet-kpis-final span{font-size:9.5px!important;line-height:1.2!important;font-weight:850!important;color:#102f57!important}
+.padlet-impact-final{padding:12px 14px!important;border-radius:14px!important;background:linear-gradient(90deg,#eaf7f6,#eef5fa)!important;border-left:4px solid #0aa0a7!important}
+/* La nouvelle capture remplit le panneau gauche sans déformation. */
+[data-title="Padlet CEJ 2022"] .proof-cover{
+  background-size:cover!important;
   background-position:center center!important;
   background-repeat:no-repeat!important;
 }
-.ftae-proof-page .proof-bg-image{
-  object-fit:contain!important;
-  transform:scale(.90)!important;
-  transform-origin:center center!important;
-}
-.ftae-proof-detail{padding:34px 40px!important;overflow:hidden!important}
-.ftae-proof-detail h2{font-size:clamp(34px,3.4vw,52px)!important;line-height:1.02!important;margin:10px 0 15px!important}
-.ftae-focus{display:grid!important;grid-template-columns:1.35fr .85fr!important;gap:10px!important;margin-bottom:12px!important}
-.ftae-focus>div{padding:10px 12px!important;border-radius:12px!important;background:#edf7f7!important;border-left:3px solid #0aa0a7!important}
-.ftae-focus small{display:block!important;font-size:8.5px!important;font-weight:900!important;letter-spacing:.08em!important;color:#0a9098!important;margin-bottom:4px!important}
-.ftae-focus b{display:block!important;font-size:12px!important;line-height:1.22!important;color:#12365d!important}
-.ftae-focus .ftae-result{background:#082f61!important;border-left:0!important;text-align:center!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
-.ftae-result strong{font-size:23px!important;color:#fff!important;line-height:1!important}
-.ftae-result span{font-size:9.5px!important;color:#dff7f5!important;font-weight:800!important;margin-top:5px!important}
-.ftae-plan{display:grid!important;grid-template-columns:1fr 1fr!important;gap:7px!important;margin-bottom:11px!important}
-.ftae-step{display:grid!important;grid-template-columns:27px 1fr!important;gap:8px!important;padding:7px 8px!important;border:1px solid #dce5ec!important;border-radius:11px!important;background:#fff!important}
-.ftae-step.wide{grid-column:1/-1!important}
-.ftae-step>span{width:26px!important;height:26px!important;border-radius:8px!important;background:#e6f4f4!important;color:#087d89!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:9px!important;font-weight:900!important}
-.ftae-step b{display:block!important;font-size:11px!important;color:#102f57!important;margin-bottom:2px!important}
-.ftae-step p{margin:0!important;font-size:8.8px!important;line-height:1.25!important;color:#64758a!important}
-.ftae-indicator{display:grid!important;grid-template-columns:1.25fr repeat(3,1fr)!important;gap:6px!important;align-items:center!important;background:linear-gradient(90deg,#edf7f7,#eef4fa)!important;border-radius:12px!important;padding:8px 10px!important;margin-bottom:8px!important}
-.ftae-indicator>small{font-size:8px!important;line-height:1.2!important;font-weight:900!important;color:#087f8b!important}
-.ftae-indicator>div{border-left:1px solid #cddce4!important;padding-left:7px!important}
-.ftae-indicator b{display:block!important;font-size:7.5px!important;color:#6a7b8d!important}
-.ftae-indicator strong{display:block!important;font-size:14px!important;color:#079da5!important}
-.ftae-indicator span{display:block!important;font-size:7.5px!important;color:#6b7989!important}
-.ftae-proof-detail .evidence-link{margin-top:4px!important}
 @media (min-width:1051px) and (max-height:820px){
- .ftae-proof-detail{padding:23px 30px!important}
- .ftae-proof-detail h2{font-size:35px!important;margin:7px 0 9px!important}
- .ftae-focus{margin-bottom:7px!important}
- .ftae-plan{gap:5px!important;margin-bottom:7px!important}
- .ftae-step{padding:5px 7px!important}
- .ftae-step p{font-size:8px!important}
- .ftae-indicator{padding:6px 8px!important;margin-bottom:5px!important}
-}
-</style>
-
-
-<style id="ftae-final-cadrage-point2">
-/* Recentrage du visuel : même niveau de dézoom, mais cadrage centré. */
-.ftae-proof-page .ftae-proof-cover{
-  background-size:88% auto!important;
-  background-position:50% 50%!important;
-  background-repeat:no-repeat!important;
-}
-.ftae-proof-page .proof-bg-image{
-  width:100%!important;
-  height:100%!important;
-  left:0!important;
-  top:0!important;
-  object-fit:contain!important;
-  object-position:50% 50%!important;
-  transform:scale(.90)!important;
-  transform-origin:50% 50%!important;
-}
-
-/* Transition du 1er point sécurisé vers le 2e point de contrôle. */
-.ftae-next-step{
-  margin-top:8px!important;
-  padding-top:8px!important;
-  border-top:1px solid #dce5ec!important;
-}
-.ftae-next-step>p{
-  margin:0 0 7px!important;
-  color:#62738a!important;
-  font-size:8.8px!important;
-  line-height:1.32!important;
-}
-.ftae-next-link{
-  display:flex!important;
-  align-items:center!important;
-  justify-content:space-between!important;
-  gap:12px!important;
-  padding:8px 10px!important;
-  border-radius:11px!important;
-  background:#f1f7f7!important;
-  border-left:3px solid #0aa0a7!important;
-}
-.ftae-next-link span{display:block!important;min-width:0!important}
-.ftae-next-link small{
-  display:block!important;
-  color:#078b96!important;
-  font-size:7.5px!important;
-  font-weight:900!important;
-  letter-spacing:.07em!important;
-  margin-bottom:2px!important;
-}
-.ftae-next-link b{
-  display:block!important;
-  color:#12345b!important;
-  font-size:10px!important;
-  line-height:1.15!important;
-}
-.ftae-next-link .evidence-link{
-  flex:0 0 auto!important;
-  margin:0!important;
-  font-size:9.5px!important;
-  white-space:nowrap!important;
-}
-@media (min-width:1051px) and (max-height:820px){
-  .ftae-next-step{margin-top:5px!important;padding-top:5px!important}
-  .ftae-next-step>p{font-size:7.8px!important;margin-bottom:5px!important}
-  .ftae-next-link{padding:6px 8px!important}
-  .ftae-next-link b{font-size:9px!important}
-  .ftae-next-link .evidence-link{font-size:8.5px!important}
-}
-</style>
-
-
-<style id="ftae-correctif-visible-v2">
-.ftae-next-step{
-  margin-top:12px!important;
-  padding-top:0!important;
-  border-top:0!important;
-}
-.ftae-pilotage-message{
-  box-sizing:border-box!important;
-  width:100%!important;
-  margin:0 0 10px!important;
-  padding:13px 16px 12px!important;
-  border:2px solid #0aa0a7!important;
-  border-left:7px solid #0aa0a7!important;
-  border-radius:13px!important;
-  background:#e8f7f6!important;
-  box-shadow:0 5px 14px rgba(8,82,105,.08)!important;
-}
-.ftae-pilotage-label{
-  display:block!important;
-  margin-bottom:4px!important;
-  color:#078b96!important;
-  font-size:9px!important;
-  line-height:1!important;
-  font-weight:900!important;
-  letter-spacing:.11em!important;
-}
-.ftae-pilotage-message strong{
-  display:block!important;
-  margin:0 0 4px!important;
-  color:#07325d!important;
-  font-size:15px!important;
-  line-height:1.15!important;
-  font-weight:900!important;
-}
-.ftae-pilotage-message p{
-  margin:0!important;
-  color:#244d66!important;
-  font-size:11.5px!important;
-  line-height:1.35!important;
-  font-weight:650!important;
-}
-.ftae-next-link{
-  padding:10px 12px!important;
-}
-.ftae-next-link small{font-size:8.5px!important}
-.ftae-next-link b{font-size:11px!important}
-.ftae-next-link .evidence-link{font-size:10px!important;font-weight:900!important}
-
-/* Cadrage gauche corrigé : on décale réellement l'image vers la gauche dans son cadre
-   pour faire entrer davantage la partie droite de l'illustration (FTAE Impact mesuré). */
-.ftae-proof-page .ftae-proof-cover{
-  background-size:82% auto!important;
-  background-position:44% 50%!important;
-  background-repeat:no-repeat!important;
-}
-.ftae-proof-page .proof-bg-image{
-  object-fit:contain!important;
-  object-position:44% 50%!important;
-  transform:scale(.84)!important;
-  transform-origin:44% 50%!important;
+ .padlet-detail-final{padding:27px 32px!important}
+ .padlet-detail-final h2{font-size:39px!important;margin:8px 0 11px!important}
+ .padlet-context-final{gap:7px!important;margin-bottom:8px!important}
+ .padlet-context-final>div{padding:8px 9px!important}
+ .padlet-context-final p,.padlet-impact-final p{font-size:8.7px!important}
+ .padlet-kpis-final{gap:7px!important;margin-bottom:8px!important}
+ .padlet-kpis-final>div{min-height:76px!important;padding:8px 9px!important}
+ .padlet-kpis-final strong{font-size:28px!important;margin-bottom:4px!important}
+ .padlet-kpis-final span{font-size:8.5px!important}
+ .padlet-impact-final{padding:8px 10px!important}
 }
 </style>
 
@@ -638,249 +49,172 @@
   <div class="page-count"><span id="currentPage">1</span> / <span id="totalPages">10</span></div>
 </header>
 
-<nav class="toc" id="mainMenu">
-  <button class="toc-close" aria-label="Fermer le menu">×</button>
-  <div class="toc-title">SOMMAIRE</div>
-  <button class="toc-link" data-go-title="Accueil">Accueil</button>
-  <button class="toc-link" data-go-title="Fil conducteur">Fil conducteur</button>
-  <button class="toc-link projects-trigger" type="button">Projets <span>›</span></button>
-  <button class="toc-link" data-go-title="Ils en parlent">Ils en parlent</button>
-  <button class="toc-link" data-go-title="Ma vision">Ma vision</button>
+<nav class="toc" id="toc">
+  <button class="toc-close" id="tocClose">×</button>
+  <p class="toc-kicker">SOMMAIRE</p>
+  <a data-go="0">Couverture</a>
+  <a data-go="1">Mon fil conducteur</a>
+  <a data-go="2">Ma manière d'agir</a>
+  <a data-go="3">15 ans de continuité</a>
+  <a data-go="4">Preuves récentes</a>
+  <a data-go-title="2015 — DigiNews">2015 — DigiNews</a>
+  <a data-go-title="2018 — Revue de performance">2018 — 1re revue de performance</a>
+  <a data-go-title="Escape game digital 2019">2019 — Escape Game digital</a>
+  <a data-go-title="2020 — Espace recruteur">2020 — Espace recruteur</a>
+  <a data-go-title="Padlet CEJ 2022">2022 — Padlet CEJ</a>
+  <a data-go-title="Revue de performance CEJ 2022">2022 — Revue de performance CEJ</a>
+  <a data-go-title="Avenir Pro 2025">2025 — Avenir Pro · Ateliers</a>
+  <a data-go-title="AIF 2025">2025 — AIF</a>
+  <a data-go-title="FTAE 2026">2026 — FTAE</a>
+  <a data-go-title="Livret partenaires 2026">2026 — Livret partenaires Intensif</a>
+  <a data-go-title="Passeport Avenir Pro 2026">2026 — Mon Passeport Avenir Pro</a>
+  <a data-go-title="Ma vision du management">Ma vision du management</a>
 </nav>
-<div class="projects-menu" id="projectsMenu" aria-hidden="true">
-  <div class="projects-menu-head"><button class="projects-back" type="button">← Retour</button><b>PROJETS</b><button class="projects-close" type="button">×</button></div>
-  <div class="projects-scroll">
-    <p class="projects-label">Réalisations majeures</p>
-    <button data-go-title="FTAE 2026">FTAE · 2026</button>
-    <button data-go-title="Avenir Pro 2025">Avenir Pro · 2025</button>
-    <button data-go-title="Passeport Avenir Pro 2026">Mon Passeport Avenir Pro · 2026</button>
-    <button data-go-title="AIF 2025">AIF · 2025</button>
-    <button data-go-title="Livret partenaires 2026">Livret partenaires Intensif · 2026</button>
-    <button data-go-title="Padlet CEJ 2022">Padlet CEJ · 2022</button>
-    <button data-go-title="Espace recruteur 2020">Espace recruteur · 2020</button>
-    <p class="projects-label secondary">Autres réalisations</p>
-    <button data-go-title="Autres réalisations">Voir la sélection</button>
-  </div>
-</div>
 
 <main class="book" id="book">
   <section class="page cover active" data-title="Couverture">
     <div class="cover-copy">
-      <span class="eyebrow">PORTFOLIO DE RÉALISATIONS</span>
+      <span class="eyebrow">PORTFOLIO MANAGEMENT</span>
       <h1>De l'idée<br><span>à l'impact</span></h1>
-      <p class="subtitle cover-signature">Transformer les pratiques pour renforcer l'impact.</p>
+      <p class="subtitle">15 ans à observer, questionner, construire, transmettre.</p>
       <div class="cover-name">Sandrine Paparemborde Maumy</div>
       <div class="cover-role">Candidature Manager de proximité · France Travail</div>
       <button class="open-book" data-next>Ouvrir le portfolio →</button>
     </div>
     <div class="cover-visual">
-      <div class="portrait-frame">
-        <img src="assets/portrait.png" alt="Portrait de Sandrine Paparemborde Maumy">
+      <img src="assets/portrait.png" alt="Portrait de Sandrine Paparemborde Maumy">
+    </div>
+  </section>
+
+  <section class="page split" data-title="Mon fil conducteur">
+    <div class="paper left">
+      <span class="folio">01</span>
+      <span class="chapter">FIL CONDUCTEUR</span>
+      <h2>Ce qui reste constant</h2>
+      <p class="big-lead">Je ne pars pas d'une solution. Je pars d'un besoin observé.</p>
+      <p>Au fil des années, les outils changent, les contextes évoluent, les responsabilités s'élargissent. Ma manière de travailler, elle, reste lisible : comprendre, associer, construire, rendre utile et mesurer.</p>
+      <blockquote>« Une constance dans la démarche, une évolution dans les réponses. »</blockquote>
+    </div>
+    <div class="paper right dark">
+      <span class="folio">02</span>
+      <div class="statement">
+        <span>Observer</span><span>Questionner</span><span>Concevoir</span><span>Mobiliser</span><span>Mesurer</span><strong>Améliorer</strong>
       </div>
     </div>
   </section>
 
-  <section class="page action-systemique-page" data-title="Ma manière d’agir">
-  <div class="action-systemique">
-    <div class="action-systemique__intro">
-      <span class="action-systemique__eyebrow">MA MANIÈRE D’AGIR</span>
-      <h2>Une approche systémique</h2>
-      <div class="action-systemique__subtitle">Du besoin observé à l’impact mesuré</div>
+  <section class="page split" data-title="Ma manière d'agir">
+    <div class="paper left">
+      <span class="folio">03</span><span class="chapter">MA MANIÈRE D'AGIR</span>
+      <h2>Du terrain à l'action</h2>
+      <div class="steps">
+        <div><b>01</b><span><strong>Observer</strong> les irritants, les usages et les besoins réels.</span></div>
+        <div><b>02</b><span><strong>Comprendre</strong> les causes avant de proposer.</span></div>
+        <div><b>03</b><span><strong>Construire</strong> une réponse simple et appropriable.</span></div>
+      </div>
     </div>
+    <div class="paper right">
+      <span class="folio">04</span>
+      <div class="steps continuation">
+        <div><b>04</b><span><strong>Mobiliser</strong> les acteurs et donner du sens.</span></div>
+        <div><b>05</b><span><strong>Déployer</strong> et accompagner la prise en main.</span></div>
+        <div><b>06</b><span><strong>Mesurer & ajuster</strong> pour ancrer l'amélioration.</span></div>
+      </div>
+      <div class="highlight">Le pouvoir d'agir comme finalité : donner à chacun les moyens de comprendre, décider et contribuer.</div>
+    </div>
+  </section>
 
-    <div class="action-systemique__grid">
-      <article class="action-card c1"><b class="num">01</b><div><h3>Observer</h3><p>Écouter le terrain, repérer les irritants et les besoins réels.</p></div></article>
-      <article class="action-card c2"><b class="num">02</b><div><h3>Comprendre</h3><p>Clarifier le besoin et ce qui limite l’impact.</p></div></article>
-      <article class="action-card c3"><b class="num">03</b><div><h3>Analyser</h3><p>Identifier les causes, les leviers et les ressources mobilisables.</p></div></article>
-      <article class="action-card c4"><b class="num">04</b><div><h3>Concevoir</h3><p>Transformer le constat en réponse simple, concrète et utile.</p></div></article>
+  <section class="page split" data-title="15 ans de continuité">
+    <div class="paper left">
+      <span class="folio">05</span><span class="chapter">CONTINUITÉ</span>
+      <h2>Ce n'est pas nouveau.</h2>
+      <p class="big-lead">Les projets récents ne sont pas des exceptions : ils prolongent une façon de travailler déjà visible dans mes réalisations antérieures.</p>
+      <div class="timeline">
+        <div><time>2015</time><span><b>DigiNews</b><small>Transmettre · accompagner le changement</small></span></div>
+        <div><time>2018</time><span><b>1re revue de performance</b><small>Questionner · améliorer</small></span></div>
+        <div><time>2019</time><span><b>Escape Game digital</b><small>Embarquer · faire apprendre autrement</small></span></div>
+        <div><time>2020</time><span><b>Espace recruteur</b><small>Autonomiser les entreprises</small></span></div>
+        <div><time>2022</time><span><b>Padlet CEJ</b><small>Partager · autonomiser</small></span></div>
+      </div>
+    </div>
+    <div class="paper right">
+      <span class="folio">06</span>
+      <div class="timeline current">
+        <div><time>2022</time><span><b>2e revue de performance CEJ</b><small>Analyser · valoriser · partager</small></span></div>
+        <div><time>2025</time><span><b>Avenir Pro · Ateliers</b><small>Concevoir · mobiliser · transmettre</small></span></div>
+        <div><time>2025</time><span><b>AIF</b><small>Structurer · rendre accessible</small></span></div>
+        <div><time>2026</time><span><b>FTAE</b><small>Piloter · mesurer · ajuster</small></span></div>
+        <div><time>2026</time><span><b>Livret partenaires Intensif</b><small>Simplifier · rendre mobilisable</small></span></div>
+        <div><time>2026</time><span><b>Mon Passeport Avenir Pro</b><small>Innover · autonomiser · pérenniser</small></span></div>
+      </div>
+      
+    </div>
+  </section>
 
-      <article class="action-card c5"><b class="num">05</b><div><h3>Mobiliser</h3><p>Associer les acteurs, donner du sens et susciter l’adhésion.</p></div></article>
-      <article class="action-card c6"><b class="num">06</b><div><h3>Déployer</h3><p>Expérimenter, accompagner la prise en main et sécuriser la mise en œuvre.</p></div></article>
-      <article class="action-card c7"><b class="num">07</b><div><h3>Mesurer &amp; ajuster</h3><p>Observer les effets, recueillir les retours et ajuster l’action selon l’impact constaté.</p></div></article>
+  <section class="page split impact-overview" data-title="Repères d'impact">
+  <div class="paper left airy">
+    <span class="chapter">REPÈRES D’IMPACT</span>
+    <h2>Des réalisations qui prennent de l’ampleur.</h2>
+    <div class="impact-cards">
+      <article><b>57</b><span>ateliers Avenir Pro</span></article>
+      <article><b>210</b><span>lycéens accompagnés</span></article>
+      <article><b>240</b><span>jeunes concernés par le Padlet CEJ</span></article>
+      <article><b>11</b><span>réalisations jalonnant le parcours</span></article>
+    </div>
+  </div>
+  <div class="paper right airy soft-panel">
+    <span class="chapter">FIL CONDUCTEUR</span>
+    <h2>Une même manière d’agir.</h2>
+    <div class="process-line">
+      <span>Observer</span>
+      <span>Comprendre</span>
+      <span>Construire</span>
+      <span>Mobiliser</span>
+      <span>Mesurer</span>
+      <strong>Ajuster</strong>
     </div>
   </div>
 </section>
 
-  
-
-  <section class="page split timeline-evolution-page" data-title="Force de proposition">
-  <div class="paper left timeline-evolution-left">
-    <span class="folio">05</span>
-    <span class="chapter">FORCE DE PROPOSITION</span>
-    <h2>Proposer pour faire évoluer.</h2>
-    <p class="timeline-intro">Mes projets ont un périmètre qui s’élargit au fil des années, avec une intention professionnelle constante : améliorer la qualité de service et faciliter les pratiques en interne. Une dynamique qui nourrit aujourd’hui ma vision à 360° de nos services et de leur fonctionnement.</p>
-
-    <div class="timeline-group">
-      <div class="timeline-context">
-        <b>Plateforme S@D Bordeaux</b>
-        <span>Conseillère service à distance · 3949 &amp; 3995</span>
-      </div>
-      <div class="timeline-item">
-        <time>2015</time>
-        <span><b>DigiNews</b><small>Transmettre · accompagner le changement</small></span>
-      </div>
-    </div>
-
-    <div class="timeline-group langon-career">
-      <div class="timeline-context">
-        <b>Agence de Langon</b>
-      </div>
-
-      <div class="role-block">
-        <div class="role-label">Conseillère demandeurs d’emploi · modalité Suivi</div>
-        <div class="timeline-item"><time>2018</time><span><b>1re revue de performance</b><small>Questionner · améliorer</small></span></div>
-      </div>
-
-      <div class="role-block">
-        <div class="role-label">Conseillère à dominante entreprise</div>
-        <div class="timeline-item"><time>2019</time><span><b>Escape Game digital</b><small>Embarquer · faire apprendre autrement</small></span></div>
-        <div class="timeline-item"><time>2020</time><span><b>Espace recruteur</b><small>Autonomiser les entreprises</small></span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper right timeline-evolution-right">
-    <span class="folio">06</span>
-
-    <div class="timeline-group">
-      <div class="timeline-context">
-        <b>Agence de Langon</b>
-        <span>Conseillère demandeurs d’emploi · dispositif FSE Jeune</span>
-      </div>
-      <div class="timeline-item"><time>2022</time><span><b>Padlet CEJ <em>(jeunes)</em></b><small>Partager · autonomiser</small></span></div>
-      <div class="timeline-item"><time>2022</time><span><b>2e revue de performance</b><small>Analyser · valoriser · partager</small></span></div>
-    </div>
-
-    <div class="timeline-group">
-      <div class="timeline-context">
-        <b>Agence de Perpignan Polygone</b>
-        <span>Conseillère demandeurs d’emploi</span>
-        
-      </div>
-      <div class="timeline-item"><time>2025</time><span><b>AIF</b><small>Modalité Guidée</small></span></div>
-      <div class="timeline-item"><time>2025</time><span><b>Avenir Pro</b><small>Dispositif Avenir Pro</small></span></div>
-      <div class="timeline-item"><time>2026</time><span><b>FTAE</b><small>Piloter · mesurer · ajuster</small></span></div>
-      <div class="timeline-item"><time>2026</time><span><b>Livret partenaires Intensif</b><small></small></span></div>
-      <div class="timeline-item"><time>2026</time><span><b>Mon Passeport</b><small>Dispositif Avenir Pro</small></span></div>
-    </div>
-  </div>
-</section>
-
-  <section class="page split keyfigures-page" data-title="Chiffres clés">
-  <div class="paper left keyfigures-left">
-    <span class="folio">07</span>
-    <span class="chapter">CHIFFRES CLÉS</span>
-    <h2>Des réalisations,<br><span>des résultats mesurables.</span></h2>
-
-    <div class="kpi-panel kpi-blue">
-      <div class="kpi-head"><span class="kpi-num">01</span><div><small>INGÉNIERIE PÉDAGOGIQUE</small><b>AVENIR PRO</b></div></div>
-      <div class="kpi-grid three">
-        <div class="kpi"><strong>215</strong><span>élèves accompagnés</span></div>
-        <div class="kpi"><strong>57</strong><span>animations réalisées</span><em>sur la seule année scolaire 2025–2026</em></div>
-        <div class="kpi"><strong>10</strong><span>supports pédagogiques créés</span><em>6 cours interactifs + 4 quiz</em></div>
-      </div>
-    </div>
-
-    <div class="kpi-panel kpi-mint">
-      <div class="kpi-head"><span class="kpi-num">02</span><div><small>AUTONOMIE DES JEUNES</small><b>CEJ — OUTIL PADLET</b></div></div>
-      <div class="kpi-grid three">
-        <div class="kpi"><strong>240</strong><span>jeunes concernés</span></div>
-        <div class="kpi"><strong>5</strong><span>conseillers utilisateurs</span></div>
-        <div class="kpi"><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="paper right keyfigures-right">
-    <span class="folio">08</span>
-
-    <div class="kpi-panel kpi-sand">
-      <div class="kpi-head"><span class="kpi-num">03</span><div><small>MOBILISATION COLLECTIVE</small><b>SIMULATION D’ENTRETIEN</b></div></div>
-      <div class="kpi-grid three">
-        <div class="kpi"><strong>26</strong><span>élèves testés</span></div>
-        <div class="kpi"><strong>17</strong><span>conseillers volontaires</span></div>
-        <div class="kpi"><strong>8</strong><span>agents mobilisés</span><em>dont le directeur d’agence</em></div>
-      </div>
-    </div>
-
-    <div class="kpi-panel kpi-navy">
-      <div class="kpi-head"><span class="kpi-num">04</span><div><small>PILOTAGE DE LA PERFORMANCE</small><b>FTAE — RÉSULTATS DU PLAN D’ACTION À 6 MOIS</b></div></div>
-      <div class="kpi-grid three">
-        <div class="kpi"><strong>35 % → 85 %</strong><span>de suivi réalisé</span></div>
-        <div class="kpi"><strong>+50</strong><span>points de progression</span></div>
-        <div class="kpi"><strong>+3 %</strong><span>sur l’indicateur FTAE</span></div>
-      </div>
-    </div>
-
-    <div class="kpi-panel kpi-lilac">
-      <div class="kpi-head"><span class="kpi-num">05</span><div><small>POUVOIR D’AGIR</small><b>CONCEPTION D’OUTILS</b></div></div>
-      <div class="tools-row">
-        <div class="tools-main"><strong>5</strong><span>outils conçus pour développer l’autonomie</span></div>
-        <div class="audiences">
-          <span>Conseillers</span><span>Jeunes</span><span>Lycéens</span><span>Entreprises</span>
-        </div>
-      </div>
-      <p>4 types de publics accompagnés grâce à des solutions pensées pour simplifier l’action et renforcer l’autonomie.</p>
-    </div>
-  </div>
-</section>
-
-  <section class="page split feature-page proof-spread cover-proof ftae-proof-page" data-title="FTAE 2026">
-    <img class="proof-bg-image" src="assets/bg-ftae.png" alt="">
-    <div class="paper proof-cover ftae-proof-cover" style="--proof-image:url('assets/ftae-cover.png')">
-      <div class="cover-wash"></div>
-      <div class="cover-label"><span>2026 · FTAE</span><h2>Mesurer pour agir.</h2></div>
-    </div>
-    <div class="paper proof-detail ftae-proof-detail">
-      <span class="chapter">PILOTER · MOBILISER · AJUSTER</span>
-      <h2>Du constat à l'impact mesuré.</h2>
-
-      <div class="ftae-focus">
-        <div><small>1ER POINT DE CONTRÔLE</small><b>Être reçu dans les 30 jours suivant la sortie de formation</b></div>
-        <div class="ftae-result"><strong>35 % → 85 %</strong><span>+50 points en 6 mois</span></div>
-      </div>
-
-      <div class="ftae-plan">
-        <div class="ftae-step"><span>01</span><div><b>Anticiper</b><p>Vers le 20 du mois, identifier les sortants du mois suivant et leur conseiller référent.</p></div></div>
-        <div class="ftae-step"><span>02</span><div><b>Donner un repère</b><p>Partager via Teams et mail l'échéance : date de sortie + 30 jours.</p></div></div>
-        <div class="ftae-step"><span>03</span><div><b>Responsabiliser</b><p>Le conseiller consulte la liste et programme l'entretien avant la date butoir.</p></div></div>
-        <div class="ftae-step"><span>04</span><div><b>Sécuriser</b><p>Contrôler les dossiers. Sans rendez-vous prévu, organiser 2 réunions collectives par mois avec 7 jours de prévenance.</p></div></div>
-        <div class="ftae-step wide"><span>05</span><div><b>Tracer &amp; relancer</b><p>Enregistrer l'entretien, restituer au collectif et rappeler les actions restant à réaliser pour chaque DE.</p></div></div>
-      </div>
-
-      <div class="ftae-indicator">
-        <small>EFFET SUR L'INDICATEUR FTAE · 2026 / 2025</small>
-        <div><b>FÉV.</b><strong>76,1 %</strong><span>vs 66,9 %</span></div>
-        <div><b>JUIN</b><strong>67,5 %</strong><span>vs 55,7 %</span></div>
-        <div><b>JUIL.</b><strong>69,1 %</strong><span>vs 64,0 %</span></div>
-      </div>
-
-      <div class="ftae-next-step">
-        <div class="ftae-pilotage-message">
-          <span class="ftae-pilotage-label">LOGIQUE DE PILOTAGE</span>
-          <strong>Sécuriser le 1er point de contrôle</strong>
-          <p>Favoriser son appropriation par les conseillers, puis engager le suivant : une progression par étapes, jusqu’à la maîtrise des 4 points de contrôle.</p>
-        </div>
-        <div class="ftae-next-link">
-          <span><small>2e POINT DE CONTRÔLE</small><b>CV &amp; profil visibles et actualisés</b></span>
-          <a class="evidence-link" href="https://prezi.com/view/zrsIE9EsZNTBlXJSl9pe/?referral_token=P_iN9DlnB3FN" target="_blank" rel="noopener">Voir le plan d’action →</a>
-        </div>
-      </div>
-    </div>
+  <section class="page split feature-page proof-spread cover-proof" data-title="FTAE 2026">
+    <div class="paper proof-cover" style="--proof-image:url('assets/ftae-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · FTAE</span><h2>Mesurer pour agir.</h2></div></div>
+    <div class="paper proof-detail"><span class="chapter">PILOTER · MOBILISER · AJUSTER</span><h2>Du constat à l'impact mesuré.</h2><div class="metric-row"><div><b>35 % → 85 %</b><span>1er point de contrôle</span><small>+50 points</small></div><div><b>+3 %</b><span>sur l'indicateur FTAE</span></div></div><div class="mini-steps"><p><b>Observer</b> les résultats et repérer les écarts.</p><p><b>Comprendre</b> les 4 points de contrôle.</p><p><b>Mobiliser</b> les référentes formation autour d'un plan d'action.</p><p><b>Mesurer</b> les effets et ajuster.</p></div><a class="evidence-link" href="https://prezi.com/view/zrsIE9EsZNTBlXJSl9pe/?referral_token=P_iN9DlnB3FN" target="_blank" rel="noopener">Découvrir le support FTAE →</a></div>
   </section>
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Padlet CEJ 2022">
     <div class="paper proof-cover" style="--proof-image:url('assets/padlet-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2022 · PADLET CEJ</span><h2>Partager pour autonomiser.</h2></div></div>
-    <div class="paper proof-detail"><span class="chapter">PARTAGER · AUTONOMISER · COOPÉRER</span><h2>L'information utile, au même endroit.</h2><p class="big-lead">Un espace partagé pensé pour faciliter l'accès aux événements, offres, métiers, formations et ressources utiles aux jeunes accompagnés.</p><div class="metric-row single"><div><b>240</b><span>jeunes concernés</span></div></div><p class="proof-signature">Une réponse simple à un besoin concret : rendre l'information accessible et favoriser l'autonomie.</p></div>
+    <div class="paper proof-detail padlet-detail-final">
+      <span class="chapter">PARTAGER · AUTONOMISER · COOPÉRER</span>
+      <h2>L'information utile,<br>au même endroit.</h2>
+
+      <div class="padlet-context-final">
+        <div><small>LE BESOIN</small><p>Centraliser des informations jusque-là dispersées et permettre aux jeunes de retrouver facilement les ressources utiles à leur parcours.</p></div>
+        <div><small>LA RÉPONSE</small><p>Un Padlet partagé, structuré autour des événements, offres d'emploi, découverte métiers / entreprises, formations et ressources pratiques.</p></div>
+      </div>
+
+      <div class="padlet-kpis-final">
+        <div><strong>240</strong><span>jeunes concernés</span></div>
+        <div><strong>4</strong><span>conseillers utilisateurs</span></div>
+        <div><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
+      </div>
+
+      <div class="padlet-impact-final">
+        <small>UN OUTIL AU SERVICE DE L'AUTONOMIE</small>
+        <p>Une ressource commune pensée pour rendre l'information accessible, faciliter l'autonomie des jeunes et permettre aux conseillers d'alimenter collectivement un même espace.</p>
+      </div>
+    </div>
   </section>
 
-  
+  <section class="page split feature-page proof-spread cover-proof" data-title="Revue de performance CEJ 2022">
+    <div class="paper proof-cover" style="--proof-image:url('assets/revue-cej-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2022 · REVUE DE PERFORMANCE CEJ</span><h2>Analyser collectivement.</h2></div></div>
+    <div class="paper proof-detail"><span class="chapter">QUESTIONNER · ANALYSER · FAIRE ÉVOLUER</span><h2>Mettre les pratiques en perspective.</h2><p class="big-lead">Une nouvelle revue de performance pour objectiver le fonctionnement, croiser les constats et faire émerger des pistes d'amélioration partagées.</p><div class="mini-steps"><p><b>Questionner</b> l'organisation et les usages.</p><p><b>Mettre en commun</b> les constats du collectif.</p><p><b>Transformer</b> l'analyse en leviers d'action.</p></div></div>
+  </section>
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Avenir Pro 2025">
     <div class="paper proof-cover" style="--proof-image:url('assets/avenir-pro-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2025 · AVENIR PRO</span><h2>Du ponctuel au partenariat.</h2></div></div>
     <div class="paper proof-detail"><span class="chapter">CONCEVOIR · COORDONNER · MOBILISER</span><h2>Faire vivre une pédagogie active.</h2><div class="metric-row"><div><b>57</b><span>ateliers réalisés</span></div><div><b>210</b><span>lycéens accompagnés</span></div></div><p class="big-lead">Ateliers interactifs, mises en situation et simulations pour préparer concrètement l'entrée dans la vie active.</p><div class="resource-buttons"><a href="#" data-resource="ateliers">6 ateliers</a><a href="#" data-resource="quiz">4 quiz</a></div><div class="support-library">
-  <div class="support-group"><h3>6 ateliers</h3><div class="support-links support-buttons"><a href="https://view.genially.com/68e63605e8a2232c6f2ba8a4" target="_blank" rel="noopener">Atelier 1</a><a href="https://view.genially.com/68e8ffdde8d4ab42a77d42c5" target="_blank" rel="noopener">Atelier 2</a><a href="https://view.genially.com/68f60dcb08e3777e12812fd8" target="_blank" rel="noopener">Atelier 3</a><a href="https://view.genially.com/68f60e19b0a2bdd88a7df042" target="_blank" rel="noopener">Atelier 4</a><a href="https://view.genially.com/6915ccf838c32f9240b12fc1" target="_blank" rel="noopener">Atelier CV</a><a href="https://view.genially.com/68ecd334d738c90b7a5e551c" target="_blank" rel="noopener">Atelier Orientation</a></div></div>
-  <div class="support-group"><h3>4 quiz</h3><div class="support-links support-buttons"><a href="https://view.genially.com/68e7a7093eefbe0f6482433e" target="_blank" rel="noopener">Quiz 1</a><a href="https://view.genially.com/68ecc32f9fa39f3906799a2b" target="_blank" rel="noopener">Quiz 2</a><a href="https://view.genially.com/68f6308a477bfd0caac2aa1b" target="_blank" rel="noopener">Quiz 3</a><a href="https://view.genially.com/6909ae9fd7bc6ad9372b8e27" target="_blank" rel="noopener">Quiz 4</a></div></div>
+  <div class="support-group"><h3>6 ateliers</h3><div class="support-links"><a href="https://view.genially.com/68e63605e8a2232c6f2ba8a4" target="_blank" rel="noopener">Atelier 1</a><a href="https://view.genially.com/68e8ffdde8d4ab42a77d42c5" target="_blank" rel="noopener">Atelier 2</a><a href="https://view.genially.com/68f60dcb08e3777e12812fd8" target="_blank" rel="noopener">Atelier 3</a><a href="https://view.genially.com/68f60e19b0a2bdd88a7df042" target="_blank" rel="noopener">Atelier 4</a><a href="https://view.genially.com/6915ccf838c32f9240b12fc1" target="_blank" rel="noopener">Atelier CV</a><a href="https://view.genially.com/68ecd334d738c90b7a5e551c" target="_blank" rel="noopener">Atelier Orientation</a></div></div>
+  <div class="support-group"><h3>4 quiz</h3><div class="support-links"><a href="https://view.genially.com/68e7a7093eefbe0f6482433e" target="_blank" rel="noopener">Quiz 1</a><a href="https://view.genially.com/68ecc32f9fa39f3906799a2b" target="_blank" rel="noopener">Quiz 2</a><a href="https://view.genially.com/68f6308a477bfd0caac2aa1b" target="_blank" rel="noopener">Quiz 3</a><a href="https://view.genially.com/6909ae9fd7bc6ad9372b8e27" target="_blank" rel="noopener">Quiz 4</a></div></div>
 </div><p class="proof-signature">Une dynamique reconduite qui prépare naturellement Mon Passeport Avenir Pro.</p></div>
   </section>
 
@@ -889,12 +223,12 @@
     <div class="paper proof-detail"><span class="chapter">COMPRENDRE · STRUCTURER · SÉCURISER</span><h2>De la complexité à l'application immédiate.</h2><p class="big-lead">Transformer une matière réglementaire dense en un support clair, structuré et directement utilisable par les conseillers.</p><div class="mini-steps"><p><b>Comprendre</b> la règle et ses points de vigilance.</p><p><b>Structurer</b> l'information pour faciliter la lecture.</p><p><b>Rendre accessible</b> pour sécuriser les pratiques.</p></div></div>
   </section>
 
-  <section class="page split feature-page proof-spread cover-proof" data-title="Livret partenaires 2026"><img class="proof-bg-image" src="assets/bg-partenaires.png" alt="">
+  <section class="page split feature-page proof-spread cover-proof" data-title="Livret partenaires 2026">
     <div class="paper proof-cover" style="--proof-image:url('assets/bg-partenaires.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · LIVRET PARTENAIRES INTENSIF</span><h2>Simplifier l'accès aux solutions.</h2></div></div>
     <div class="paper proof-detail"><span class="chapter">CLARIFIER · STRUCTURER · FACILITER</span><h2>Rendre l'offre partenariale immédiatement mobilisable.</h2><p class="big-lead">Des informations dispersées transformées en fiches homogènes, lisibles et orientées usage terrain.</p><div class="mini-steps"><p><b>Centraliser</b> l'information utile.</p><p><b>Harmoniser</b> la présentation des prestations.</p><p><b>Faciliter</b> le repérage et la mobilisation par les conseillers.</p></div></div>
   </section>
 
-  <section class="page split feature-page proof-spread cover-proof" data-title="Passeport Avenir Pro 2026"><img class="proof-bg-image" src="assets/bg-passeport.png" alt="">
+  <section class="page split feature-page proof-spread cover-proof" data-title="Passeport Avenir Pro 2026">
     <div class="paper proof-cover" style="--proof-image:url('assets/passeport-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · MON PASSEPORT AVENIR PRO</span><h2>Faire du jeune l'acteur de son parcours.</h2></div></div>
     <div class="paper proof-detail"><span class="chapter">INNOVER · AUTONOMISER · PÉRENNISER</span><h2>De l'atelier à un parcours que l'élève conserve.</h2><div class="metric-row single"><div><b>8</b><span>missions structurées</span></div></div><p class="big-lead">Un parcours interactif qui prolonge Avenir Pro et permet à l'élève d'explorer, construire, sauvegarder et valoriser sa progression.</p><p class="proof-signature">L'affiche de présentation, son QR code et son accès cliquable restent associés à cette preuve.</p></div>
   </section>
@@ -990,26 +324,7 @@
       <div class="closing">De l'idée à l'impact.</div>
     </div>
   </section>
-<section class="page other-projects-page" data-title="Autres réalisations">
-  <div class="paper full other-projects">
-    <span class="chapter">AUTRES RÉALISATIONS</span>
-    <h2>D’autres façons d’expérimenter, transmettre et faire évoluer les pratiques.</h2>
-    <p class="other-intro">Cette sélection complète les projets majeurs présentés en double page. Elle ne constitue pas l’intégralité des réalisations menées.</p>
-    <div class="other-grid">
-      <article><span>2015</span><h3>DigiNews</h3><p>Partager les évolutions digitales et accompagner leur appropriation par les collaborateurs.</p></article>
-      <article><span>2018</span><h3>1re revue de performance</h3><p>Questionner l’organisation, analyser les difficultés et proposer des pistes d’amélioration.</p></article>
-      <article><span>2019</span><h3>Escape Game digital</h3><p>Faire découvrir autrement, favoriser la coopération et créer de l’adhésion.</p></article>
-      <article><span>2022</span><h3>Revue de performance CEJ</h3><p>Mettre en perspective les pratiques, la dynamique collective et les résultats.</p></article>
-    </div>
-  </div>
-</section><section class="page split testimonials-page" data-title="Ils en parlent">
-<div class="paper left"><span class="chapter">ILS EN PARLENT</span><h2>Le regard des autres.</h2>
-<div class="testimonial-cards"><blockquote>« Innovant et agréable, ça change ! »</blockquote><blockquote>« Une bouffée d’air dans notre quotidien. »</blockquote><blockquote>« Travailler ensemble différemment. »</blockquote><blockquote>« Cohésion équipe. »</blockquote></div></div>
-<div class="paper right soft-panel testimonial-message"><span class="chapter">CE QUE J’EN RETIENS</span><h2>Créer l’adhésion compte autant que créer l’outil.</h2><p>Une réalisation prend tout son sens lorsqu’elle est comprise, utilisée et appropriée par le collectif.</p></div>
-</section><section class="page split vision-page" data-title="Ma vision">
-<div class="paper left dark vision-left"><span class="chapter light">MA VISION</span><h2 class="white">Manager, c’est d’abord donner du sens.</h2><p class="vision-quote">Être au plus près du collectif, écouter, faire confiance et créer les conditions pour que chacun puisse contribuer.</p></div>
-<div class="paper right vision-right"><span class="chapter">MANAGER DE PROXIMITÉ</span><div class="vision-principles"><span><b>Écouter</b> pour comprendre avant d’agir.</span><span><b>Donner du sens</b> aux objectifs et aux décisions.</span><span><b>Faire confiance</b> dans un cadre clair.</span><span><b>Accompagner</b> les compétences et les évolutions.</span><span><b>Décider</b> lorsque la situation le nécessite.</span><span><b>Reconnaître</b> les contributions et les réussites.</span></div></div>
-</section></main>
+</main>
 
 <div class="nav-arrows">
   <button id="prevBtn" aria-label="Page précédente">←</button>
@@ -1022,27 +337,5 @@
 </div>
 
 <script src="script.js"></script>
-<script>
-(function(){
- const pages=[...document.querySelectorAll('section.page')];
- function go(title){
-   const i=pages.findIndex(p=>p.dataset.title===title || (title==="Accueil" && /Accueil|Couverture/i.test(p.dataset.title||"")) || (title==="Fil conducteur" && /Fil conducteur|Chronologie|Repères/i.test(p.dataset.title||"")));
-   if(i<0) return;
-   if(typeof window.goToPage==="function"){ window.goToPage(i); }
-   else { pages[i].scrollIntoView({behavior:"smooth",block:"start"}); }
-   document.getElementById("projectsMenu")?.classList.remove("open");
-   document.getElementById("mainMenu")?.classList.remove("open");
- }
- document.addEventListener("click",e=>{
-   const b=e.target.closest("[data-go-title]");
-   if(b){e.preventDefault();go(b.dataset.goTitle);}
-   if(e.target.closest(".projects-trigger")){
-     const pm=document.getElementById("projectsMenu"); pm?.classList.add("open"); pm?.setAttribute("aria-hidden","false");
-   }
-   if(e.target.closest(".projects-back")||e.target.closest(".projects-close")){
-     const pm=document.getElementById("projectsMenu"); pm?.classList.remove("open"); pm?.setAttribute("aria-hidden","true");
-   }
- });
-})();
-</script></body>
+</body>
 </html>
