@@ -628,6 +628,119 @@
 }
 </style>
 
+
+<style id="padlet-cej-enrichi">
+.padlet-proof-right{
+  box-sizing:border-box!important;
+  padding:clamp(34px,4.4vh,54px) clamp(38px,4vw,60px)!important;
+  overflow:hidden!important;
+}
+.padlet-proof-right .chapter{
+  color:#079da5!important;font-weight:900!important;letter-spacing:.14em!important;
+}
+.padlet-proof-right h2{
+  margin:13px 0 20px!important;
+  color:#08234d!important;
+  font-size:clamp(38px,3.8vw,58px)!important;
+  line-height:1.01!important;
+  letter-spacing:-.04em!important;
+}
+.padlet-story{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:11px!important;
+  margin-bottom:13px!important;
+}
+.padlet-card{
+  padding:13px 14px!important;
+  border-radius:14px!important;
+  background:#f1f8f8!important;
+  border-top:3px solid #0aa0a7!important;
+}
+.padlet-card small,.padlet-impact small{
+  display:block!important;
+  margin-bottom:5px!important;
+  color:#078b96!important;
+  font-size:9px!important;
+  font-weight:900!important;
+  letter-spacing:.09em!important;
+}
+.padlet-card p{
+  margin:0!important;
+  color:#24445f!important;
+  font-size:10.5px!important;
+  line-height:1.35!important;
+}
+.padlet-kpis{
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:10px!important;
+  margin-bottom:13px!important;
+}
+.padlet-kpis>div{
+  min-height:104px!important;
+  padding:12px 13px!important;
+  border:1px solid #d8e3e9!important;
+  border-radius:14px!important;
+  background:#fff!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+}
+.padlet-kpis strong{
+  display:block!important;
+  color:#0a9da5!important;
+  font-size:clamp(29px,2.7vw,42px)!important;
+  line-height:1!important;
+  letter-spacing:-.04em!important;
+  margin-bottom:7px!important;
+}
+.padlet-kpis span{
+  color:#102f57!important;
+  font-size:10.5px!important;
+  line-height:1.2!important;
+  font-weight:850!important;
+}
+.padlet-impact{
+  padding:12px 15px!important;
+  border-radius:14px!important;
+  background:linear-gradient(90deg,#eaf7f6,#eef5fa)!important;
+  border-left:4px solid #0aa0a7!important;
+}
+.padlet-impact p{
+  margin:0!important;
+  color:#284c66!important;
+  font-size:10.5px!important;
+  line-height:1.35!important;
+  font-weight:600!important;
+}
+/* léger dézoom du visuel Padlet pour donner davantage de contexte */
+.padlet-proof-left{
+  background-size:92% auto!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+.padlet-proof-left img{
+  object-fit:contain!important;
+  object-position:center center!important;
+  transform:scale(.94)!important;
+  transform-origin:center center!important;
+}
+@media (min-width:1051px) and (max-height:820px){
+  .padlet-proof-right{padding:26px 32px!important}
+  .padlet-proof-right h2{font-size:38px!important;margin:8px 0 12px!important}
+  .padlet-story{gap:7px!important;margin-bottom:8px!important}
+  .padlet-card{padding:9px 10px!important}
+  .padlet-card p{font-size:9px!important}
+  .padlet-kpis{gap:7px!important;margin-bottom:8px!important}
+  .padlet-kpis>div{min-height:80px!important;padding:8px 10px!important}
+  .padlet-kpis strong{font-size:30px!important;margin-bottom:4px!important}
+  .padlet-kpis span{font-size:9px!important}
+  .padlet-impact{padding:9px 11px!important}
+  .padlet-impact p{font-size:9px!important}
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -664,21 +777,66 @@
 </div>
 
 <main class="book" id="book">
-  <section class="page cover active" data-title="Couverture">
-    <div class="cover-copy">
-      <span class="eyebrow">PORTFOLIO DE RÉALISATIONS</span>
-      <h1>De l'idée<br><span>à l'impact</span></h1>
-      <p class="subtitle cover-signature">Transformer les pratiques pour renforcer l'impact.</p>
-      <div class="cover-name">Sandrine Paparemborde Maumy</div>
-      <div class="cover-role">Candidature Manager de proximité · France Travail</div>
-      <button class="open-book" data-next>Ouvrir le portfolio →</button>
-    </div>
-    <div class="cover-visual">
-      <div class="portrait-frame">
-        <img src="assets/portrait.png" alt="Portrait de Sandrine Paparemborde Maumy">
+  <section class="page cover active" data-title="Couverture"><div class="paper left timeline-evolution-left padlet-proof-left">
+    <span class="folio">05</span>
+    <span class="chapter">FORCE DE PROPOSITION</span>
+    <h2>Proposer pour faire évoluer.</h2>
+    <p class="timeline-intro">Mes projets ont un périmètre qui s’élargit au fil des années, avec une intention professionnelle constante : améliorer la qualité de service et faciliter les pratiques en interne. Une dynamique qui nourrit aujourd’hui ma vision à 360° de nos services et de leur fonctionnement.</p>
+
+    <div class="timeline-group">
+      <div class="timeline-context">
+        <b>Plateforme S@D Bordeaux</b>
+        <span>Conseillère service à distance · 3949 &amp; 3995</span>
+      </div>
+      <div class="timeline-item">
+        <time>2015</time>
+        <span><b>DigiNews</b><small>Transmettre · accompagner le changement</small></span>
       </div>
     </div>
-  </section>
+
+    <div class="timeline-group langon-career">
+      <div class="timeline-context">
+        <b>Agence de Langon</b>
+      </div>
+
+      <div class="role-block">
+        <div class="role-label">Conseillère demandeurs d’emploi · modalité Suivi</div>
+        <div class="timeline-item"><time>2018</time><span><b>1re revue de performance</b><small>Questionner · améliorer</small></span></div>
+      </div>
+
+      <div class="role-block">
+        <div class="role-label">Conseillère à dominante entreprise</div>
+        <div class="timeline-item"><time>2019</time><span><b>Escape Game digital</b><small>Embarquer · faire apprendre autrement</small></span></div>
+        <div class="timeline-item"><time>2020</time><span><b>Espace recruteur</b><small>Autonomiser les entreprises</small></span></div>
+      </div>
+    </div>
+  </div>
+<div class="paper right padlet-proof-right">
+  <span class="chapter">PARTAGER · AUTONOMISER · COOPÉRER</span>
+  <h2>L'information utile,<br>au même endroit.</h2>
+
+  <div class="padlet-story">
+    <div class="padlet-card">
+      <small>LE BESOIN</small>
+      <p>Centraliser des informations jusque-là dispersées et permettre aux jeunes de retrouver facilement les ressources utiles à leur parcours.</p>
+    </div>
+    <div class="padlet-card">
+      <small>LA RÉPONSE</small>
+      <p>Un Padlet partagé, structuré autour des événements, offres d'emploi, découverte métiers / entreprises, formations et ressources pratiques.</p>
+    </div>
+  </div>
+
+  <div class="padlet-kpis">
+    <div><strong>240</strong><span>jeunes concernés</span></div>
+    <div><strong>4</strong><span>conseillers utilisateurs</span></div>
+    <div><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
+  </div>
+
+  <div class="padlet-impact">
+    <small>UN OUTIL AU SERVICE DE L'AUTONOMIE</small>
+    <p>Une ressource commune pensée pour rendre l'information accessible, faciliter l'autonomie des jeunes et permettre aux conseillers d'alimenter collectivement un même espace.</p>
+  </div>
+</div></section>
 
   <section class="page action-systemique-page" data-title="Ma manière d’agir">
   <div class="action-systemique">
@@ -785,7 +943,7 @@
       <div class="kpi-head"><span class="kpi-num">02</span><div><small>AUTONOMIE DES JEUNES</small><b>CEJ — OUTIL PADLET</b></div></div>
       <div class="kpi-grid three">
         <div class="kpi"><strong>240</strong><span>jeunes concernés</span></div>
-        <div class="kpi"><strong>5</strong><span>conseillers utilisateurs</span></div>
+        <div class="kpi"><strong>4</strong><span>conseillers utilisateurs</span></div>
         <div class="kpi"><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
       </div>
     </div>
