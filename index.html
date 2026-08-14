@@ -225,6 +225,32 @@
 }
 </style>
 
+
+<style id="page02-title-cleanup">
+.action-systemique-page .action-systemique__intro h2{
+  margin-bottom:6px !important;
+}
+.action-systemique-page .action-systemique__subtitle{
+  margin:0 !important;
+  color:#0b5fa9 !important;
+  font-size:clamp(22px,2.15vw,34px) !important;
+  line-height:1.08 !important;
+  font-weight:800 !important;
+  letter-spacing:-.025em !important;
+}
+.action-systemique-page .action-systemique{
+  gap:clamp(20px,2.8vh,32px) !important;
+}
+@media (min-width:1051px) and (max-height:820px){
+  .action-systemique-page .action-systemique{
+    gap:20px !important;
+  }
+  .action-systemique-page .action-systemique__subtitle{
+    font-size:clamp(20px,1.9vw,29px) !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -281,8 +307,8 @@
   <div class="action-systemique">
     <div class="action-systemique__intro">
       <span class="action-systemique__eyebrow">MA MANIÈRE D’AGIR</span>
-      <h2>Une approche systémique, <span>du besoin observé à l’impact</span></h2>
-      <p>Observer le terrain, comprendre ce qui se joue, analyser les leviers, concevoir une réponse, mobiliser, déployer puis mesurer pour ajuster.</p>
+      <h2>Une approche systémique</h2>
+      <div class="action-systemique__subtitle">Du besoin observé à l’impact mesuré</div>
     </div>
 
     <div class="action-systemique__grid">
