@@ -628,6 +628,33 @@
 }
 </style>
 
+
+<style id="padlet-correctif-depuis-index-installe">
+.padlet-detail-current{padding:36px 40px!important;overflow:hidden!important}
+.padlet-detail-current h2{font-size:clamp(36px,3.4vw,52px)!important;line-height:1.02!important;margin:11px 0 17px!important}
+.padlet-context-current{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;margin-bottom:12px!important}
+.padlet-context-current>div{padding:12px 13px!important;border-radius:14px!important;background:#eef8f7!important;border-top:3px solid #0aa0a7!important}
+.padlet-context-current small,.padlet-impact-current small{display:block!important;color:#078b96!important;font-size:9px!important;font-weight:900!important;letter-spacing:.09em!important;margin-bottom:5px!important}
+.padlet-context-current p,.padlet-impact-current p{margin:0!important;color:#284760!important;font-size:10px!important;line-height:1.35!important}
+.padlet-kpis-current{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:9px!important;margin-bottom:12px!important}
+.padlet-kpis-current>div{padding:11px 12px!important;min-height:90px!important;border:1px solid #d9e4e9!important;border-radius:14px!important;background:#fff!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+.padlet-kpis-current strong{font-size:32px!important;line-height:1!important;color:#0a9da5!important;margin-bottom:6px!important}
+.padlet-kpis-current span{font-size:9.5px!important;line-height:1.2!important;font-weight:850!important;color:#102f57!important}
+.padlet-impact-current{padding:11px 14px!important;border-radius:14px!important;background:linear-gradient(90deg,#eaf7f6,#eef5fa)!important;border-left:4px solid #0aa0a7!important}
+@media (min-width:1051px) and (max-height:820px){
+ .padlet-detail-current{padding:25px 30px!important}
+ .padlet-detail-current h2{font-size:37px!important;margin:7px 0 10px!important}
+ .padlet-context-current{gap:7px!important;margin-bottom:8px!important}
+ .padlet-context-current>div{padding:8px 9px!important}
+ .padlet-context-current p,.padlet-impact-current p{font-size:8.6px!important}
+ .padlet-kpis-current{gap:7px!important;margin-bottom:8px!important}
+ .padlet-kpis-current>div{min-height:72px!important;padding:8px 9px!important}
+ .padlet-kpis-current strong{font-size:27px!important;margin-bottom:4px!important}
+ .padlet-kpis-current span{font-size:8.4px!important}
+ .padlet-impact-current{padding:8px 10px!important}
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -785,7 +812,7 @@
       <div class="kpi-head"><span class="kpi-num">02</span><div><small>AUTONOMIE DES JEUNES</small><b>CEJ — OUTIL PADLET</b></div></div>
       <div class="kpi-grid three">
         <div class="kpi"><strong>240</strong><span>jeunes concernés</span></div>
-        <div class="kpi"><strong>5</strong><span>conseillers utilisateurs</span></div>
+        <div class="kpi"><strong>4</strong><span>conseillers utilisateurs</span></div>
         <div class="kpi"><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
       </div>
     </div>
@@ -871,7 +898,23 @@
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Padlet CEJ 2022">
     <div class="paper proof-cover" style="--proof-image:url('assets/padlet-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2022 · PADLET CEJ</span><h2>Partager pour autonomiser.</h2></div></div>
-    <div class="paper proof-detail"><span class="chapter">PARTAGER · AUTONOMISER · COOPÉRER</span><h2>L'information utile, au même endroit.</h2><p class="big-lead">Un espace partagé pensé pour faciliter l'accès aux événements, offres, métiers, formations et ressources utiles aux jeunes accompagnés.</p><div class="metric-row single"><div><b>240</b><span>jeunes concernés</span></div></div><p class="proof-signature">Une réponse simple à un besoin concret : rendre l'information accessible et favoriser l'autonomie.</p></div>
+    <div class="paper proof-detail padlet-detail-current">
+      <span class="chapter">PARTAGER · AUTONOMISER · COOPÉRER</span>
+      <h2>L'information utile,<br>au même endroit.</h2>
+      <div class="padlet-context-current">
+        <div><small>LE BESOIN</small><p>Centraliser des informations jusque-là dispersées et permettre aux jeunes de retrouver facilement les ressources utiles à leur parcours.</p></div>
+        <div><small>LA RÉPONSE</small><p>Un Padlet partagé, structuré autour des événements, offres d'emploi, découverte métiers / entreprises, formations et ressources pratiques.</p></div>
+      </div>
+      <div class="padlet-kpis-current">
+        <div><strong>240</strong><span>jeunes concernés</span></div>
+        <div><strong>4</strong><span>conseillers utilisateurs</span></div>
+        <div><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
+      </div>
+      <div class="padlet-impact-current">
+        <small>UN OUTIL AU SERVICE DE L'AUTONOMIE</small>
+        <p>Une ressource commune pensée pour rendre l'information accessible, faciliter l'autonomie des jeunes et permettre aux conseillers d'alimenter collectivement un même espace.</p>
+      </div>
+    </div>
   </section>
 
   
