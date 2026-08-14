@@ -395,14 +395,56 @@
 </style>
 
 
-<style id="page04-school-year-note">
-.school-year-note{
-  display:block!important;
-  margin-top:7px!important;
-  font-size:clamp(10px,.82vw,13px)!important;
-  line-height:1.25!important;
-  font-weight:600!important;
-  color:#66758a!important;
+<style id="page04-keyfigures-redesign">
+.keyfigures-page{overflow:hidden!important}
+.keyfigures-page .paper{box-sizing:border-box;overflow:hidden!important;padding:34px 38px!important}
+.keyfigures-page .chapter{color:#079da5!important;font-weight:900!important;letter-spacing:.15em!important}
+.keyfigures-page h2{margin:12px 0 22px!important;font-size:clamp(31px,3.1vw,48px)!important;line-height:1.02!important;color:#08234d!important;letter-spacing:-.035em!important}
+.keyfigures-page h2 span{color:#0b69b5!important}
+.keyfigures-right{padding-top:48px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:14px!important}
+
+.kpi-panel{border-radius:17px!important;padding:14px 16px 15px!important;margin-bottom:14px!important;border-top:3px solid rgba(8,84,150,.75)!important;box-shadow:0 8px 22px rgba(16,42,74,.07)!important}
+.kpi-blue{background:#e7f2fb!important}
+.kpi-mint{background:#e3f5f2!important;border-top-color:#08a39f!important}
+.kpi-sand{background:#f7ecd8!important;border-top-color:#c98c36!important}
+.kpi-lilac{background:#f2e9f2!important;border-top-color:#9c7186!important}
+.kpi-navy{background:linear-gradient(135deg,#0a3971,#087f9c)!important;border-top-color:#fff!important;color:#fff!important}
+
+.kpi-head{display:flex!important;align-items:center!important;gap:9px!important;margin-bottom:10px!important}
+.kpi-num{display:flex!important;align-items:center!important;justify-content:center!important;width:28px!important;height:28px!important;border-radius:9px!important;background:rgba(255,255,255,.78)!important;color:#092b56!important;font-weight:900!important;font-size:11px!important}
+.kpi-head div{display:flex!important;flex-direction:column!important;gap:1px!important}
+.kpi-head small{font-size:9px!important;line-height:1.15!important;font-weight:800!important;letter-spacing:.035em!important;color:#577189!important}
+.kpi-head b{font-size:14px!important;line-height:1.1!important;color:#12365e!important}
+.kpi-navy .kpi-head small,.kpi-navy .kpi-head b{color:#fff!important}
+
+.kpi-grid{display:grid!important;gap:9px!important}
+.kpi-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.kpi{min-height:96px!important;background:rgba(255,255,255,.82)!important;border-radius:13px!important;padding:11px 12px!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+.kpi strong{display:block!important;font-size:clamp(25px,2.5vw,39px)!important;line-height:.95!important;color:#0a9ca4!important;letter-spacing:-.04em!important;margin-bottom:7px!important}
+.kpi span{font-size:11px!important;line-height:1.25!important;font-weight:800!important;color:#153354!important}
+.kpi em{font-style:normal!important;font-size:9.5px!important;line-height:1.25!important;color:#66778a!important;margin-top:5px!important}
+.kpi-navy .kpi{background:rgba(255,255,255,.09)!important;border:1px solid rgba(255,255,255,.16)!important}
+.kpi-navy .kpi strong,.kpi-navy .kpi span,.kpi-navy .kpi em{color:#fff!important}
+
+.tools-row{display:grid!important;grid-template-columns:1.1fr 1.6fr!important;gap:12px!important}
+.tools-main{background:rgba(255,255,255,.82)!important;border-radius:13px!important;padding:12px!important;display:flex!important;align-items:center!important;gap:12px!important}
+.tools-main strong{font-size:42px!important;line-height:1!important;color:#9b6279!important}
+.tools-main span{font-size:11px!important;line-height:1.25!important;font-weight:800!important;color:#4f3d4b!important}
+.audiences{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
+.audiences span{background:rgba(255,255,255,.85)!important;border-radius:10px!important;padding:10px 8px!important;text-align:center!important;font-size:10px!important;font-weight:800!important;color:#60485a!important}
+.kpi-lilac p{margin:9px 2px 0!important;font-size:9.5px!important;line-height:1.3!important;color:#6f6070!important}
+
+@media (min-width:1051px) and (max-height:820px){
+ .keyfigures-page .paper{padding:25px 28px!important}
+ .keyfigures-page h2{font-size:34px!important;margin:8px 0 13px!important}
+ .keyfigures-right{padding-top:32px!important;gap:9px!important}
+ .kpi-panel{padding:10px 12px!important;margin-bottom:9px!important}
+ .kpi-head{margin-bottom:7px!important}
+ .kpi{min-height:78px!important;padding:8px 9px!important}
+ .kpi strong{font-size:29px!important;margin-bottom:5px!important}
+ .kpi span{font-size:9.8px!important}
+ .kpi em{font-size:8.7px!important}
+ .tools-main strong{font-size:34px!important}
 }
 </style>
 
@@ -544,27 +586,61 @@
   </div>
 </section>
 
-  <section class="page split impact-overview" data-title="Repères d'impact">
-  <div class="paper left airy">
-    <span class="chapter">REPÈRES D’IMPACT</span>
-    <h2>Des réalisations qui prennent de l’ampleur.</h2>
-    <div class="impact-cards">
-      <article><b>57</b><span>ateliers Avenir Pro<span class="school-year-note">sur la seule année scolaire 2025–2026</span></span></article>
-      <article><b>210</b><span>lycéens accompagnés</span></article>
-      <article><b>240</b><span>jeunes concernés par le Padlet CEJ</span></article>
-      <article><b>11</b><span>réalisations jalonnant le parcours</span></article>
+  <section class="page split keyfigures-page" data-title="Chiffres clés">
+  <div class="paper left keyfigures-left">
+    <span class="folio">07</span>
+    <span class="chapter">CHIFFRES CLÉS</span>
+    <h2>Des réalisations,<br><span>des résultats mesurables.</span></h2>
+
+    <div class="kpi-panel kpi-blue">
+      <div class="kpi-head"><span class="kpi-num">01</span><div><small>INGÉNIERIE PÉDAGOGIQUE</small><b>AVENIR PRO</b></div></div>
+      <div class="kpi-grid three">
+        <div class="kpi"><strong>215</strong><span>élèves accompagnés</span></div>
+        <div class="kpi"><strong>57</strong><span>animations réalisées</span><em>sur la seule année scolaire 2025–2026</em></div>
+        <div class="kpi"><strong>10</strong><span>supports pédagogiques créés</span><em>6 cours interactifs + 4 quiz</em></div>
+      </div>
+    </div>
+
+    <div class="kpi-panel kpi-mint">
+      <div class="kpi-head"><span class="kpi-num">02</span><div><small>AUTONOMIE DES JEUNES</small><b>CEJ — OUTIL PADLET</b></div></div>
+      <div class="kpi-grid three">
+        <div class="kpi"><strong>240</strong><span>jeunes concernés</span></div>
+        <div class="kpi"><strong>5</strong><span>conseillers utilisateurs</span></div>
+        <div class="kpi"><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
+      </div>
     </div>
   </div>
-  <div class="paper right airy soft-panel">
-    <span class="chapter">FIL CONDUCTEUR</span>
-    <h2>Une même manière d’agir.</h2>
-    <div class="process-line">
-      <span>Observer</span>
-      <span>Comprendre</span>
-      <span>Construire</span>
-      <span>Mobiliser</span>
-      <span>Mesurer</span>
-      <strong>Ajuster</strong>
+
+  <div class="paper right keyfigures-right">
+    <span class="folio">08</span>
+
+    <div class="kpi-panel kpi-sand">
+      <div class="kpi-head"><span class="kpi-num">03</span><div><small>MOBILISATION COLLECTIVE</small><b>SIMULATION D’ENTRETIEN</b></div></div>
+      <div class="kpi-grid three">
+        <div class="kpi"><strong>26</strong><span>élèves testés</span></div>
+        <div class="kpi"><strong>17</strong><span>conseillers volontaires</span></div>
+        <div class="kpi"><strong>8</strong><span>agents mobilisés</span><em>dont le directeur d’agence</em></div>
+      </div>
+    </div>
+
+    <div class="kpi-panel kpi-navy">
+      <div class="kpi-head"><span class="kpi-num">04</span><div><small>PILOTAGE DE LA PERFORMANCE</small><b>FTAE — RÉSULTATS DU PLAN D’ACTION À 6 MOIS</b></div></div>
+      <div class="kpi-grid three">
+        <div class="kpi"><strong>35 % → 85 %</strong><span>de suivi réalisé</span></div>
+        <div class="kpi"><strong>+50</strong><span>points de progression</span></div>
+        <div class="kpi"><strong>+3 %</strong><span>sur l’indicateur FTAE</span></div>
+      </div>
+    </div>
+
+    <div class="kpi-panel kpi-lilac">
+      <div class="kpi-head"><span class="kpi-num">05</span><div><small>POUVOIR D’AGIR</small><b>CONCEPTION D’OUTILS</b></div></div>
+      <div class="tools-row">
+        <div class="tools-main"><strong>5</strong><span>outils conçus pour développer l’autonomie</span></div>
+        <div class="audiences">
+          <span>Conseillers</span><span>Jeunes</span><span>Lycéens</span><span>Entreprises</span>
+        </div>
+      </div>
+      <p>4 types de publics accompagnés grâce à des solutions pensées pour simplifier l’action et renforcer l’autonomie.</p>
     </div>
   </div>
 </section>
