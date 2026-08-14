@@ -669,6 +669,84 @@
 }
 </style>
 
+
+<style id="padlet-harmonieux-final">
+/* Nouvelle capture Padlet : plus grande, centrée, mais encore lisible dans son ensemble */
+[data-title="Padlet CEJ 2022"] .proof-cover::before{
+  inset:0 !important;
+  background-size:112% auto !important;
+  background-position:center 16% !important;
+  background-repeat:no-repeat !important;
+  transform:none !important;
+}
+[data-title="Padlet CEJ 2022"] .proof-cover{
+  background:#eef3f6 !important;
+}
+
+/* Partie texte : occupation plus généreuse et meilleure lisibilité */
+.padlet-detail-current{
+  padding:34px 38px !important;
+}
+.padlet-detail-current .chapter{
+  font-size:11px !important;
+  letter-spacing:.13em !important;
+}
+.padlet-detail-current h2{
+  font-size:clamp(43px,3.8vw,58px) !important;
+  line-height:1.01 !important;
+  margin:14px 0 20px !important;
+}
+.padlet-context-current{
+  gap:12px !important;
+  margin-bottom:14px !important;
+}
+.padlet-context-current>div{
+  padding:15px 16px !important;
+  min-height:122px !important;
+}
+.padlet-context-current small,
+.padlet-impact-current small{
+  font-size:10px !important;
+  margin-bottom:7px !important;
+}
+.padlet-context-current p,
+.padlet-impact-current p{
+  font-size:12px !important;
+  line-height:1.42 !important;
+}
+.padlet-kpis-current{
+  gap:11px !important;
+  margin-bottom:14px !important;
+}
+.padlet-kpis-current>div{
+  min-height:118px !important;
+  padding:14px !important;
+}
+.padlet-kpis-current strong{
+  font-size:40px !important;
+  margin-bottom:8px !important;
+}
+.padlet-kpis-current span{
+  font-size:11px !important;
+  line-height:1.25 !important;
+}
+.padlet-impact-current{
+  padding:15px 17px !important;
+  min-height:92px !important;
+}
+
+@media (min-width:1051px) and (max-height:820px){
+  .padlet-detail-current{padding:27px 31px !important}
+  .padlet-detail-current h2{font-size:40px !important;margin:9px 0 12px !important}
+  .padlet-context-current>div{padding:10px 11px !important;min-height:90px !important}
+  .padlet-context-current p,.padlet-impact-current p{font-size:9.6px !important}
+  .padlet-kpis-current>div{min-height:82px !important;padding:9px 10px !important}
+  .padlet-kpis-current strong{font-size:30px !important;margin-bottom:4px !important}
+  .padlet-kpis-current span{font-size:9px !important}
+  .padlet-impact-current{padding:10px 12px !important;min-height:66px !important}
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
