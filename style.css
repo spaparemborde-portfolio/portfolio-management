@@ -540,3 +540,21 @@ h2{
   .cover-visual{height:auto;padding:8px 26px 76px}
   .portrait-frame{width:min(340px,78vw);max-height:none}
 }
+
+/* PAGE 02 — MA MANIÈRE D’AGIR */
+.action-systemique-page{overflow:hidden}
+.action-systemique{min-height:100%;padding:clamp(24px,3.4vh,46px) clamp(28px,4vw,64px);display:flex;flex-direction:column;justify-content:center;gap:clamp(14px,2.1vh,25px);background:radial-gradient(circle at 100% 0%,rgba(26,164,171,.11),transparent 34%),linear-gradient(135deg,#fff 0%,#fbfdff 62%,#f3fafb 100%)}
+.action-systemique__intro{max-width:1080px}
+.action-systemique__intro .chapter{color:#079ba4;font-weight:800;letter-spacing:.17em;font-size:clamp(11px,.9vw,14px)}
+.action-systemique__intro h2{margin:8px 0;color:#071f49;font-size:clamp(31px,3.65vw,58px);line-height:.99;letter-spacing:-.04em}
+.action-systemique__intro h2 span{color:#0b5fa9}
+.action-systemique__intro>p{margin:0;max-width:980px;color:#536987;font-size:clamp(13px,1.1vw,17px);line-height:1.42}
+.action-systemique__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(10px,1.1vw,17px)}
+.action-step{min-height:126px;padding:clamp(13px,1.35vw,20px);border-radius:18px;background:rgba(255,255,255,.97);border-top:4px solid #1769aa;box-shadow:0 9px 24px rgba(7,31,73,.08);display:flex;gap:12px;align-items:flex-start}
+.action-step:nth-child(3n){border-top-color:#0aa0a7}
+.action-step__num{flex:0 0 42px;height:42px;border-radius:13px;display:grid;place-items:center;background:#eaf4f8;color:#073f7d;font-weight:900}
+.action-step h3{margin:3px 0 6px;color:#061d43;font-size:clamp(16px,1.25vw,20px);line-height:1.08}
+.action-step p{margin:0;color:#5a6d89;font-size:clamp(12px,.95vw,15px);line-height:1.4}
+.action-step--last{grid-column:2/span 2;border-top-color:#0aa0a7}
+@media(max-width:1050px){.action-systemique{justify-content:flex-start;overflow-y:auto}.action-systemique__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.action-step--last{grid-column:1/-1}}
+@media(max-width:640px){.action-systemique{padding:22px 17px 90px;gap:18px;overflow-y:auto}.action-systemique__intro h2{font-size:clamp(34px,10.5vw,50px)}.action-systemique__grid{grid-template-columns:1fr}.action-step,.action-step--last{grid-column:auto;min-height:0}}
