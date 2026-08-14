@@ -16,30 +16,33 @@
   <div class="page-count"><span id="currentPage">1</span> / <span id="totalPages">10</span></div>
 </header>
 
-<nav class="toc" id="toc">
-  <button class="toc-close" id="tocClose">×</button>
-  <p class="toc-kicker">SOMMAIRE</p>
-  <a data-go="0">Couverture</a>
-  <a data-go="1">Mon fil conducteur</a>
-  <a data-go="2">Ma manière d'agir</a>
-  <a data-go="3">15 ans de continuité</a>
-  <a data-go="4">Preuves récentes</a>
-  <a data-go-title="2015 — DigiNews">2015 — DigiNews</a>
-  <a data-go-title="2018 — Revue de performance">2018 — 1re revue de performance</a>
-  <a data-go-title="Escape game digital 2019">2019 — Escape Game digital</a>
-  <a data-go-title="2020 — Espace recruteur">2020 — Espace recruteur</a>
-  <a data-go-title="Padlet CEJ 2022">2022 — Padlet CEJ</a>
-  <a data-go-title="Revue de performance CEJ 2022">2022 — Revue de performance CEJ</a>
-  <a data-go-title="Avenir Pro 2025">2025 — Avenir Pro · Ateliers</a>
-  <a data-go-title="AIF 2025">2025 — AIF</a>
-  <a data-go-title="FTAE 2026">2026 — FTAE</a>
-  <a data-go-title="Livret partenaires 2026">2026 — Livret partenaires Intensif</a>
-  <a data-go-title="Passeport Avenir Pro 2026">2026 — Mon Passeport Avenir Pro</a>
-  <a data-go-title="Ma vision du management">Ma vision du management</a>
+<nav class="toc" id="mainMenu">
+  <button class="toc-close" aria-label="Fermer le menu">×</button>
+  <div class="toc-title">SOMMAIRE</div>
+  <button class="toc-link" data-go-title="Accueil">Accueil</button>
+  <button class="toc-link" data-go-title="Fil conducteur">Fil conducteur</button>
+  <button class="toc-link projects-trigger" type="button">Projets <span>›</span></button>
+  <button class="toc-link" data-go-title="Ils en parlent">Ils en parlent</button>
+  <button class="toc-link" data-go-title="Ma vision">Ma vision</button>
 </nav>
+<div class="projects-menu" id="projectsMenu" aria-hidden="true">
+  <div class="projects-menu-head"><button class="projects-back" type="button">← Retour</button><b>PROJETS</b><button class="projects-close" type="button">×</button></div>
+  <div class="projects-scroll">
+    <p class="projects-label">Réalisations majeures</p>
+    <button data-go-title="FTAE 2026">FTAE · 2026</button>
+    <button data-go-title="Avenir Pro 2025">Avenir Pro · 2025</button>
+    <button data-go-title="Passeport Avenir Pro 2026">Mon Passeport Avenir Pro · 2026</button>
+    <button data-go-title="AIF 2025">AIF · 2025</button>
+    <button data-go-title="Livret partenaires 2026">Livret partenaires Intensif · 2026</button>
+    <button data-go-title="Padlet CEJ 2022">Padlet CEJ · 2022</button>
+    <button data-go-title="Espace recruteur 2020">Espace recruteur · 2020</button>
+    <p class="projects-label secondary">Autres réalisations</p>
+    <button data-go-title="Autres réalisations">Voir la sélection</button>
+  </div>
+</div>
 
 <main class="book" id="book">
-  <section class="page cover active" data-title="Couverture">
+  <section class="page cover active" data-title="Couverture"><div class="cover-portrait"><img src="assets/portrait.png" alt="Portrait de Sandrine Paparemborde Maumy"></div>
     <div class="cover-copy">
       <span class="eyebrow">PORTFOLIO MANAGEMENT</span>
       <h1>De l'idée<br><span>à l'impact</span></h1>
@@ -143,7 +146,7 @@
   </div>
 </section>
 
-  <section class="page split feature-page proof-spread cover-proof" data-title="FTAE 2026">
+  <section class="page split feature-page proof-spread cover-proof" data-title="FTAE 2026"><img class="proof-bg-image" src="assets/bg-ftae.png" alt="">
     <div class="paper proof-cover" style="--proof-image:url('assets/ftae-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · FTAE</span><h2>Mesurer pour agir.</h2></div></div>
     <div class="paper proof-detail"><span class="chapter">PILOTER · MOBILISER · AJUSTER</span><h2>Du constat à l'impact mesuré.</h2><div class="metric-row"><div><b>35 % → 85 %</b><span>1er point de contrôle</span><small>+50 points</small></div><div><b>+3 %</b><span>sur l'indicateur FTAE</span></div></div><div class="mini-steps"><p><b>Observer</b> les résultats et repérer les écarts.</p><p><b>Comprendre</b> les 4 points de contrôle.</p><p><b>Mobiliser</b> les référentes formation autour d'un plan d'action.</p><p><b>Mesurer</b> les effets et ajuster.</p></div><a class="evidence-link" href="https://prezi.com/view/zrsIE9EsZNTBlXJSl9pe/?referral_token=P_iN9DlnB3FN" target="_blank" rel="noopener">Découvrir le support FTAE →</a></div>
   </section>
@@ -153,16 +156,13 @@
     <div class="paper proof-detail"><span class="chapter">PARTAGER · AUTONOMISER · COOPÉRER</span><h2>L'information utile, au même endroit.</h2><p class="big-lead">Un espace partagé pensé pour faciliter l'accès aux événements, offres, métiers, formations et ressources utiles aux jeunes accompagnés.</p><div class="metric-row single"><div><b>240</b><span>jeunes concernés</span></div></div><p class="proof-signature">Une réponse simple à un besoin concret : rendre l'information accessible et favoriser l'autonomie.</p></div>
   </section>
 
-  <section class="page split feature-page proof-spread cover-proof" data-title="Revue de performance CEJ 2022">
-    <div class="paper proof-cover" style="--proof-image:url('assets/revue-cej-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2022 · REVUE DE PERFORMANCE CEJ</span><h2>Analyser collectivement.</h2></div></div>
-    <div class="paper proof-detail"><span class="chapter">QUESTIONNER · ANALYSER · FAIRE ÉVOLUER</span><h2>Mettre les pratiques en perspective.</h2><p class="big-lead">Une nouvelle revue de performance pour objectiver le fonctionnement, croiser les constats et faire émerger des pistes d'amélioration partagées.</p><div class="mini-steps"><p><b>Questionner</b> l'organisation et les usages.</p><p><b>Mettre en commun</b> les constats du collectif.</p><p><b>Transformer</b> l'analyse en leviers d'action.</p></div></div>
-  </section>
+  
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Avenir Pro 2025">
     <div class="paper proof-cover" style="--proof-image:url('assets/avenir-pro-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2025 · AVENIR PRO</span><h2>Du ponctuel au partenariat.</h2></div></div>
     <div class="paper proof-detail"><span class="chapter">CONCEVOIR · COORDONNER · MOBILISER</span><h2>Faire vivre une pédagogie active.</h2><div class="metric-row"><div><b>57</b><span>ateliers réalisés</span></div><div><b>210</b><span>lycéens accompagnés</span></div></div><p class="big-lead">Ateliers interactifs, mises en situation et simulations pour préparer concrètement l'entrée dans la vie active.</p><div class="resource-buttons"><a href="#" data-resource="ateliers">6 ateliers</a><a href="#" data-resource="quiz">4 quiz</a></div><div class="support-library">
-  <div class="support-group"><h3>6 ateliers</h3><div class="support-links"><a href="https://view.genially.com/68e63605e8a2232c6f2ba8a4" target="_blank" rel="noopener">Atelier 1</a><a href="https://view.genially.com/68e8ffdde8d4ab42a77d42c5" target="_blank" rel="noopener">Atelier 2</a><a href="https://view.genially.com/68f60dcb08e3777e12812fd8" target="_blank" rel="noopener">Atelier 3</a><a href="https://view.genially.com/68f60e19b0a2bdd88a7df042" target="_blank" rel="noopener">Atelier 4</a><a href="https://view.genially.com/6915ccf838c32f9240b12fc1" target="_blank" rel="noopener">Atelier CV</a><a href="https://view.genially.com/68ecd334d738c90b7a5e551c" target="_blank" rel="noopener">Atelier Orientation</a></div></div>
-  <div class="support-group"><h3>4 quiz</h3><div class="support-links"><a href="https://view.genially.com/68e7a7093eefbe0f6482433e" target="_blank" rel="noopener">Quiz 1</a><a href="https://view.genially.com/68ecc32f9fa39f3906799a2b" target="_blank" rel="noopener">Quiz 2</a><a href="https://view.genially.com/68f6308a477bfd0caac2aa1b" target="_blank" rel="noopener">Quiz 3</a><a href="https://view.genially.com/6909ae9fd7bc6ad9372b8e27" target="_blank" rel="noopener">Quiz 4</a></div></div>
+  <div class="support-group"><h3>6 ateliers</h3><div class="support-links support-buttons"><a href="https://view.genially.com/68e63605e8a2232c6f2ba8a4" target="_blank" rel="noopener">Atelier 1</a><a href="https://view.genially.com/68e8ffdde8d4ab42a77d42c5" target="_blank" rel="noopener">Atelier 2</a><a href="https://view.genially.com/68f60dcb08e3777e12812fd8" target="_blank" rel="noopener">Atelier 3</a><a href="https://view.genially.com/68f60e19b0a2bdd88a7df042" target="_blank" rel="noopener">Atelier 4</a><a href="https://view.genially.com/6915ccf838c32f9240b12fc1" target="_blank" rel="noopener">Atelier CV</a><a href="https://view.genially.com/68ecd334d738c90b7a5e551c" target="_blank" rel="noopener">Atelier Orientation</a></div></div>
+  <div class="support-group"><h3>4 quiz</h3><div class="support-links support-buttons"><a href="https://view.genially.com/68e7a7093eefbe0f6482433e" target="_blank" rel="noopener">Quiz 1</a><a href="https://view.genially.com/68ecc32f9fa39f3906799a2b" target="_blank" rel="noopener">Quiz 2</a><a href="https://view.genially.com/68f6308a477bfd0caac2aa1b" target="_blank" rel="noopener">Quiz 3</a><a href="https://view.genially.com/6909ae9fd7bc6ad9372b8e27" target="_blank" rel="noopener">Quiz 4</a></div></div>
 </div><p class="proof-signature">Une dynamique reconduite qui prépare naturellement Mon Passeport Avenir Pro.</p></div>
   </section>
 
@@ -171,12 +171,12 @@
     <div class="paper proof-detail"><span class="chapter">COMPRENDRE · STRUCTURER · SÉCURISER</span><h2>De la complexité à l'application immédiate.</h2><p class="big-lead">Transformer une matière réglementaire dense en un support clair, structuré et directement utilisable par les conseillers.</p><div class="mini-steps"><p><b>Comprendre</b> la règle et ses points de vigilance.</p><p><b>Structurer</b> l'information pour faciliter la lecture.</p><p><b>Rendre accessible</b> pour sécuriser les pratiques.</p></div></div>
   </section>
 
-  <section class="page split feature-page proof-spread cover-proof" data-title="Livret partenaires 2026">
+  <section class="page split feature-page proof-spread cover-proof" data-title="Livret partenaires 2026"><img class="proof-bg-image" src="assets/bg-partenaires.png" alt="">
     <div class="paper proof-cover" style="--proof-image:url('assets/bg-partenaires.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · LIVRET PARTENAIRES INTENSIF</span><h2>Simplifier l'accès aux solutions.</h2></div></div>
     <div class="paper proof-detail"><span class="chapter">CLARIFIER · STRUCTURER · FACILITER</span><h2>Rendre l'offre partenariale immédiatement mobilisable.</h2><p class="big-lead">Des informations dispersées transformées en fiches homogènes, lisibles et orientées usage terrain.</p><div class="mini-steps"><p><b>Centraliser</b> l'information utile.</p><p><b>Harmoniser</b> la présentation des prestations.</p><p><b>Faciliter</b> le repérage et la mobilisation par les conseillers.</p></div></div>
   </section>
 
-  <section class="page split feature-page proof-spread cover-proof" data-title="Passeport Avenir Pro 2026">
+  <section class="page split feature-page proof-spread cover-proof" data-title="Passeport Avenir Pro 2026"><img class="proof-bg-image" src="assets/bg-passeport.png" alt="">
     <div class="paper proof-cover" style="--proof-image:url('assets/passeport-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · MON PASSEPORT AVENIR PRO</span><h2>Faire du jeune l'acteur de son parcours.</h2></div></div>
     <div class="paper proof-detail"><span class="chapter">INNOVER · AUTONOMISER · PÉRENNISER</span><h2>De l'atelier à un parcours que l'élève conserve.</h2><div class="metric-row single"><div><b>8</b><span>missions structurées</span></div></div><p class="big-lead">Un parcours interactif qui prolonge Avenir Pro et permet à l'élève d'explorer, construire, sauvegarder et valoriser sa progression.</p><p class="proof-signature">L'affiche de présentation, son QR code et son accès cliquable restent associés à cette preuve.</p></div>
   </section>
@@ -272,7 +272,26 @@
       <div class="closing">De l'idée à l'impact.</div>
     </div>
   </section>
-</main>
+<section class="page other-projects-page" data-title="Autres réalisations">
+  <div class="paper full other-projects">
+    <span class="chapter">AUTRES RÉALISATIONS</span>
+    <h2>D’autres façons d’expérimenter, transmettre et faire évoluer les pratiques.</h2>
+    <p class="other-intro">Cette sélection complète les projets majeurs présentés en double page. Elle ne constitue pas l’intégralité des réalisations menées.</p>
+    <div class="other-grid">
+      <article><span>2015</span><h3>DigiNews</h3><p>Partager les évolutions digitales et accompagner leur appropriation par les collaborateurs.</p></article>
+      <article><span>2018</span><h3>1re revue de performance</h3><p>Questionner l’organisation, analyser les difficultés et proposer des pistes d’amélioration.</p></article>
+      <article><span>2019</span><h3>Escape Game digital</h3><p>Faire découvrir autrement, favoriser la coopération et créer de l’adhésion.</p></article>
+      <article><span>2022</span><h3>Revue de performance CEJ</h3><p>Mettre en perspective les pratiques, la dynamique collective et les résultats.</p></article>
+    </div>
+  </div>
+</section><section class="page split testimonials-page" data-title="Ils en parlent">
+<div class="paper left"><span class="chapter">ILS EN PARLENT</span><h2>Le regard des autres.</h2>
+<div class="testimonial-cards"><blockquote>« Innovant et agréable, ça change ! »</blockquote><blockquote>« Une bouffée d’air dans notre quotidien. »</blockquote><blockquote>« Travailler ensemble différemment. »</blockquote><blockquote>« Cohésion équipe. »</blockquote></div></div>
+<div class="paper right soft-panel testimonial-message"><span class="chapter">CE QUE J’EN RETIENS</span><h2>Créer l’adhésion compte autant que créer l’outil.</h2><p>Une réalisation prend tout son sens lorsqu’elle est comprise, utilisée et appropriée par le collectif.</p></div>
+</section><section class="page split vision-page" data-title="Ma vision">
+<div class="paper left dark vision-left"><span class="chapter light">MA VISION</span><h2 class="white">Manager, c’est d’abord donner du sens.</h2><p class="vision-quote">Être au plus près du collectif, écouter, faire confiance et créer les conditions pour que chacun puisse contribuer.</p></div>
+<div class="paper right vision-right"><span class="chapter">MANAGER DE PROXIMITÉ</span><div class="vision-principles"><span><b>Écouter</b> pour comprendre avant d’agir.</span><span><b>Donner du sens</b> aux objectifs et aux décisions.</span><span><b>Faire confiance</b> dans un cadre clair.</span><span><b>Accompagner</b> les compétences et les évolutions.</span><span><b>Décider</b> lorsque la situation le nécessite.</span><span><b>Reconnaître</b> les contributions et les réussites.</span></div></div>
+</section></main>
 
 <div class="nav-arrows">
   <button id="prevBtn" aria-label="Page précédente">←</button>
@@ -285,5 +304,27 @@
 </div>
 
 <script src="script.js"></script>
-</body>
+<script>
+(function(){
+ const pages=[...document.querySelectorAll('section.page')];
+ function go(title){
+   const i=pages.findIndex(p=>p.dataset.title===title || (title==="Accueil" && /Accueil|Couverture/i.test(p.dataset.title||"")) || (title==="Fil conducteur" && /Fil conducteur|Chronologie|Repères/i.test(p.dataset.title||"")));
+   if(i<0) return;
+   if(typeof window.goToPage==="function"){ window.goToPage(i); }
+   else { pages[i].scrollIntoView({behavior:"smooth",block:"start"}); }
+   document.getElementById("projectsMenu")?.classList.remove("open");
+   document.getElementById("mainMenu")?.classList.remove("open");
+ }
+ document.addEventListener("click",e=>{
+   const b=e.target.closest("[data-go-title]");
+   if(b){e.preventDefault();go(b.dataset.goTitle);}
+   if(e.target.closest(".projects-trigger")){
+     const pm=document.getElementById("projectsMenu"); pm?.classList.add("open"); pm?.setAttribute("aria-hidden","false");
+   }
+   if(e.target.closest(".projects-back")||e.target.closest(".projects-close")){
+     const pm=document.getElementById("projectsMenu"); pm?.classList.remove("open"); pm?.setAttribute("aria-hidden","true");
+   }
+ });
+})();
+</script></body>
 </html>
