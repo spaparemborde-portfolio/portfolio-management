@@ -1109,68 +1109,313 @@
 </style>
 
 
-<style id="correctif-stable-ftae-padlet-avenir">
-/* Masque le menu de sélection parasite, quelle que soit sa classe héritée */
-body > header + nav,
-body > .project-filter,
-body > .projects-filter,
-body > .filter-panel,
-body > .selection-panel,
-body > .portfolio-filter,
-body > .portfolio-selector,
-body > .project-selector,
-body > .menu-selection,
-body > .project-menu { display:none !important; }
-
-/* Le portfolio doit reprendre toute la fenêtre */
-html,body{width:100%;min-height:100%;margin:0}
-.viewer,.book,.portfolio,.portfolio-shell,.pages,.stage{
-  max-width:none;
+<style id="repair-20260815-menu-ftae">
+/* 1) Le sous-menu Projets ne doit jamais apparaître dans le flux de la page. */
+.projects-menu{
+  position:fixed !important;
+  z-index:9999 !important;
+  top:58px !important;
+  left:18px !important;
+  width:min(360px,calc(100vw - 36px)) !important;
+  max-height:calc(100vh - 82px) !important;
+  overflow:auto !important;
+  padding:14px !important;
+  border:1px solid #d7e1e8 !important;
+  border-radius:16px !important;
+  background:#ffffff !important;
+  box-shadow:0 18px 50px rgba(7,31,73,.18) !important;
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+  transform:translateY(-8px) !important;
+  transition:opacity .18s ease,transform .18s ease,visibility .18s ease !important;
+}
+.projects-menu.open{
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+  transform:translateY(0) !important;
+}
+.projects-menu-head{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:10px !important;
+  margin-bottom:10px !important;
+}
+.projects-menu-head button,
+.projects-scroll button{
+  border:0 !important;
+  background:transparent !important;
+  color:#10294f !important;
+  font:inherit !important;
+  cursor:pointer !important;
+}
+.projects-scroll{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:4px !important;
+}
+.projects-scroll > button{
+  display:block !important;
+  width:100% !important;
+  padding:10px 11px !important;
+  text-align:left !important;
+  border-radius:9px !important;
+}
+.projects-scroll > button:hover{background:#edf7f7 !important}
+.projects-label{
+  margin:10px 7px 5px !important;
+  color:#079da5 !important;
+  font-size:10px !important;
+  font-weight:900 !important;
+  letter-spacing:.10em !important;
+  text-transform:uppercase !important;
 }
 
-/* FTAE : conserver la mise en page validée et augmenter le corps sans toucher au titre */
-[data-title="FTAE 2026"] .proof-detail p,
-[data-title="FTAE 2026"] .proof-detail small,
-[data-title="FTAE 2026"] .proof-detail span:not(.chapter){
-  font-size:max(11.5px, .78vw) !important;
-  line-height:1.35 !important;
+/* 2) Ces images décoratives étaient devenues des éléments de grille,
+      ce qui cassait notamment la double page FTAE. Les couvertures possèdent
+      déjà leur propre image de fond : on neutralise donc les doublons. */
+.proof-bg-image{
+  display:none !important;
 }
-[data-title="FTAE 2026"] .proof-detail b{
-  font-size:max(12.5px, .86vw) !important;
+
+/* Sécurisation des doubles pages preuves : exactement deux volets côte à côte. */
+.page.split.feature-page.proof-spread.cover-proof{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  grid-template-rows:1fr !important;
+}
+.page.split.feature-page.proof-spread.cover-proof > .paper{
+  min-width:0 !important;
+  min-height:0 !important;
+  height:100% !important;
+}
+
+/* Le contenu FTAE reste dans son volet droit et ne passe plus sous la couverture. */
+.ftae-proof-page .ftae-proof-cover{
+  grid-column:1 !important;
+  grid-row:1 !important;
+}
+.ftae-proof-page .ftae-proof-detail{
+  grid-column:2 !important;
+  grid-row:1 !important;
+}
+</style>
+<style id="lisibilite-padlet-ftae-20260815">
+/* Correctif ciblé : meilleure lecture des deux pages, sans changer les contenus. */
+
+/* ---------- PADLET ---------- */
+.padlet-detail-current{
+  padding:32px 34px !important;
+}
+.padlet-detail-current .chapter{
+  font-size:12px !important;
+  letter-spacing:.13em !important;
+}
+.padlet-detail-current h2{
+  font-size:clamp(44px,3.45vw,58px) !important;
+  line-height:1.02 !important;
+  margin:14px 0 18px !important;
+}
+.padlet-context-current{
+  gap:12px !important;
+  margin-bottom:14px !important;
+}
+.padlet-context-current > div{
+  padding:15px 16px !important;
+  min-height:118px !important;
+}
+.padlet-context-current small,
+.padlet-impact-current small{
+  font-size:11px !important;
+  line-height:1.2 !important;
+}
+.padlet-context-current p,
+.padlet-impact-current p{
+  font-size:13px !important;
+  line-height:1.43 !important;
+}
+.padlet-kpis-current{
+  gap:12px !important;
+  margin-bottom:15px !important;
+}
+.padlet-kpis-current > div{
+  min-height:112px !important;
+  padding:15px !important;
+}
+.padlet-kpis-current strong{
+  font-size:39px !important;
+  line-height:1 !important;
+}
+.padlet-kpis-current span{
+  font-size:11.5px !important;
   line-height:1.25 !important;
 }
-
-/* Padlet : même logique de lisibilité */
-[data-title="Padlet CEJ 2022"] .proof-detail p,
-[data-title="Padlet CEJ 2022"] .proof-detail small,
-[data-title="Padlet CEJ 2022"] .proof-detail span:not(.chapter){
-  font-size:max(12px, .82vw) !important;
-  line-height:1.4 !important;
-}
-[data-title="Padlet CEJ 2022"] .proof-detail b{
-  font-size:max(13px, .9vw) !important;
-  line-height:1.25 !important;
-}
-[data-title="Padlet CEJ 2022"] .padlet-kpis-current strong{
-  font-size:max(38px,2.45vw) !important;
+.padlet-impact-current{
+  padding:15px 17px !important;
+  min-height:88px !important;
 }
 
-/* Avenir Pro : fond = fichier assets/avenir-pro-cover.png */
-[data-title="Avenir Pro 2025"] .avenir-pro-cover::before,
-[data-title="Avenir Pro 2025"] .proof-cover::before{
-  background-image:var(--proof-image) !important;
-  background-size:cover !important;
-  background-position:center center !important;
-  background-repeat:no-repeat !important;
+/* ---------- FTAE ---------- */
+.ftae-proof-detail{
+  padding:30px 34px !important;
+}
+.ftae-proof-detail .chapter{
+  font-size:12px !important;
+  letter-spacing:.13em !important;
+}
+.ftae-proof-detail h2{
+  font-size:clamp(38px,3vw,52px) !important;
+  line-height:1.02 !important;
+  margin:13px 0 13px !important;
+}
+.ftae-control-card small,
+.ftae-next small,
+.ftae-kicker,
+.ftae-logic small{
+  font-size:10.5px !important;
+  line-height:1.18 !important;
+}
+.ftae-control-card strong,
+.ftae-next strong{
+  font-size:13px !important;
+  line-height:1.28 !important;
+}
+.ftae-score strong{
+  font-size:31px !important;
+}
+.ftae-score span{
+  font-size:10.5px !important;
+}
+.ftae-step{
+  padding:10px 12px !important;
+  min-height:58px !important;
+}
+.ftae-step b{
+  font-size:12.5px !important;
+  line-height:1.18 !important;
+}
+.ftae-step p{
+  font-size:10.2px !important;
+  line-height:1.30 !important;
+}
+.ftae-results{
+  min-height:63px !important;
+}
+.ftae-results,
+.ftae-results *{
+  font-size:10px !important;
+}
+.ftae-results strong{
+  font-size:16px !important;
+}
+.ftae-logic{
+  padding:12px 14px !important;
+}
+.ftae-logic strong{
+  font-size:15px !important;
+  line-height:1.18 !important;
+}
+.ftae-logic p{
+  font-size:11.5px !important;
+  line-height:1.30 !important;
+}
+.ftae-next{
+  min-height:54px !important;
+  padding:10px 14px !important;
+}
+.ftae-next a,
+.ftae-next button{
+  font-size:11px !important;
+  font-weight:800 !important;
+}
+
+/* Écrans d'ordinateur plus bas : conserver l'ensemble de la double page visible. */
+@media (min-width:1051px) and (max-height:820px){
+  .padlet-detail-current{padding:25px 29px !important}
+  .padlet-detail-current h2{font-size:39px !important;margin:9px 0 11px !important}
+  .padlet-context-current>div{padding:11px 12px !important;min-height:91px !important}
+  .padlet-context-current p,.padlet-impact-current p{font-size:10.7px !important}
+  .padlet-kpis-current>div{min-height:82px !important;padding:10px 11px !important}
+  .padlet-kpis-current strong{font-size:31px !important}
+  .padlet-kpis-current span{font-size:9.7px !important}
+  .padlet-impact-current{padding:10px 12px !important;min-height:66px !important}
+
+  .ftae-proof-detail{padding:23px 28px !important}
+  .ftae-proof-detail h2{font-size:34px !important;margin:8px 0 9px !important}
+  .ftae-step{padding:7px 9px !important;min-height:48px !important}
+  .ftae-step b{font-size:11.2px !important}
+  .ftae-step p{font-size:9.2px !important}
+  .ftae-results{min-height:53px !important}
+  .ftae-logic{padding:9px 11px !important}
+  .ftae-logic strong{font-size:13px !important}
+  .ftae-logic p{font-size:10.2px !important}
+  .ftae-next{min-height:44px !important;padding:8px 11px !important}
+}
+</style>
+
+<style id="lisibilite-padlet-avenir-plus">
+/* Padlet : légère hausse supplémentaire des textes secondaires */
+[data-title="Padlet CEJ 2022"] .padlet-context-current p,
+[data-title="Padlet CEJ 2022"] .padlet-impact-current p{
+  font-size:13.5px !important;
+  line-height:1.45 !important;
+}
+[data-title="Padlet CEJ 2022"] .padlet-context-current small,
+[data-title="Padlet CEJ 2022"] .padlet-impact-current small{
+  font-size:11.5px !important;
+}
+[data-title="Padlet CEJ 2022"] .padlet-kpis-current span{
+  font-size:12.5px !important;
+  line-height:1.28 !important;
+}
+
+/* Avenir Pro : titre principal conservé, informations secondaires plus lisibles */
+[data-title="Avenir Pro 2025"] .avenir-kpis span{
+  font-size:12px !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-kpis em{
+  font-size:10.5px !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-block-title b{
+  font-size:12px !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-block-title span{
+  font-size:10px !important;
 }
 [data-title="Avenir Pro 2025"] .avenir-support-grid a span{
-  font-size:max(10px,.68vw) !important;
+  font-size:10.7px !important;
+  line-height:1.25 !important;
 }
 [data-title="Avenir Pro 2025"] .avenir-quiz-grid a span{
-  font-size:max(10.5px,.72vw) !important;
+  font-size:11px !important;
+  line-height:1.24 !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-sim-copy small{
+  font-size:9.8px !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-sim-copy strong{
+  font-size:15px !important;
 }
 [data-title="Avenir Pro 2025"] .avenir-sim-copy p{
-  font-size:max(10.5px,.72vw) !important;
+  font-size:10.7px !important;
+  line-height:1.32 !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-sim-stats span{
+  font-size:9.2px !important;
+}
+
+/* Sur écrans bas, rester dans la page sans revenir aux caractères minuscules */
+@media (min-width:1051px) and (max-height:820px){
+  [data-title="Padlet CEJ 2022"] .padlet-context-current p,
+  [data-title="Padlet CEJ 2022"] .padlet-impact-current p{font-size:11px !important}
+  [data-title="Padlet CEJ 2022"] .padlet-kpis-current span{font-size:10.5px !important}
+
+  [data-title="Avenir Pro 2025"] .avenir-kpis span{font-size:10px !important}
+  [data-title="Avenir Pro 2025"] .avenir-kpis em{font-size:8.8px !important}
+  [data-title="Avenir Pro 2025"] .avenir-support-grid a span{font-size:8.8px !important}
+  [data-title="Avenir Pro 2025"] .avenir-quiz-grid a span{font-size:9.2px !important}
+  [data-title="Avenir Pro 2025"] .avenir-sim-copy p{font-size:8.7px !important}
 }
 </style>
 
@@ -1449,7 +1694,7 @@ html,body{width:100%;min-height:100%;margin:0}
 
     <div class="paper proof-detail avenir-pro-detail">
       <span class="chapter">CONCEVOIR · COORDONNER · MOBILISER</span>
-      <h2>Faire vivre une pédagogie active.</h2>
+      <h2>Transformer le partenariat en expériences concrètes.</h2>
 
       <div class="avenir-kpis">
         <div>

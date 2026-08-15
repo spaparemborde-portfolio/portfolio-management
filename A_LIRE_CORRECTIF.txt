@@ -1,0 +1,11 @@
+CORRECTIF DÉFINITIF
+
+1. Le correctif isolé validé du menu parasite + FTAE a été réintégré.
+2. Padlet : caractères secondaires légèrement agrandis.
+3. Avenir Pro : caractères secondaires légèrement agrandis.
+4. Nouveau titre : « Transformer le partenariat en expériences concrètes. »
+5. L'image Avenir Pro reste : assets/avenir-pro-cover.png
+6. Le lien LinkedIn de la simulation est conservé.
+
+INSTALLATION : remplacer les fichiers du dépôt portfolio-management avec le contenu du ZIP,
+y compris le dossier assets.
