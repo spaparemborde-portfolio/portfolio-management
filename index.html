@@ -747,6 +747,100 @@
 }
 </style>
 
+
+<style id="repair-20260815-menu-ftae">
+/* 1) Le sous-menu Projets ne doit jamais apparaître dans le flux de la page. */
+.projects-menu{
+  position:fixed !important;
+  z-index:9999 !important;
+  top:58px !important;
+  left:18px !important;
+  width:min(360px,calc(100vw - 36px)) !important;
+  max-height:calc(100vh - 82px) !important;
+  overflow:auto !important;
+  padding:14px !important;
+  border:1px solid #d7e1e8 !important;
+  border-radius:16px !important;
+  background:#ffffff !important;
+  box-shadow:0 18px 50px rgba(7,31,73,.18) !important;
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+  transform:translateY(-8px) !important;
+  transition:opacity .18s ease,transform .18s ease,visibility .18s ease !important;
+}
+.projects-menu.open{
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+  transform:translateY(0) !important;
+}
+.projects-menu-head{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:10px !important;
+  margin-bottom:10px !important;
+}
+.projects-menu-head button,
+.projects-scroll button{
+  border:0 !important;
+  background:transparent !important;
+  color:#10294f !important;
+  font:inherit !important;
+  cursor:pointer !important;
+}
+.projects-scroll{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:4px !important;
+}
+.projects-scroll > button{
+  display:block !important;
+  width:100% !important;
+  padding:10px 11px !important;
+  text-align:left !important;
+  border-radius:9px !important;
+}
+.projects-scroll > button:hover{background:#edf7f7 !important}
+.projects-label{
+  margin:10px 7px 5px !important;
+  color:#079da5 !important;
+  font-size:10px !important;
+  font-weight:900 !important;
+  letter-spacing:.10em !important;
+  text-transform:uppercase !important;
+}
+
+/* 2) Ces images décoratives étaient devenues des éléments de grille,
+      ce qui cassait notamment la double page FTAE. Les couvertures possèdent
+      déjà leur propre image de fond : on neutralise donc les doublons. */
+.proof-bg-image{
+  display:none !important;
+}
+
+/* Sécurisation des doubles pages preuves : exactement deux volets côte à côte. */
+.page.split.feature-page.proof-spread.cover-proof{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  grid-template-rows:1fr !important;
+}
+.page.split.feature-page.proof-spread.cover-proof > .paper{
+  min-width:0 !important;
+  min-height:0 !important;
+  height:100% !important;
+}
+
+/* Le contenu FTAE reste dans son volet droit et ne passe plus sous la couverture. */
+.ftae-proof-page .ftae-proof-cover{
+  grid-column:1 !important;
+  grid-row:1 !important;
+}
+.ftae-proof-page .ftae-proof-detail{
+  grid-column:2 !important;
+  grid-row:1 !important;
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
