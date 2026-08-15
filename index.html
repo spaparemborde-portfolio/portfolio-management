@@ -1108,6 +1108,72 @@
 }
 </style>
 
+
+<style id="correctif-stable-ftae-padlet-avenir">
+/* Masque le menu de sélection parasite, quelle que soit sa classe héritée */
+body > header + nav,
+body > .project-filter,
+body > .projects-filter,
+body > .filter-panel,
+body > .selection-panel,
+body > .portfolio-filter,
+body > .portfolio-selector,
+body > .project-selector,
+body > .menu-selection,
+body > .project-menu { display:none !important; }
+
+/* Le portfolio doit reprendre toute la fenêtre */
+html,body{width:100%;min-height:100%;margin:0}
+.viewer,.book,.portfolio,.portfolio-shell,.pages,.stage{
+  max-width:none;
+}
+
+/* FTAE : conserver la mise en page validée et augmenter le corps sans toucher au titre */
+[data-title="FTAE 2026"] .proof-detail p,
+[data-title="FTAE 2026"] .proof-detail small,
+[data-title="FTAE 2026"] .proof-detail span:not(.chapter){
+  font-size:max(11.5px, .78vw) !important;
+  line-height:1.35 !important;
+}
+[data-title="FTAE 2026"] .proof-detail b{
+  font-size:max(12.5px, .86vw) !important;
+  line-height:1.25 !important;
+}
+
+/* Padlet : même logique de lisibilité */
+[data-title="Padlet CEJ 2022"] .proof-detail p,
+[data-title="Padlet CEJ 2022"] .proof-detail small,
+[data-title="Padlet CEJ 2022"] .proof-detail span:not(.chapter){
+  font-size:max(12px, .82vw) !important;
+  line-height:1.4 !important;
+}
+[data-title="Padlet CEJ 2022"] .proof-detail b{
+  font-size:max(13px, .9vw) !important;
+  line-height:1.25 !important;
+}
+[data-title="Padlet CEJ 2022"] .padlet-kpis-current strong{
+  font-size:max(38px,2.45vw) !important;
+}
+
+/* Avenir Pro : fond = fichier assets/avenir-pro-cover.png */
+[data-title="Avenir Pro 2025"] .avenir-pro-cover::before,
+[data-title="Avenir Pro 2025"] .proof-cover::before{
+  background-image:var(--proof-image) !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-support-grid a span{
+  font-size:max(10px,.68vw) !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-quiz-grid a span{
+  font-size:max(10.5px,.72vw) !important;
+}
+[data-title="Avenir Pro 2025"] .avenir-sim-copy p{
+  font-size:max(10.5px,.72vw) !important;
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>

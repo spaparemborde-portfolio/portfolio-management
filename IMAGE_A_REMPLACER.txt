@@ -1,0 +1,5 @@
+IMAGE AVENIR PRO À REMPLACER : assets/avenir-pro-cover.png
+
+Si vous souhaitez remplacer uniquement l'image de fond Avenir Pro,
+conservez exactement ce nom de fichier : avenir-pro-cover.png
+et remplacez ce fichier dans le dossier assets.
