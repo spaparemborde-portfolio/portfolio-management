@@ -1,0 +1,11 @@
+VERSION LISIBILITÉ — 15/08/2026
+
+Base : ZIP GitHub portfolio-management-main transmis par Sandrine.
+Modifications :
+- suppression des numéros de page/folio ;
+- Force de proposition et Chiffres clés agrandis ;
+- abandon visuel de l'effet double-page pour les réalisations ;
+- FTAE, Padlet, Avenir Pro et réalisations suivantes présentés comme une grande page ;
+- images de fond conservées en fondu sur une partie de la page ;
+- sous-titres, chiffres et textes agrandis avec Ma manière d'agir comme référence de lisibilité ;
+- ordre actuel des pages conservé.
