@@ -1420,13 +1420,14 @@
 </style>
 
 
-<style id="single-page-readable-20260815">
-/* ==========================================================
-   LISIBILITÉ GLOBALE — à partir de Force de proposition
-   Référence visuelle : « Ma manière d'agir »
-   ========================================================== */
+<style id="horizontal-complet-20260815">
+/* ============================================================
+   VERSION HORIZONTALE COMPLÈTE
+   Source : ZIP GitHub d'origine.
+   Aucun contenu HTML des anciennes pages gauche/droite supprimé.
+   ============================================================ */
 
-/* Plus aucun numéro de page / folio */
+/* 1 — masquer uniquement les numéros de page */
 .folio,
 .page-number,
 .page-num,
@@ -1435,239 +1436,165 @@
   display:none !important;
 }
 
-/* À partir des pages de réalisations : abandon visuel du livre en 2 feuilles.
-   Une réalisation = une grande page pleine largeur. */
-.timeline-evolution-page,
-.keyfigures-page,
-[data-title="FTAE 2026"],
-[data-title="Padlet CEJ 2022"],
-[data-title="Avenir Pro 2025"],
-[data-title="AIF 2025"],
-[data-title="Livret partenaires 2026"],
-[data-title="Passeport Avenir Pro 2026"]{
+/* 2 — FORCE DE PROPOSITION :
+   garder les DEUX anciennes feuilles et les faire tenir dans UN écran.
+   Les informations Bordeaux + Langon + Perpignan restent toutes présentes. */
+.timeline-evolution-page{
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  overflow:hidden !important;
+}
+.timeline-evolution-page > .paper{
   display:block !important;
-  width:100% !important;
-  max-width:none !important;
-}
-
-/* Les deux anciennes moitiés deviennent des zones d'une même page.
-   On conserve les images mais sans l'effet de livre. */
-.timeline-evolution-page > .paper,
-.keyfigures-page > .paper{
-  width:100% !important;
-  max-width:none !important;
-  min-height:auto !important;
+  width:auto !important;
+  min-width:0 !important;
+  height:100% !important;
+  min-height:0 !important;
+  box-sizing:border-box !important;
+  padding:clamp(24px,2.25vw,42px) clamp(28px,2.7vw,50px) !important;
+  overflow:hidden !important;
   border-radius:0 !important;
-  box-shadow:none !important;
-}
-
-/* Force de proposition : contenu plus grand et confortable */
-.timeline-evolution-page .paper{
-  padding:clamp(36px,4vw,68px) clamp(44px,5vw,82px) !important;
 }
 .timeline-evolution-page .chapter{
-  font-size:clamp(13px,1vw,17px) !important;
+  font-size:clamp(12px,.82vw,15px) !important;
 }
 .timeline-evolution-page .timeline-intro{
-  font-size:clamp(18px,1.35vw,23px) !important;
-  line-height:1.5 !important;
-  max-width:1050px !important;
+  font-size:clamp(14px,1.02vw,18px) !important;
+  line-height:1.42 !important;
+  margin-bottom:16px !important;
 }
 .timeline-evolution-page .timeline-context{
-  padding:18px 20px !important;
+  padding:12px 15px !important;
+  margin:10px 0 !important;
 }
 .timeline-evolution-page .timeline-context b{
-  font-size:clamp(17px,1.25vw,21px) !important;
+  font-size:clamp(14px,.98vw,17px) !important;
 }
 .timeline-evolution-page .timeline-context span,
 .timeline-evolution-page .role-label{
-  font-size:clamp(15px,1.08vw,18px) !important;
-  line-height:1.4 !important;
+  font-size:clamp(12px,.84vw,15px) !important;
+  line-height:1.3 !important;
 }
-.timeline-evolution-page .timeline-item time{
-  font-size:clamp(17px,1.2vw,21px) !important;
+.timeline-evolution-page .timeline-item{
+  margin:7px 0 !important;
 }
+.timeline-evolution-page .timeline-item time,
 .timeline-evolution-page .timeline-item b{
-  font-size:clamp(17px,1.22vw,21px) !important;
+  font-size:clamp(13px,.9vw,16px) !important;
 }
 .timeline-evolution-page .timeline-item small{
-  font-size:clamp(14px,1vw,17px) !important;
-  line-height:1.4 !important;
+  font-size:clamp(11.5px,.78vw,14px) !important;
+  line-height:1.28 !important;
 }
 
-/* Chiffres clés : une page, textes secondaires nettement plus grands */
-.keyfigures-page .paper{
-  padding:clamp(32px,3.6vw,60px) clamp(42px,4.5vw,76px) !important;
+/* 3 — CHIFFRES CLÉS :
+   garder les DEUX anciennes feuilles dans UN écran.
+   Avenir Pro, CEJ, simulation, FTAE et conception d'outils restent présents. */
+.keyfigures-page{
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  overflow:hidden !important;
+}
+.keyfigures-page > .paper{
+  display:block !important;
+  width:auto !important;
+  min-width:0 !important;
+  height:100% !important;
+  min-height:0 !important;
+  box-sizing:border-box !important;
+  padding:clamp(22px,2vw,38px) clamp(25px,2.4vw,44px) !important;
+  overflow:hidden !important;
+  border-radius:0 !important;
 }
 .keyfigures-page .kpi-panel{
-  padding:22px 24px !important;
-  margin-bottom:16px !important;
+  padding:13px 15px !important;
+  margin-bottom:10px !important;
 }
 .keyfigures-page .kpi-head small{
-  font-size:clamp(12px,.9vw,15px) !important;
+  font-size:clamp(10.5px,.7vw,13px) !important;
 }
 .keyfigures-page .kpi-head b{
-  font-size:clamp(16px,1.15vw,20px) !important;
+  font-size:clamp(13px,.88vw,16px) !important;
 }
 .keyfigures-page .kpi span{
-  font-size:clamp(14px,1vw,17px) !important;
-  line-height:1.35 !important;
+  font-size:clamp(11.5px,.78vw,14px) !important;
+  line-height:1.22 !important;
 }
-.keyfigures-page .kpi em{
-  font-size:clamp(12px,.9vw,15px) !important;
-  line-height:1.35 !important;
-}
+.keyfigures-page .kpi em,
 .keyfigures-page .tools-main span,
 .keyfigures-page .audiences span,
 .keyfigures-page .kpi-panel > p{
-  font-size:clamp(14px,1vw,17px) !important;
-  line-height:1.45 !important;
+  font-size:clamp(10.5px,.7vw,13px) !important;
+  line-height:1.25 !important;
 }
 
-/* Réalisations démontrées : une seule grande page, avec le visuel fondu
-   conservé sur environ 34% de la largeur et le texte sur le reste. */
+/* 4 — Les pages de réalisations restent des écrans horizontaux.
+   On ne touche pas à leur structure HTML ni à leurs contenus. */
+.ftae-proof-page,
+.padlet-proof-page,
+.avenir-proof-page,
 [data-title="FTAE 2026"],
 [data-title="Padlet CEJ 2022"],
-[data-title="Avenir Pro 2025"],
-[data-title="AIF 2025"],
-[data-title="Livret partenaires 2026"],
-[data-title="Passeport Avenir Pro 2026"]{
-  position:relative !important;
-  min-height:calc(100vh - 90px) !important;
-  overflow:hidden !important;
-  background:#f7f4ed !important;
-}
-
-[data-title="FTAE 2026"] > .proof-cover,
-[data-title="Padlet CEJ 2022"] > .proof-cover,
-[data-title="Avenir Pro 2025"] > .proof-cover,
-[data-title="AIF 2025"] > .proof-cover,
-[data-title="Livret partenaires 2026"] > .proof-cover,
-[data-title="Passeport Avenir Pro 2026"] > .proof-cover{
-  position:absolute !important;
-  inset:0 auto 0 0 !important;
-  width:36% !important;
+[data-title="Avenir Pro 2025"]{
   height:100% !important;
-  min-height:100% !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
+  min-height:0 !important;
   overflow:hidden !important;
 }
 
-[data-title="FTAE 2026"] > .proof-detail,
-[data-title="Padlet CEJ 2022"] > .proof-detail,
-[data-title="Avenir Pro 2025"] > .proof-detail,
-[data-title="AIF 2025"] > .proof-detail,
-[data-title="Livret partenaires 2026"] > .proof-detail,
-[data-title="Passeport Avenir Pro 2026"] > .proof-detail{
-  box-sizing:border-box !important;
-  width:64% !important;
-  min-height:calc(100vh - 90px) !important;
-  margin-left:36% !important;
-  padding:clamp(34px,3.5vw,58px) clamp(38px,4vw,68px) !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-  overflow:visible !important;
+/* Lisibilité : légère hausse des textes secondaires sans grossir les grands titres. */
+.padlet-context-current p,
+.padlet-impact-current p{
+  font-size:clamp(13px,.9vw,16px) !important;
+  line-height:1.4 !important;
 }
-
-/* Fond fondu : lisible mais présent */
-[data-title="FTAE 2026"] .proof-cover::after,
-[data-title="Padlet CEJ 2022"] .proof-cover::after,
-[data-title="Avenir Pro 2025"] .proof-cover::after,
-[data-title="AIF 2025"] .proof-cover::after,
-[data-title="Livret partenaires 2026"] .proof-cover::after,
-[data-title="Passeport Avenir Pro 2026"] .proof-cover::after{
-  content:"" !important;
-  position:absolute !important;
-  inset:0 !important;
-  background:linear-gradient(90deg,rgba(6,34,62,.08) 0%,rgba(6,34,62,.15) 65%,rgba(247,244,237,.96) 100%) !important;
-  pointer-events:none !important;
-}
-
-/* Titres principaux : on ne les grossit pas davantage.
-   Sous-titres et corps : référence de confort Ma manière d'agir. */
-[data-title="FTAE 2026"] .proof-detail .chapter,
-[data-title="Padlet CEJ 2022"] .proof-detail .chapter,
-[data-title="Avenir Pro 2025"] .proof-detail .chapter,
-[data-title="AIF 2025"] .proof-detail .chapter,
-[data-title="Livret partenaires 2026"] .proof-detail .chapter,
-[data-title="Passeport Avenir Pro 2026"] .proof-detail .chapter{
-  font-size:clamp(13px,.95vw,16px) !important;
-}
-[data-title="FTAE 2026"] .proof-detail p,
-[data-title="Padlet CEJ 2022"] .proof-detail p,
-[data-title="Avenir Pro 2025"] .proof-detail p,
-[data-title="AIF 2025"] .proof-detail p,
-[data-title="Livret partenaires 2026"] .proof-detail p,
-[data-title="Passeport Avenir Pro 2026"] .proof-detail p{
-  font-size:clamp(15px,1.08vw,18px) !important;
-  line-height:1.48 !important;
-}
-[data-title="FTAE 2026"] .proof-detail small,
-[data-title="Padlet CEJ 2022"] .proof-detail small,
-[data-title="Avenir Pro 2025"] .proof-detail small,
-[data-title="AIF 2025"] .proof-detail small,
-[data-title="Livret partenaires 2026"] .proof-detail small,
-[data-title="Passeport Avenir Pro 2026"] .proof-detail small{
-  font-size:clamp(12px,.9vw,15px) !important;
-  line-height:1.3 !important;
-}
-[data-title="FTAE 2026"] .proof-detail b,
-[data-title="Padlet CEJ 2022"] .proof-detail b,
-[data-title="Avenir Pro 2025"] .proof-detail b,
-[data-title="AIF 2025"] .proof-detail b,
-[data-title="Livret partenaires 2026"] .proof-detail b,
-[data-title="Passeport Avenir Pro 2026"] .proof-detail b{
-  font-size:max(15px,1.05vw) !important;
-}
-
-/* Padlet */
-.padlet-context-current p,.padlet-impact-current p{
-  font-size:clamp(15px,1.08vw,18px) !important;
-}
-.padlet-context-current small,.padlet-impact-current small{
-  font-size:clamp(12px,.9vw,15px) !important;
+.padlet-context-current small,
+.padlet-impact-current small{
+  font-size:clamp(11px,.75vw,13px) !important;
 }
 .padlet-kpis-current span{
-  font-size:clamp(14px,1vw,17px) !important;
+  font-size:clamp(12px,.82vw,14px) !important;
 }
 
-/* Avenir Pro : conserver toutes les ressources mais les rendre lisibles */
-.avenir-kpis span{font-size:clamp(14px,1vw,17px) !important}
-.avenir-kpis em{font-size:clamp(12px,.86vw,14.5px) !important}
-.avenir-block-title b{font-size:clamp(13px,.95vw,16px) !important}
-.avenir-block-title span{font-size:clamp(12px,.86vw,14.5px) !important}
+.avenir-kpis span{font-size:clamp(12px,.82vw,14px) !important}
+.avenir-kpis em{font-size:clamp(10px,.68vw,12px) !important}
+.avenir-block-title b{font-size:clamp(11.5px,.78vw,13.5px) !important}
+.avenir-block-title span{font-size:clamp(10px,.68vw,12px) !important}
 .avenir-support-grid a span,
 .avenir-quiz-grid a span{
-  font-size:clamp(12.5px,.9vw,15px) !important;
-  line-height:1.3 !important;
+  font-size:clamp(10.5px,.72vw,12.5px) !important;
+  line-height:1.22 !important;
 }
-.avenir-sim-copy strong{font-size:clamp(17px,1.2vw,20px) !important}
-.avenir-sim-copy p{font-size:clamp(13px,.95vw,16px) !important}
-.avenir-sim-stats span{font-size:clamp(11px,.82vw,14px) !important}
+.avenir-sim-copy strong{font-size:clamp(14px,.95vw,17px) !important}
+.avenir-sim-copy p{font-size:clamp(11px,.75vw,13px) !important;line-height:1.3 !important}
+.avenir-sim-stats span{font-size:clamp(9.5px,.64vw,11.5px) !important}
 
-/* Sur mobile/tablette, image au-dessus et contenu en dessous */
-@media (max-width:1050px){
-  [data-title="FTAE 2026"] > .proof-cover,
-  [data-title="Padlet CEJ 2022"] > .proof-cover,
-  [data-title="Avenir Pro 2025"] > .proof-cover,
-  [data-title="AIF 2025"] > .proof-cover,
-  [data-title="Livret partenaires 2026"] > .proof-cover,
-  [data-title="Passeport Avenir Pro 2026"] > .proof-cover{
-    position:relative !important;
-    width:100% !important;
-    height:42vh !important;
-    min-height:320px !important;
-  }
-  [data-title="FTAE 2026"] > .proof-detail,
-  [data-title="Padlet CEJ 2022"] > .proof-detail,
-  [data-title="Avenir Pro 2025"] > .proof-detail,
-  [data-title="AIF 2025"] > .proof-detail,
-  [data-title="Livret partenaires 2026"] > .proof-detail,
-  [data-title="Passeport Avenir Pro 2026"] > .proof-detail{
-    width:100% !important;
-    margin-left:0 !important;
-    min-height:auto !important;
+/* 5 — CRITIQUE : empêcher le correctif de créer un scroll vertical entre pages.
+   Le système de navigation horizontal d'origine reste maître. */
+html,body{
+  overflow:hidden !important;
+}
+.stage,
+.book,
+.viewer,
+.carousel,
+.slider,
+.slides,
+#app,
+main{
+  max-height:100vh;
+}
+
+/* Écrans moins larges : on réduit les marges, mais on conserve la logique horizontale. */
+@media (max-width:1200px){
+  .timeline-evolution-page > .paper,
+  .keyfigures-page > .paper{
+    padding:20px 22px !important;
   }
 }
 </style>

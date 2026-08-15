@@ -1,0 +1,13 @@
+CORRECTIF HORIZONTAL COMPLET — 15/08/2026
+
+Cette version repart exclusivement du ZIP GitHub d'origine transmis dans la conversation.
+Aucun bloc de contenu des anciennes pages gauche/droite n'a été supprimé.
+
+Objectifs :
+- conserver la navigation horizontale par flèches ;
+- supprimer les numéros de page ;
+- Force de proposition : Bordeaux + Langon + Perpignan réunis sur un seul écran ;
+- Chiffres clés : tous les blocs des deux anciennes pages réunis sur un seul écran ;
+- conserver FTAE, Padlet et Avenir Pro et leurs visuels ;
+- améliorer la lisibilité des textes secondaires sans agrandir inutilement les grands titres ;
+- ne pas créer de défilement vertical entre les pages.
