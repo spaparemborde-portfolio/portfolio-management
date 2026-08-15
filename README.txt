@@ -1,23 +1,26 @@
-PORTFOLIO MANAGEMENT — V2
+PORTFOLIO MANAGEMENT — Correctif global lisibilité + Avenir Pro
 
-Installation GitHub Pages
-1. Décompresser le ZIP.
-2. Déposer tous les fichiers et le dossier assets/ à la racine du dépôt portfolio-management.
-3. GitHub > Settings > Pages.
-4. Source : Deploy from a branch.
-5. Branch : main / root.
-6. Save.
-7. Attendre 1 à 3 minutes puis ouvrir :
-   https://spaparemborde-portfolio.github.io/portfolio-management/
+Cette version conserve les corrections déjà validées FTAE et Padlet.
 
-Notes
-- Portfolio indépendant du portfolio principal.
-- Navigation livre : flèches, clavier gauche/droite et sommaire.
-- Sur mobile, les doubles pages se transforment automatiquement en lecture verticale.
-- Version 2 destinée à être enrichie avec les autres preuves et données chiffrées.
+NOUVEAUTÉS
+- Pages 05–06 « Proposer pour faire évoluer » :
+  caractères secondaires agrandis, titre principal inchangé.
+- Pages 07–08 « Des réalisations, des résultats mesurables » :
+  libellés et textes secondaires agrandis, titre principal inchangé.
+- Page Avenir Pro :
+  nouvelle couverture issue de l'affiche Simulation d'entretien ;
+  titre « Construire une relation de confiance avec l’Éducation nationale. » ;
+  57 ateliers avec précision « sur la seule année scolaire 2025–2026 » ;
+  210 lycéens ;
+  6 ateliers et 4 quiz avec leurs intitulés validés ;
+  bloc Simulation d'entretien : 26 élèves, 17 collègues volontaires, 8 agents mobilisés ;
+  accès au support PDF de la simulation.
+- FTAE et Padlet : corrections de lisibilité précédentes conservées.
 
-V2 : chronologie 2015–2026 enrichie ; FTAE 35 % → 85 % (+50 points) et +3 % sur l'indicateur ; impact Espace recruteur formulé sans chiffre non mesuré.
+INSTALLATION GITHUB
+Décompresser le ZIP et remplacer le contenu du dépôt portfolio-management
+par les fichiers du ZIP, en conservant le dossier assets.
 
-V4 : suppression du doublon FTAE dans la page d'impact, refonte de la page FTAE, marges et espacements augmentés, pages allégées et meilleure hiérarchie visuelle.
-
-V5 : suppression des commentaires internes, correction globale des espacements, refonte complète FTAE et Avenir Pro, nouvelles doubles pages plus visuelles, fonds fondus issus des supports FTAE/Livret partenaires/Passeport lorsque disponibles.
+IMPORTANT
+Le bouton de la simulation ouvre directement la publication LinkedIn de Marie Boucher.
+Le support PDF de la simulation reste conservé dans le dossier assets.
