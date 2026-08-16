@@ -2054,6 +2054,120 @@
  .aif-levers{gap:7px!important}.aif-levers article{padding:9px!important}.aif-levers p{font-size:10px!important}.aif-positioning{margin-top:8px!important;padding:9px 12px!important}
 }
 </style>
+
+<style id="final-ftae-avenir-aif-livret-20260816">
+/* --- FTAE : petite vignette visuelle, priorité au contenu --- */
+.page.active[data-title="FTAE 2026"]{
+  grid-template-columns:22% 78% !important;
+}
+.page.active[data-title="FTAE 2026"] .ftae-proof-cover,
+.page.active[data-title="FTAE 2026"] .proof-cover{
+  min-width:0 !important;
+}
+.page.active[data-title="FTAE 2026"] .proof-bg-image{
+  object-fit:contain !important;
+  object-position:center !important;
+  transform:scale(.82) !important;
+}
+.page.active[data-title="FTAE 2026"] .ftae-proof-detail,
+.page.active[data-title="FTAE 2026"] .proof-detail{
+  padding:clamp(24px,2vw,36px) clamp(28px,2.45vw,46px) !important;
+}
+/* le 2e point de contrôle et son lien restent visibles */
+.page.active[data-title="FTAE 2026"] a{
+  position:relative !important;
+  z-index:5 !important;
+}
+
+/* --- AVENIR PRO : visuel discret + contenu validé intact --- */
+.page.active[data-title="Avenir Pro 2025"]{
+  grid-template-columns:22% 78% !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-pro-cover,
+.page.active[data-title="Avenir Pro 2025"] .proof-cover{
+  min-width:0 !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-pro-detail,
+.page.active[data-title="Avenir Pro 2025"] .proof-detail{
+  padding:clamp(22px,1.85vw,34px) clamp(27px,2.3vw,44px) !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-support-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-quiz-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+}
+
+/* --- AIF : image intégrale, recentrée et non rognée --- */
+.page.active[data-title="AIF 2025"]{
+  grid-template-columns:25% 75% !important;
+}
+.page.active[data-title="AIF 2025"] .proof-bg-image,
+.page.active[data-title="AIF 2025"] img{
+  object-fit:contain !important;
+  object-position:center !important;
+  transform:scale(.86) !important;
+}
+.page.active[data-title="AIF 2025"] .proof-cover{
+  background-size:contain !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+}
+
+/* --- Livret partenaires : page légère --- */
+.page.active[data-title="Livret partenaires 2026"]{
+  grid-template-columns:26% 74% !important;
+}
+.page.active[data-title="Livret partenaires 2026"] .proof-cover{
+  min-width:0 !important;
+  background-size:contain !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+}
+.page.active[data-title="Livret partenaires 2026"] .proof-bg-image{
+  object-fit:contain !important;
+  object-position:center !important;
+  transform:scale(.86) !important;
+}
+.page.active[data-title="Livret partenaires 2026"] .proof-detail{
+  padding:clamp(28px,2.4vw,44px) clamp(32px,2.8vw,52px) !important;
+}
+.livret-light-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.livret-light-card{
+  padding:16px 17px;
+  border-radius:15px;
+  background:#f4f8fb;
+  border-top:3px solid #0a9ca4;
+}
+.livret-light-card b{
+  display:block;
+  color:#12365e;
+  font-size:clamp(13px,.92vw,16px);
+  margin-bottom:6px;
+}
+.livret-light-card p{
+  margin:0;
+  color:#5c6f83;
+  font-size:clamp(11.5px,.8vw,14px);
+  line-height:1.4;
+}
+.livret-light-summary{
+  margin-top:14px;
+  padding:14px 17px;
+  border-radius:14px;
+  background:linear-gradient(90deg,#e7f2fb,#e3f5f2);
+  color:#173a5d;
+  font-size:clamp(12px,.84vw,14.5px);
+  line-height:1.4;
+  font-weight:700;
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -2416,7 +2530,17 @@
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Livret partenaires 2026"><img class="proof-bg-image" src="assets/bg-partenaires.png" alt="">
     <div class="paper proof-cover" style="--proof-image:url('assets/bg-partenaires.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · LIVRET PARTENAIRES INTENSIF</span><h2>Simplifier l'accès aux solutions.</h2></div></div>
-    <div class="paper proof-detail"><span class="chapter">CLARIFIER · STRUCTURER · FACILITER</span><h2>Rendre l'offre partenariale immédiatement mobilisable.</h2><p class="big-lead">Des informations dispersées transformées en fiches homogènes, lisibles et orientées usage terrain.</p><div class="mini-steps"><p><b>Centraliser</b> l'information utile.</p><p><b>Harmoniser</b> la présentation des prestations.</p><p><b>Faciliter</b> le repérage et la mobilisation par les conseillers.</p></div></div>
+    <div class="paper proof-detail">
+      <span class="chapter">OUTILLER LE COLLECTIF</span>
+      <h2>Transformer une information dense en un outil directement mobilisable.</h2>
+      <p>À la demande de la direction départementale, j’ai conçu un livret numérique interactif réunissant sur un support unique les offres des partenaires mobilisables dans le cadre des accompagnements intensifs.</p>
+      <div class="livret-light-grid">
+        <div class="livret-light-card"><b>Une commande départementale</b><p>Synthétiser les apports du séminaire partenaires et rendre l’information immédiatement accessible aux conseillers.</p></div>
+        <div class="livret-light-card"><b>Une conception interactive</b><p>Structurer, hiérarchiser et relier les ressources pour faciliter l’accès aux offres et aux solutions permettant de lever les freins à l’emploi.</p></div>
+        <div class="livret-light-card"><b>Une diffusion à l’échelle du département</b><p>Support validé par la direction départementale puis diffusé aux collègues concernés par les accompagnements intensifs.</p></div>
+      </div>
+      <div class="livret-light-summary">Mission réalisée dans un délai contraint, en parallèle de mes activités : capacité d’adaptation, organisation, rapidité d’exécution et exigence de qualité.</div>
+    </div>
   </section>
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Passeport Avenir Pro 2026"><img class="proof-bg-image" src="assets/bg-passeport.png" alt="">

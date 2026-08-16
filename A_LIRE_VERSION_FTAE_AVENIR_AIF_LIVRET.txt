@@ -1,0 +1,8 @@
+VERSION FTAE / AVENIR PRO / AIF / LIVRET PARTENAIRES — 16/08/2026
+
+- FTAE : zone visuelle fortement réduite, contenu prioritaire ; liens existants conservés.
+- Avenir Pro : zone visuelle fortement réduite ; textes, titres, liens, chiffres et encadrés existants conservés.
+- AIF : image affichée en entier et recentrée ; axe développement des compétences/autonomie du collectif conservé.
+- Livret partenaires : page volontairement légère autour de la commande départementale, conception interactive,
+  diffusion départementale et capacité à réaliser dans un délai contraint en parallèle des autres activités.
+- Navigation et dimensions générales du portfolio conservées.
