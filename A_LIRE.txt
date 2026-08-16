@@ -1,0 +1,6 @@
+CORRECTIF AUTRES RÉALISATIONS
+
+À remplacer : index.html uniquement.
+AUCUN fichier du dossier assets n'est ajouté ou modifié par ce correctif.
+Les anciennes pages détaillées DigiNews, Revue de performance, Espace recruteur et Escape Game
+sont regroupées dans une seule page chronologique en quatre cartes.
