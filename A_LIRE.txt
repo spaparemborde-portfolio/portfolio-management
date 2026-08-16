@@ -1,11 +1,10 @@
-CORRECTIF — BOUTON PADLET CEJ
+CORRECTIF — PREZI AIF
 
-Ajout sur la page « Padlet CEJ 2022 » :
-- bouton « Découvrir le Padlet → »
-- lien direct vers le support Padlet CEJ fourni.
+Ajout sur la page « AIF 2025 » :
+- bouton « Voir la présentation → »
+- lien vers le Prezi AIF transmis.
 
-Ce ZIP est cumulatif et conserve les assets et correctifs précédents.
+Ce ZIP repart du dernier correctif cumulatif et conserve donc notamment
+le bouton Padlet CEJ et les assets précédents.
 
-À intégrer :
-- index.html
-- le dossier assets peut être conservé tel quel si vous avez déjà installé la dernière version cumulative.
+Si la dernière version est déjà installée, le remplacement de index.html suffit.
