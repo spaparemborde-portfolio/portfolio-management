@@ -1,1 +1,1 @@
-Remplacer uniquement index.html. Aucun asset ajouté ou modifié.
+Remplacer index.html ET importer le dossier assets du ZIP. Trois recommandations DOCX ont été ajoutées.
