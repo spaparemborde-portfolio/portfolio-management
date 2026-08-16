@@ -1,0 +1,11 @@
+HARMONISATION LISIBILITÉ — 16/08/2026
+
+Référence de lecture : page Padlet.
+Modifications :
+- Force de proposition : caractères agrandis et répartition 46/54 environ ;
+- Chiffres clés : caractères et chiffres agrandis, meilleur équilibre ;
+- FTAE : zone visuelle gauche réduite à environ 34 %, zone texte élargie ;
+- Padlet : taille de lecture conservée comme référence ;
+- Avenir Pro : même principe que FTAE pour libérer de la place au texte ;
+- navigation horizontale par flèches conservée ;
+- aucun contenu supprimé.

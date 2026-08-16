@@ -1543,6 +1543,167 @@
 /* Le responsive d'origine reste disponible sur petits écrans. */
 </style>
 
+
+<style id="harmonisation-lisibilite-20260816">
+/* =========================================================
+   HARMONISATION DE LA LISIBILITÉ
+   Référence : taille de lecture de la page Padlet
+   ========================================================= */
+
+/* FORCE DE PROPOSITION : plus équilibré, plus lisible */
+.page.active.timeline-evolution-page{
+  grid-template-columns:0.92fr 1.08fr !important;
+}
+.timeline-evolution-page > .paper{
+  padding:clamp(28px,2.35vw,44px) clamp(30px,2.6vw,48px) !important;
+}
+.timeline-evolution-page .chapter{
+  font-size:clamp(13px,.92vw,16px) !important;
+}
+.timeline-evolution-page h2{
+  font-size:clamp(38px,3vw,52px) !important;
+  line-height:1.02 !important;
+  margin:12px 0 14px !important;
+}
+.timeline-evolution-page .timeline-intro{
+  font-size:clamp(16px,1.08vw,19px) !important;
+  line-height:1.43 !important;
+  max-width:900px !important;
+}
+.timeline-evolution-page .timeline-context{
+  padding:14px 16px !important;
+  margin:11px 0 !important;
+}
+.timeline-evolution-page .timeline-context b{
+  font-size:clamp(15px,1.02vw,18px) !important;
+}
+.timeline-evolution-page .timeline-context span,
+.timeline-evolution-page .role-label{
+  font-size:clamp(13px,.9vw,15.5px) !important;
+  line-height:1.32 !important;
+}
+.timeline-evolution-page .timeline-item{
+  margin:7px 0 !important;
+}
+.timeline-evolution-page .timeline-item time,
+.timeline-evolution-page .timeline-item b{
+  font-size:clamp(14px,.96vw,16.5px) !important;
+}
+.timeline-evolution-page .timeline-item small{
+  font-size:clamp(12px,.82vw,14.5px) !important;
+  line-height:1.28 !important;
+}
+.timeline-evolution-page .timeline-group{margin-top:13px !important}
+
+/* CHIFFRES CLÉS : mêmes proportions de lecture que Padlet */
+.page.active.keyfigures-page{
+  grid-template-columns:0.96fr 1.04fr !important;
+}
+.keyfigures-page > .paper{
+  padding:clamp(24px,2.1vw,38px) clamp(27px,2.35vw,43px) !important;
+}
+.keyfigures-page h2{
+  font-size:clamp(36px,2.8vw,48px) !important;
+  line-height:1.02 !important;
+  margin:10px 0 15px !important;
+}
+.keyfigures-page .kpi-panel{
+  padding:14px 16px !important;
+  margin-bottom:10px !important;
+}
+.keyfigures-page .kpi-head small{
+  font-size:clamp(11px,.76vw,13.5px) !important;
+}
+.keyfigures-page .kpi-head b{
+  font-size:clamp(13.5px,.92vw,16.5px) !important;
+}
+.keyfigures-page .kpi strong{
+  font-size:clamp(26px,1.95vw,34px) !important;
+}
+.keyfigures-page .kpi span{
+  font-size:clamp(12.5px,.86vw,15px) !important;
+  line-height:1.24 !important;
+}
+.keyfigures-page .kpi em,
+.keyfigures-page .tools-main span,
+.keyfigures-page .audiences span,
+.keyfigures-page .kpi-panel > p{
+  font-size:clamp(11px,.76vw,13.5px) !important;
+  line-height:1.28 !important;
+}
+
+/* FTAE : réduire légèrement la zone image/titre gauche pour donner plus de place au texte */
+.page.active[data-title="FTAE 2026"]{
+  grid-template-columns:34% 66% !important;
+}
+.page.active[data-title="FTAE 2026"] > .proof-cover{
+  width:100% !important;
+}
+.page.active[data-title="FTAE 2026"] > .proof-detail{
+  width:100% !important;
+}
+.page.active[data-title="FTAE 2026"] .proof-detail{
+  padding:clamp(28px,2.3vw,42px) clamp(30px,2.6vw,48px) !important;
+}
+.page.active[data-title="FTAE 2026"] .proof-detail .chapter{
+  font-size:clamp(13px,.9vw,15.5px) !important;
+}
+.page.active[data-title="FTAE 2026"] .proof-detail h2{
+  font-size:clamp(38px,3vw,52px) !important;
+  line-height:1.02 !important;
+}
+.page.active[data-title="FTAE 2026"] .proof-detail p{
+  font-size:clamp(13.5px,.92vw,16px) !important;
+  line-height:1.38 !important;
+}
+.page.active[data-title="FTAE 2026"] .proof-detail small{
+  font-size:clamp(11px,.76vw,13px) !important;
+}
+.page.active[data-title="FTAE 2026"] .proof-detail b{
+  font-size:clamp(13px,.9vw,15.5px) !important;
+}
+
+/* Padlet : ne pas toucher au grand titre, garder sa lisibilité comme référence */
+.page.active[data-title="Padlet CEJ 2022"] .proof-detail p{
+  font-size:clamp(13.5px,.92vw,16px) !important;
+  line-height:1.4 !important;
+}
+.page.active[data-title="Padlet CEJ 2022"] .proof-detail small{
+  font-size:clamp(11px,.76vw,13px) !important;
+}
+.page.active[data-title="Padlet CEJ 2022"] .padlet-kpis-current span{
+  font-size:clamp(12.5px,.86vw,15px) !important;
+}
+
+/* Avenir Pro : même logique, photo/titre légèrement rognés pour la lecture */
+.page.active[data-title="Avenir Pro 2025"]{
+  grid-template-columns:34% 66% !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .proof-detail{
+  padding:clamp(26px,2.15vw,40px) clamp(28px,2.45vw,46px) !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-kpis span{
+  font-size:clamp(12.5px,.86vw,15px) !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-kpis em{
+  font-size:clamp(11px,.76vw,13px) !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-support-grid a span,
+.page.active[data-title="Avenir Pro 2025"] .avenir-quiz-grid a span{
+  font-size:clamp(11.5px,.8vw,13.5px) !important;
+  line-height:1.24 !important;
+}
+.page.active[data-title="Avenir Pro 2025"] .avenir-sim-copy p{
+  font-size:clamp(11.5px,.8vw,13.5px) !important;
+  line-height:1.32 !important;
+}
+
+/* Sécurité : le script conserve seul le contrôle des pages actives */
+.page:not(.active){
+  display:none !important;
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
