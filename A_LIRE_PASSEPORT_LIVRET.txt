@@ -1,0 +1,7 @@
+CORRECTIF PASSEPORT AVENIR PRO + LIVRET PARTENAIRES
+
+- Livret : dernière phrase supprimée et remplacée par un lien direct de consultation.
+- Passeport : page recentrée sur l'innovation issue du terrain, l'autonomie du lycéen,
+  la conception, le centre de pilotage et la conception responsable/RGPD.
+- Aucun nouveau visuel/illustration ajouté.
+- Format horizontal et navigation du portfolio conservés.

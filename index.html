@@ -2215,6 +2215,41 @@
 }
 </style>
 
+
+<style id="passeport-livret-final-20260816">
+.page[data-title="Passeport Avenir Pro 2026"]{
+  grid-template-columns:30% 70% !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .proof-cover{
+  min-width:0!important; overflow:hidden!important;
+  background-size:contain!important; background-position:center!important; background-repeat:no-repeat!important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .proof-bg-image,
+.page[data-title="Passeport Avenir Pro 2026"] .proof-cover img{
+  object-fit:contain!important; object-position:center!important; transform:none!important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .passeport-management-detail{
+  padding:clamp(22px,1.8vw,34px) clamp(25px,2.15vw,41px)!important;
+  overflow:auto!important;
+}
+.passeport-management-detail h2{font-size:clamp(29px,2.25vw,43px)!important;line-height:1.03!important;margin:7px 0 8px!important}
+.passeport-management-detail .big-lead{font-size:clamp(13px,1vw,17px)!important;margin:0 0 11px!important}
+.passeport-story{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.passeport-story article{display:flex;gap:8px;padding:10px 11px;border-radius:11px;background:#f3f8fb}
+.passeport-story article>span{font-weight:800;color:#08a0a8}
+.passeport-story b{display:block;color:#173b62;margin-bottom:3px}
+.passeport-story p,.passeport-pilot p{margin:0;font-size:clamp(10.5px,.72vw,12.5px);line-height:1.35;color:#586c80}
+.passeport-pilot{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:9px}
+.passeport-pilot>div{padding:10px 12px;border-left:3px solid #08a0a8;background:#eef7f8;border-radius:9px}
+.passeport-pilot small{display:block;font-size:9px;font-weight:800;color:#08a0a8;letter-spacing:.08em}
+.passeport-pilot b{display:block;color:#173b62;margin:2px 0 3px}
+.passeport-recognition{display:flex;gap:10px;align-items:center;margin-top:9px;padding:9px 12px;border-radius:10px;background:#f5f1fb}
+.passeport-recognition b{white-space:nowrap;color:#6c48a4}
+.passeport-recognition span{font-size:clamp(10.5px,.74vw,12.5px);line-height:1.3;color:#586c80}
+.passeport-direct-link,.livret-view-link a{display:inline-block;margin-top:9px;padding:9px 14px;border-radius:999px;background:#123d67;color:white!important;text-decoration:none!important;font-weight:800;font-size:clamp(11px,.8vw,13.5px)}
+.livret-view-link{margin-top:10px}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -2586,13 +2621,32 @@
         <div class="livret-light-card"><b>Une conception interactive</b><p>Structurer, hiérarchiser et relier les ressources pour faciliter l’accès aux offres et aux solutions permettant de lever les freins à l’emploi.</p></div>
         <div class="livret-light-card"><b>Une diffusion à l’échelle du département</b><p>Support validé par la direction départementale puis diffusé aux collègues concernés par les accompagnements intensifs.</p></div>
       </div>
-      <div class="livret-light-summary">Mission réalisée dans un délai contraint, en parallèle de mes activités : capacité d’adaptation, organisation, rapidité d’exécution et exigence de qualité.</div>
+      <div class="livret-view-link"><a href="https://poleemploi.sharepoint.com/:p:/r/sites/OCC-Collectif-DTPyrnes-Orientales/_layouts/15/Doc.aspx?sourcedoc=%7BDD48FEF5-0394-4B19-84B0-B2C1670B8840%7D&file=_Guide%20des%20partenaires%20Intensif%20%20Interactif%20JUIN%202026.pptx&action=edit&mobileredirect=true" target="_blank" rel="noopener">Consulter le livret partenaires →</a></div>
     </div>
   </section>
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Passeport Avenir Pro 2026"><img class="proof-bg-image" src="assets/bg-passeport.png" alt="">
     <div class="paper proof-cover" style="--proof-image:url('assets/passeport-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · MON PASSEPORT AVENIR PRO</span><h2>Faire du jeune l'acteur de son parcours.</h2></div></div>
-    <div class="paper proof-detail"><span class="chapter">INNOVER · AUTONOMISER · PÉRENNISER</span><h2>De l'atelier à un parcours que l'élève conserve.</h2><div class="metric-row single"><div><b>8</b><span>missions structurées</span></div></div><p class="big-lead">Un parcours interactif qui prolonge Avenir Pro et permet à l'élève d'explorer, construire, sauvegarder et valoriser sa progression.</p><p class="proof-signature">L'affiche de présentation, son QR code et son accès cliquable restent associés à cette preuve.</p></div>
+    
+    <div class="paper proof-detail passeport-management-detail">
+      <span class="chapter">INNOVER · CONCEVOIR · AUTONOMISER</span>
+      <h2>Transformer l’expérience des ateliers en un outil personnel, durable et réutilisable.</h2>
+      <p class="big-lead">Une initiative née du terrain pour rendre l’élève acteur de son parcours, au-delà du temps de l’atelier.</p>
+
+      <div class="passeport-story">
+        <article><span>01</span><div><b>Observer</b><p>Après 57 ateliers Avenir Pro en 2025–2026, constater que les lycéens ne conservent pas toujours les apports et ne les mobilisent pas forcément au moment où ils en auront besoin.</p></div></article>
+        <article><span>02</span><div><b>Concevoir</b><p>Imaginer seule une application qui accompagne progressivement l’élève au fil des ateliers et lui permet de construire ses propres repères, documents et ressources.</p></div></article>
+        <article><span>03</span><div><b>Autonomiser</b><p>Permettre à chacun de poursuivre chez lui, à son rythme, de parler de lui avec recul et de conserver un passeport utile pour préparer CV, lettre de motivation et démarches futures.</p></div></article>
+      </div>
+
+      <div class="passeport-pilot">
+        <div><small>UN OUTIL PENSÉ AUSSI POUR LE SUIVI</small><b>Centre de pilotage pédagogique</b><p>Visualiser les progressions et repérer les situations nécessitant éventuellement davantage d’accompagnement, sans stockage centralisé des données.</p></div>
+        <div><small>CONCEPTION RESPONSABLE</small><b>RGPD · sauvegarde locale · partage maîtrisé</b><p>Tests réalisés avant déploiement pour sécuriser sauvegarde, export et transmission de progression. Première utilisation avec les lycéens prévue à la reprise d’Avenir Pro.</p></div>
+      </div>
+
+      <div class="passeport-recognition"><b>Une innovation déjà remarquée</b><span>Projet présenté à la direction de l’agence puis à une représentante de la direction régionale, avec perspective de diffusion pour faire connaître l’outil.</span></div>
+      <span class="passeport-direct-link disabled">Lien direct à renseigner</span>
+    </div>
   </section>
 
 <section class="page split evidence-page" data-title="2015 — DigiNews">
