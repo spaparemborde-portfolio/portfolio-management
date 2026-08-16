@@ -2250,6 +2250,81 @@
 .livret-view-link{margin-top:10px}
 </style>
 
+
+<style id="correctif-passeport-livret-v2">
+/* LIVRET NUMÉRIQUE : titre plus mesuré + image entière, dézoomée et recentrée */
+.page[data-title="Livret partenaires 2026"]{
+  grid-template-columns:30% 70% !important;
+}
+.page[data-title="Livret partenaires 2026"] .proof-detail h2{
+  font-size:clamp(27px,2.05vw,39px) !important;
+  line-height:1.06 !important;
+  margin:8px 0 14px !important;
+  max-width:820px !important;
+}
+.page[data-title="Livret partenaires 2026"] .proof-cover{
+  background-size:82% auto !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+.page[data-title="Livret partenaires 2026"] .proof-bg-image{
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:scale(.78) !important;
+  transform-origin:center center !important;
+}
+
+/* MON PASSEPORT AVENIR PRO : affiche PDF avec QR code, intégralement visible */
+.page[data-title="Passeport Avenir Pro 2026"]{
+  grid-template-columns:31% 69% !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] > .proof-bg-image{
+  display:none !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .proof-cover{
+  background:#f5f5f5 !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .proof-cover::before{
+  inset:18px !important;
+  background-image:var(--proof-image) !important;
+  background-size:contain !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  transform:none !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .proof-cover .cover-wash{
+  background:linear-gradient(180deg,rgba(7,31,73,.02),rgba(7,31,73,.05) 68%,rgba(7,31,73,.84) 100%) !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .proof-cover .cover-label{
+  left:26px !important;
+  right:26px !important;
+  bottom:24px !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .proof-cover .cover-label h2{
+  font-size:clamp(27px,2.05vw,39px) !important;
+  line-height:1.03 !important;
+}
+.page[data-title="Passeport Avenir Pro 2026"] .passeport-direct-link{
+  display:inline-block !important;
+  margin-top:10px !important;
+  padding:10px 15px !important;
+  border-radius:999px !important;
+  background:#123d67 !important;
+  color:#fff !important;
+  text-decoration:none !important;
+  font-weight:900 !important;
+  font-size:clamp(11px,.8vw,13.5px) !important;
+}
+
+/* Format horizontal / navigation existante conservés */
+.page[data-title="Livret partenaires 2026"],
+.page[data-title="Passeport Avenir Pro 2026"]{
+  height:100% !important;
+  min-height:0 !important;
+  overflow:hidden !important;
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -2626,7 +2701,7 @@
   </section>
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Passeport Avenir Pro 2026"><img class="proof-bg-image" src="assets/bg-passeport.png" alt="">
-    <div class="paper proof-cover" style="--proof-image:url('assets/passeport-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · MON PASSEPORT AVENIR PRO</span><h2>Faire du jeune l'acteur de son parcours.</h2></div></div>
+    <div class="paper proof-cover" style="--proof-image:url('assets/passeport-qr-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2026 · MON PASSEPORT AVENIR PRO</span><h2>Faire du jeune l'acteur de son parcours.</h2></div></div>
     
     <div class="paper proof-detail passeport-management-detail">
       <span class="chapter">INNOVER · CONCEVOIR · AUTONOMISER</span>
@@ -2645,7 +2720,7 @@
       </div>
 
       <div class="passeport-recognition"><b>Une innovation déjà remarquée</b><span>Projet présenté à la direction de l’agence puis à une représentante de la direction régionale, avec perspective de diffusion pour faire connaître l’outil.</span></div>
-      <span class="passeport-direct-link disabled">Lien direct à renseigner</span>
+      <a class="passeport-direct-link" href="https://mon-passeport-avenir-pro.pages.dev/" target="_blank" rel="noopener">Accéder à Mon Passeport Avenir Pro →</a>
     </div>
   </section>
 

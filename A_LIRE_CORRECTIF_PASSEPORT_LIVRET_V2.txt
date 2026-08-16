@@ -1,0 +1,13 @@
+CORRECTIF V2 - LIVRET NUMÉRIQUE + MON PASSEPORT AVENIR PRO
+
+Livret numérique :
+- taille du titre réduite ;
+- image de couverture dézoomée et recentrée pour être davantage visible dans son ensemble.
+
+Mon Passeport Avenir Pro :
+- l'affiche PDF de présentation/connexion est utilisée comme visuel de couverture ;
+- l'affiche est affichée en entier, sans recadrage destructif ;
+- QR code conservé dans l'affiche ;
+- bouton direct activé vers https://mon-passeport-avenir-pro.pages.dev/
+
+Aucune nouvelle illustration générée n'a été ajoutée.
