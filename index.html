@@ -2055,116 +2055,163 @@
 }
 </style>
 
-<style id="final-ftae-avenir-aif-livret-20260816">
-/* --- FTAE : petite vignette visuelle, priorité au contenu --- */
-.page.active[data-title="FTAE 2026"]{
-  grid-template-columns:22% 78% !important;
+
+<style id="correctif-ftae-avenir-livret-20260816b">
+/* =========================================================
+   CORRECTIF CIBLÉ : FTAE / AVENIR PRO / LIVRET
+   - aucun texte initial d'Avenir Pro n'est réécrit
+   - on agit uniquement sur la composition / lisibilité
+   ========================================================= */
+
+/* FTAE : reprendre l'esprit de la maquette validée :
+   visuel réduit à gauche, grand espace de travail à droite. */
+.page[data-title="FTAE 2026"]{
+  grid-template-columns: 27% 73% !important;
 }
-.page.active[data-title="FTAE 2026"] .ftae-proof-cover,
-.page.active[data-title="FTAE 2026"] .proof-cover{
+.page[data-title="FTAE 2026"] .proof-cover,
+.page[data-title="FTAE 2026"] .ftae-proof-cover{
   min-width:0 !important;
+  overflow:hidden !important;
 }
-.page.active[data-title="FTAE 2026"] .proof-bg-image{
+.page[data-title="FTAE 2026"] .proof-bg-image,
+.page[data-title="FTAE 2026"] .ftae-proof-cover img{
+  width:100% !important;
+  height:100% !important;
   object-fit:contain !important;
-  object-position:center !important;
-  transform:scale(.82) !important;
+  object-position:center center !important;
+  transform:none !important;
 }
-.page.active[data-title="FTAE 2026"] .ftae-proof-detail,
-.page.active[data-title="FTAE 2026"] .proof-detail{
-  padding:clamp(24px,2vw,36px) clamp(28px,2.45vw,46px) !important;
+.page[data-title="FTAE 2026"] .proof-detail,
+.page[data-title="FTAE 2026"] .ftae-proof-detail{
+  padding:clamp(20px,1.65vw,31px) clamp(24px,2vw,38px) !important;
+  overflow:auto !important;
 }
-/* le 2e point de contrôle et son lien restent visibles */
-.page.active[data-title="FTAE 2026"] a{
+.page[data-title="FTAE 2026"] .proof-detail h2,
+.page[data-title="FTAE 2026"] .ftae-proof-detail h2{
+  font-size:clamp(30px,2.55vw,48px) !important;
+  line-height:1.02 !important;
+  margin-bottom:10px !important;
+}
+/* Ne jamais masquer le second point de contrôle ni ses liens. */
+.page[data-title="FTAE 2026"] a,
+.page[data-title="FTAE 2026"] button{
   position:relative !important;
-  z-index:5 !important;
+  z-index:20 !important;
+  pointer-events:auto !important;
+}
+.page[data-title="FTAE 2026"] .proof-detail > *,
+.page[data-title="FTAE 2026"] .ftae-proof-detail > *{
+  max-width:none !important;
 }
 
-/* --- AVENIR PRO : visuel discret + contenu validé intact --- */
-.page.active[data-title="Avenir Pro 2025"]{
-  grid-template-columns:22% 78% !important;
+/* AVENIR PRO : même principe visuel, mais contenu initial strictement conservé.
+   On réduit seulement la photo et on donne davantage de largeur aux blocs existants. */
+.page[data-title="Avenir Pro 2025"]{
+  grid-template-columns: 27% 73% !important;
 }
-.page.active[data-title="Avenir Pro 2025"] .avenir-pro-cover,
-.page.active[data-title="Avenir Pro 2025"] .proof-cover{
+.page[data-title="Avenir Pro 2025"] .proof-cover,
+.page[data-title="Avenir Pro 2025"] .avenir-pro-cover{
   min-width:0 !important;
+  overflow:hidden !important;
 }
-.page.active[data-title="Avenir Pro 2025"] .avenir-pro-detail,
-.page.active[data-title="Avenir Pro 2025"] .proof-detail{
-  padding:clamp(22px,1.85vw,34px) clamp(27px,2.3vw,44px) !important;
+.page[data-title="Avenir Pro 2025"] .proof-bg-image,
+.page[data-title="Avenir Pro 2025"] .avenir-pro-cover img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  transform:none !important;
 }
-.page.active[data-title="Avenir Pro 2025"] .avenir-support-grid{
+.page[data-title="Avenir Pro 2025"] .proof-detail,
+.page[data-title="Avenir Pro 2025"] .avenir-pro-detail{
+  padding:clamp(18px,1.55vw,29px) clamp(22px,1.9vw,36px) !important;
+  overflow:auto !important;
+}
+.page[data-title="Avenir Pro 2025"] .proof-detail h2,
+.page[data-title="Avenir Pro 2025"] .avenir-pro-detail h2{
+  font-size:clamp(29px,2.35vw,44px) !important;
+  line-height:1.02 !important;
+  margin-bottom:8px !important;
+}
+/* 6 ateliers = 2 lignes de 3 ; 4 quiz = 1 seule ligne */
+.page[data-title="Avenir Pro 2025"] .avenir-support-grid,
+.page[data-title="Avenir Pro 2025"] .workshop-grid,
+.page[data-title="Avenir Pro 2025"] .ateliers-grid{
   grid-template-columns:repeat(3,minmax(0,1fr)) !important;
 }
-.page.active[data-title="Avenir Pro 2025"] .avenir-quiz-grid{
+.page[data-title="Avenir Pro 2025"] .avenir-quiz-grid,
+.page[data-title="Avenir Pro 2025"] .quiz-grid{
   grid-template-columns:repeat(4,minmax(0,1fr)) !important;
 }
-
-/* --- AIF : image intégrale, recentrée et non rognée --- */
-.page.active[data-title="AIF 2025"]{
-  grid-template-columns:25% 75% !important;
-}
-.page.active[data-title="AIF 2025"] .proof-bg-image,
-.page.active[data-title="AIF 2025"] img{
-  object-fit:contain !important;
-  object-position:center !important;
-  transform:scale(.86) !important;
-}
-.page.active[data-title="AIF 2025"] .proof-cover{
-  background-size:contain !important;
-  background-position:center !important;
-  background-repeat:no-repeat !important;
+.page[data-title="Avenir Pro 2025"] a{
+  position:relative !important;
+  z-index:20 !important;
+  pointer-events:auto !important;
 }
 
-/* --- Livret partenaires : page légère --- */
-.page.active[data-title="Livret partenaires 2026"]{
-  grid-template-columns:26% 74% !important;
+/* LIVRET : abandon de la composition "brochure".
+   On revient à la logique AIF : visuel compact à gauche, contenu sobre à droite. */
+.page[data-title="Livret partenaires 2026"]{
+  grid-template-columns:31% 69% !important;
 }
-.page.active[data-title="Livret partenaires 2026"] .proof-cover{
+.page[data-title="Livret partenaires 2026"] .proof-cover{
   min-width:0 !important;
+  overflow:hidden !important;
   background-size:contain !important;
-  background-position:center !important;
+  background-position:center center !important;
   background-repeat:no-repeat !important;
 }
-.page.active[data-title="Livret partenaires 2026"] .proof-bg-image{
+.page[data-title="Livret partenaires 2026"] .proof-bg-image,
+.page[data-title="Livret partenaires 2026"] .proof-cover img{
+  width:100% !important;
+  height:100% !important;
   object-fit:contain !important;
-  object-position:center !important;
-  transform:scale(.86) !important;
+  object-position:center center !important;
+  transform:none !important;
 }
-.page.active[data-title="Livret partenaires 2026"] .proof-detail{
-  padding:clamp(28px,2.4vw,44px) clamp(32px,2.8vw,52px) !important;
+.page[data-title="Livret partenaires 2026"] .proof-detail{
+  padding:clamp(28px,2.3vw,44px) clamp(30px,2.55vw,48px) !important;
+  overflow:auto !important;
 }
-.livret-light-grid{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:12px;
-  margin-top:18px;
+.page[data-title="Livret partenaires 2026"] .proof-detail h2{
+  font-size:clamp(34px,2.8vw,52px) !important;
+  line-height:1.04 !important;
+  margin:10px 0 18px !important;
 }
-.livret-light-card{
-  padding:16px 17px;
-  border-radius:15px;
-  background:#f4f8fb;
-  border-top:3px solid #0a9ca4;
+.page[data-title="Livret partenaires 2026"] .livret-light-grid{
+  grid-template-columns:1fr !important;
+  gap:8px !important;
+  margin-top:16px !important;
 }
-.livret-light-card b{
-  display:block;
-  color:#12365e;
-  font-size:clamp(13px,.92vw,16px);
-  margin-bottom:6px;
+.page[data-title="Livret partenaires 2026"] .livret-light-card{
+  padding:11px 15px !important;
+  border-radius:10px !important;
+  border-top:0 !important;
+  border-left:3px solid #0a9ca4 !important;
+  background:#eef7f8 !important;
 }
-.livret-light-card p{
-  margin:0;
-  color:#5c6f83;
-  font-size:clamp(11.5px,.8vw,14px);
-  line-height:1.4;
+.page[data-title="Livret partenaires 2026"] .livret-light-card b{
+  margin-bottom:3px !important;
+  font-size:clamp(13px,.95vw,16px) !important;
 }
-.livret-light-summary{
-  margin-top:14px;
-  padding:14px 17px;
-  border-radius:14px;
-  background:linear-gradient(90deg,#e7f2fb,#e3f5f2);
-  color:#173a5d;
-  font-size:clamp(12px,.84vw,14.5px);
-  line-height:1.4;
-  font-weight:700;
+.page[data-title="Livret partenaires 2026"] .livret-light-card p{
+  font-size:clamp(11.5px,.82vw,14px) !important;
+}
+.page[data-title="Livret partenaires 2026"] .livret-light-summary{
+  margin-top:10px !important;
+  padding:11px 15px !important;
+  border-radius:10px !important;
+  font-size:clamp(12px,.86vw,14.5px) !important;
+}
+
+/* Conserver le format horizontal / navigation page par page. */
+.page[data-title="FTAE 2026"],
+.page[data-title="Avenir Pro 2025"],
+.page[data-title="Livret partenaires 2026"]{
+  height:100% !important;
+  min-height:0 !important;
+  max-height:100% !important;
+  overflow:hidden !important;
 }
 </style>
 
