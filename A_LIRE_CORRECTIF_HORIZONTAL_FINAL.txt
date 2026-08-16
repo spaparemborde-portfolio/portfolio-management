@@ -1,0 +1,14 @@
+CORRECTIF HORIZONTAL FINAL — 16/08/2026
+
+Base : ZIP GitHub d'origine portfolio-management-main.
+Correction principale : seules les pages portant la classe .active sont affichées.
+Ainsi Force de proposition et Chiffres clés ne s'empilent plus verticalement.
+
+Conservé :
+- tous les contenus gauche + droite de Force de proposition ;
+- tous les blocs de Chiffres clés ;
+- FTAE, Padlet et Avenir Pro ;
+- les visuels existants et les fonds fondus ;
+- la navigation par flèches du script d'origine.
+
+Supprimé visuellement : numéros de pages / compteur.

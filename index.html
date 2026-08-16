@@ -1420,14 +1420,15 @@
 </style>
 
 
-<style id="horizontal-complet-20260815">
-/* ============================================================
-   VERSION HORIZONTALE COMPLÈTE
-   Source : ZIP GitHub d'origine.
-   Aucun contenu HTML des anciennes pages gauche/droite supprimé.
-   ============================================================ */
+<style id="horizontal-final-20260816">
+/* =========================================================
+   CORRECTIF FINAL NAVIGATION HORIZONTALE
+   IMPORTANT : ne jamais forcer display sur une page inactive.
+   Le script d'origine reste seul responsable de .active.
+   ========================================================= */
 
-/* 1 — masquer uniquement les numéros de page */
+/* Aucun numéro de page visible */
+.page-count,
 .folio,
 .page-number,
 .page-num,
@@ -1436,167 +1437,110 @@
   display:none !important;
 }
 
-/* 2 — FORCE DE PROPOSITION :
-   garder les DEUX anciennes feuilles et les faire tenir dans UN écran.
-   Les informations Bordeaux + Langon + Perpignan restent toutes présentes. */
-.timeline-evolution-page{
-  display:grid !important;
+/* FORCE DE PROPOSITION : les deux anciennes moitiés réunies
+   dans UNE seule diapositive, sans perte de contenu. */
+.page.active.timeline-evolution-page{
   grid-template-columns:1fr 1fr !important;
-  width:100% !important;
-  height:100% !important;
-  min-height:0 !important;
+  width:min(1540px,calc(100vw - 40px)) !important;
+  height:min(820px,calc(100vh - 130px)) !important;
+  min-height:560px !important;
   overflow:hidden !important;
 }
-.timeline-evolution-page > .paper{
+.page.active.timeline-evolution-page > .paper{
   display:block !important;
   width:auto !important;
   min-width:0 !important;
   height:100% !important;
   min-height:0 !important;
   box-sizing:border-box !important;
-  padding:clamp(24px,2.25vw,42px) clamp(28px,2.7vw,50px) !important;
+  padding:clamp(24px,2.15vw,40px) clamp(26px,2.45vw,46px) !important;
   overflow:hidden !important;
-  border-radius:0 !important;
 }
-.timeline-evolution-page .chapter{
-  font-size:clamp(12px,.82vw,15px) !important;
-}
-.timeline-evolution-page .timeline-intro{
-  font-size:clamp(14px,1.02vw,18px) !important;
-  line-height:1.42 !important;
-  margin-bottom:16px !important;
-}
-.timeline-evolution-page .timeline-context{
-  padding:12px 15px !important;
-  margin:10px 0 !important;
-}
-.timeline-evolution-page .timeline-context b{
-  font-size:clamp(14px,.98vw,17px) !important;
-}
+.timeline-evolution-page .chapter{font-size:clamp(12px,.82vw,15px) !important}
+.timeline-evolution-page h2{font-size:clamp(32px,2.65vw,46px) !important;line-height:1.02 !important;margin:10px 0 12px !important}
+.timeline-evolution-page .timeline-intro{font-size:clamp(13.5px,.95vw,17px) !important;line-height:1.4 !important;margin-bottom:14px !important}
+.timeline-evolution-page .timeline-context{padding:11px 14px !important;margin:9px 0 !important}
+.timeline-evolution-page .timeline-context b{font-size:clamp(13.5px,.94vw,16.5px) !important}
 .timeline-evolution-page .timeline-context span,
-.timeline-evolution-page .role-label{
-  font-size:clamp(12px,.84vw,15px) !important;
-  line-height:1.3 !important;
-}
-.timeline-evolution-page .timeline-item{
-  margin:7px 0 !important;
-}
+.timeline-evolution-page .role-label{font-size:clamp(11.5px,.8vw,14px) !important;line-height:1.28 !important}
+.timeline-evolution-page .timeline-item{margin:6px 0 !important;min-height:0 !important}
 .timeline-evolution-page .timeline-item time,
-.timeline-evolution-page .timeline-item b{
-  font-size:clamp(13px,.9vw,16px) !important;
-}
-.timeline-evolution-page .timeline-item small{
-  font-size:clamp(11.5px,.78vw,14px) !important;
-  line-height:1.28 !important;
-}
+.timeline-evolution-page .timeline-item b{font-size:clamp(12.5px,.86vw,15px) !important}
+.timeline-evolution-page .timeline-item small{font-size:clamp(10.5px,.72vw,12.8px) !important;line-height:1.25 !important}
+.timeline-evolution-page .timeline-group{margin-top:12px !important}
+.timeline-evolution-page .role-block{margin:7px 0 !important}
 
-/* 3 — CHIFFRES CLÉS :
-   garder les DEUX anciennes feuilles dans UN écran.
-   Avenir Pro, CEJ, simulation, FTAE et conception d'outils restent présents. */
-.keyfigures-page{
-  display:grid !important;
+/* CHIFFRES CLÉS : les deux anciennes moitiés restent ensemble
+   dans UNE seule diapositive et tous les blocs 01 à 05 sont conservés. */
+.page.active.keyfigures-page{
   grid-template-columns:1fr 1fr !important;
-  width:100% !important;
-  height:100% !important;
-  min-height:0 !important;
+  width:min(1540px,calc(100vw - 40px)) !important;
+  height:min(820px,calc(100vh - 130px)) !important;
+  min-height:560px !important;
   overflow:hidden !important;
 }
-.keyfigures-page > .paper{
+.page.active.keyfigures-page > .paper{
   display:block !important;
   width:auto !important;
   min-width:0 !important;
   height:100% !important;
   min-height:0 !important;
   box-sizing:border-box !important;
-  padding:clamp(22px,2vw,38px) clamp(25px,2.4vw,44px) !important;
+  padding:clamp(20px,1.85vw,34px) clamp(23px,2.1vw,40px) !important;
   overflow:hidden !important;
-  border-radius:0 !important;
 }
-.keyfigures-page .kpi-panel{
-  padding:13px 15px !important;
-  margin-bottom:10px !important;
-}
-.keyfigures-page .kpi-head small{
-  font-size:clamp(10.5px,.7vw,13px) !important;
-}
-.keyfigures-page .kpi-head b{
-  font-size:clamp(13px,.88vw,16px) !important;
-}
-.keyfigures-page .kpi span{
-  font-size:clamp(11.5px,.78vw,14px) !important;
-  line-height:1.22 !important;
-}
-.keyfigures-page .kpi em,
+.keyfigures-page h2{font-size:clamp(30px,2.45vw,43px) !important;margin:8px 0 14px !important}
+.keyfigures-page .kpi-panel{padding:11px 13px !important;margin-bottom:8px !important}
+.keyfigures-page .kpi-head small{font-size:clamp(9.5px,.66vw,12px) !important}
+.keyfigures-page .kpi-head b{font-size:clamp(12px,.82vw,15px) !important}
+.keyfigures-page .kpi span{font-size:clamp(10.5px,.72vw,13px) !important;line-height:1.2 !important}
+.keyfigures-page .kpi em{font-size:clamp(9px,.62vw,11.5px) !important;line-height:1.2 !important}
 .keyfigures-page .tools-main span,
 .keyfigures-page .audiences span,
-.keyfigures-page .kpi-panel > p{
-  font-size:clamp(10.5px,.7vw,13px) !important;
-  line-height:1.25 !important;
-}
+.keyfigures-page .kpi-panel > p{font-size:clamp(9.5px,.66vw,12px) !important;line-height:1.23 !important}
 
-/* 4 — Les pages de réalisations restent des écrans horizontaux.
-   On ne touche pas à leur structure HTML ni à leurs contenus. */
-.ftae-proof-page,
-.padlet-proof-page,
-.avenir-proof-page,
-[data-title="FTAE 2026"],
-[data-title="Padlet CEJ 2022"],
-[data-title="Avenir Pro 2025"]{
-  height:100% !important;
-  min-height:0 !important;
+/* FTAE / Padlet / Avenir Pro :
+   conserver exactement le mécanisme de page d'origine.
+   On n'affiche JAMAIS ces pages tant qu'elles ne portent pas .active. */
+.page.active.ftae-proof-page,
+.page.active.avenir-pro-page,
+.page.active[data-title="Padlet CEJ 2022"]{
   overflow:hidden !important;
 }
 
-/* Lisibilité : légère hausse des textes secondaires sans grossir les grands titres. */
-.padlet-context-current p,
-.padlet-impact-current p{
+/* Lisibilité secondaire, sans toucher aux grands titres */
+.page.active[data-title="Padlet CEJ 2022"] .padlet-context-current p,
+.page.active[data-title="Padlet CEJ 2022"] .padlet-impact-current p{
   font-size:clamp(13px,.9vw,16px) !important;
   line-height:1.4 !important;
 }
-.padlet-context-current small,
-.padlet-impact-current small{
+.page.active[data-title="Padlet CEJ 2022"] .padlet-context-current small,
+.page.active[data-title="Padlet CEJ 2022"] .padlet-impact-current small{
   font-size:clamp(11px,.75vw,13px) !important;
 }
-.padlet-kpis-current span{
+.page.active[data-title="Padlet CEJ 2022"] .padlet-kpis-current span{
   font-size:clamp(12px,.82vw,14px) !important;
 }
-
-.avenir-kpis span{font-size:clamp(12px,.82vw,14px) !important}
-.avenir-kpis em{font-size:clamp(10px,.68vw,12px) !important}
-.avenir-block-title b{font-size:clamp(11.5px,.78vw,13.5px) !important}
-.avenir-block-title span{font-size:clamp(10px,.68vw,12px) !important}
-.avenir-support-grid a span,
-.avenir-quiz-grid a span{
+.page.active.avenir-pro-page .avenir-kpis span{font-size:clamp(12px,.82vw,14px) !important}
+.page.active.avenir-pro-page .avenir-kpis em{font-size:clamp(10px,.68vw,12px) !important}
+.page.active.avenir-pro-page .avenir-block-title b{font-size:clamp(11.5px,.78vw,13.5px) !important}
+.page.active.avenir-pro-page .avenir-block-title span{font-size:clamp(10px,.68vw,12px) !important}
+.page.active.avenir-pro-page .avenir-support-grid a span,
+.page.active.avenir-pro-page .avenir-quiz-grid a span{
   font-size:clamp(10.5px,.72vw,12.5px) !important;
   line-height:1.22 !important;
 }
-.avenir-sim-copy strong{font-size:clamp(14px,.95vw,17px) !important}
-.avenir-sim-copy p{font-size:clamp(11px,.75vw,13px) !important;line-height:1.3 !important}
-.avenir-sim-stats span{font-size:clamp(9.5px,.64vw,11.5px) !important}
+.page.active.avenir-pro-page .avenir-sim-copy strong{font-size:clamp(14px,.95vw,17px) !important}
+.page.active.avenir-pro-page .avenir-sim-copy p{font-size:clamp(11px,.75vw,13px) !important;line-height:1.3 !important}
 
-/* 5 — CRITIQUE : empêcher le correctif de créer un scroll vertical entre pages.
-   Le système de navigation horizontal d'origine reste maître. */
-html,body{
-  overflow:hidden !important;
-}
-.stage,
-.book,
-.viewer,
-.carousel,
-.slider,
-.slides,
-#app,
-main{
-  max-height:100vh;
+/* Desktop : une page à la fois, pas d'empilement vertical.
+   Ne pas toucher à display:none des pages inactives. */
+@media (min-width:901px){
+  html,body{overflow:hidden !important}
+  .book{height:100vh !important;min-height:0 !important;box-sizing:border-box !important}
 }
 
-/* Écrans moins larges : on réduit les marges, mais on conserve la logique horizontale. */
-@media (max-width:1200px){
-  .timeline-evolution-page > .paper,
-  .keyfigures-page > .paper{
-    padding:20px 22px !important;
-  }
-}
+/* Le responsive d'origine reste disponible sur petits écrans. */
 </style>
 
 </head>
