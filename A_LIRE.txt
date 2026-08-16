@@ -1,6 +1,5 @@
-CORRECTIF AUTRES RÉALISATIONS
-
-À remplacer : index.html uniquement.
-AUCUN fichier du dossier assets n'est ajouté ou modifié par ce correctif.
-Les anciennes pages détaillées DigiNews, Revue de performance, Espace recruteur et Escape Game
-sont regroupées dans une seule page chronologique en quatre cartes.
+Remplacer uniquement index.html.
+Polices de la page Autres réalisations agrandies.
+Page Autres réalisations déplacée juste avant Ma vision du management.
+Aucun asset ajouté ou modifié.
+La page Ma vision du management reste intacte pour la prochaine étape.
