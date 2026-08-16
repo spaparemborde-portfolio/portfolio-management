@@ -1,14 +1,12 @@
-PORTFOLIO — VERSION AVEC RECOMMANDATIONS PDF
+CORRECTIF — PAGE « MANAGER, POUR QUOI FAIRE ? »
 
-Cette version remplace les trois anciennes recommandations DOCX par les PDF fournis :
-- assets/recommandation-severine-claveau.pdf
-- assets/recommandation-nathalie-rey.pdf
-- assets/recommandation-veronique-delrieu.pdf
+Version cumulative avec assets et recommandations PDF.
 
-Les boutons « Lire la recommandation » de la page « Ils en parlent » pointent désormais vers ces PDF.
+Modifications :
+- augmentation des tailles de police sur l'ensemble de la page « Manager, pour quoi faire ? » ;
+- augmentation de la hauteur/respiration des cartes pour mieux occuper la page ;
+- suppression de la phrase répétitive « Faire réussir sans faire à la place. » sous la citation finale.
 
 À intégrer :
 - index.html
-- le dossier assets complet de ce ZIP
-
-Le ZIP reste cumulatif et conserve les autres éléments/assets déjà présents.
+- le dossier assets complet si vous repartez du ZIP complet.
