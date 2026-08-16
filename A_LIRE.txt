@@ -1,14 +1,11 @@
-CORRECTIF — CLÔTURE + COPYRIGHT
+CORRECTIF — BOUTON PADLET CEJ
 
-Modifications :
-- page de clôture rééquilibrée ;
-- portrait conservé à droite ;
-- copyright déplacé sous le portrait, aligné à droite ;
-- copyright ajouté sur la page de couverture, en bas à droite ;
-- aucune illustration ajoutée.
+Ajout sur la page « Padlet CEJ 2022 » :
+- bouton « Découvrir le Padlet → »
+- lien direct vers le support Padlet CEJ fourni.
 
-Version cumulative : elle conserve les recommandations PDF et l'ensemble des assets précédents.
+Ce ZIP est cumulatif et conserve les assets et correctifs précédents.
 
 À intégrer :
 - index.html
-- le dossier assets complet si vous repartez de ce ZIP.
+- le dossier assets peut être conservé tel quel si vous avez déjà installé la dernière version cumulative.
