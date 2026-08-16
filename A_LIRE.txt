@@ -1,12 +1,16 @@
-CORRECTIF — PAGE « MANAGER, POUR QUOI FAIRE ? »
+PORTFOLIO — VERSION FINALE AVEC PORTRAIT
 
-Version cumulative avec assets et recommandations PDF.
+Cette version reprend le ZIP de clôture bleue et intègre le portrait transmis
+dans la dernière page.
 
-Modifications :
-- augmentation des tailles de police sur l'ensemble de la page « Manager, pour quoi faire ? » ;
-- augmentation de la hauteur/respiration des cartes pour mieux occuper la page ;
-- suppression de la phrase répétitive « Faire réussir sans faire à la place. » sous la citation finale.
+Elle contient également :
+- la page « Manager, pour quoi faire ? » ;
+- la suppression des deux anciennes pages « Ma vision » ;
+- la page de clôture bleue ;
+- la mention « Candidate à la fonction de Manager de proximité » ;
+- le copyright ;
+- les recommandations PDF et les autres éléments du dossier assets.
 
 À intégrer :
 - index.html
-- le dossier assets complet si vous repartez du ZIP complet.
+- le dossier assets complet.
