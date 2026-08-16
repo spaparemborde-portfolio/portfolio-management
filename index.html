@@ -2013,6 +2013,46 @@
 }
 </style>
 
+
+<style id="correctifs-aif-et-largeur-20260816">
+/* Davantage d'espace au contenu, tout en conservant le visuel fondu */
+.page.active[data-title="FTAE 2026"],
+.page.active[data-title="Avenir Pro 2025"]{grid-template-columns:27% 73% !important}
+.page.active[data-title="FTAE 2026"] .ftae-proof-cover,
+.page.active[data-title="FTAE 2026"] .proof-bg-image{background-position:48% center !important;object-position:48% center !important}
+.page.active[data-title="Avenir Pro 2025"] .avenir-pro-cover::before{background-position:50% center !important}
+
+/* Chiffres clés : le symbole % devient secondaire visuellement */
+.keyfigures-single-page .kpi strong .pct{font-size:.62em!important;font-style:normal!important;vertical-align:.12em!important;font-weight:900!important}
+
+/* AIF : image mieux cadrée et espace éditorial renforcé */
+.page.active[data-title="AIF 2025"]{grid-template-columns:31% 69% !important}
+.page.active[data-title="AIF 2025"] .aif-cover{background-size:contain!important;background-repeat:no-repeat!important;background-position:center center!important;background-color:#dfe5ea!important}
+.page.active[data-title="AIF 2025"] .aif-detail{padding:clamp(28px,2.5vw,46px) clamp(34px,3vw,56px)!important;overflow:hidden!important}
+.aif-detail h2{font-size:clamp(39px,3.3vw,55px)!important;line-height:1.02!important;margin:10px 0 13px!important}
+.aif-detail .big-lead{font-size:clamp(15px,1.08vw,19px)!important;line-height:1.42!important;margin:0 0 15px!important}
+.aif-role{padding:13px 15px;border-left:4px solid #0aa0a7;border-radius:12px;background:#edf7f7;margin-bottom:12px}
+.aif-role small{display:block;color:#078e97;font-size:10px;font-weight:900;letter-spacing:.1em;margin-bottom:4px}
+.aif-role strong{display:block;color:#092d59;font-size:17px;line-height:1.2;margin-bottom:4px}
+.aif-role p{margin:0;color:#526a82;font-size:13px;line-height:1.35}
+.aif-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:11px}
+.aif-grid>div{padding:12px;border:1px solid #d9e4ea;border-radius:12px;background:#fff}
+.aif-grid b{display:block;color:#087f8b;font-size:11px;line-height:1.15;margin-bottom:6px}
+.aif-grid p{margin:0;color:#526a82;font-size:12px;line-height:1.35}
+.aif-signature{padding:10px 13px;border-radius:11px;background:#f0f5f8;color:#526a82;font-size:12.5px;line-height:1.35}
+.aif-signature b{color:#0b315e}
+@media (min-width:1051px) and (max-height:820px){
+ .page.active[data-title="FTAE 2026"],.page.active[data-title="Avenir Pro 2025"]{grid-template-columns:26% 74% !important}
+ .page.active[data-title="AIF 2025"]{grid-template-columns:29% 71% !important}
+ .page.active[data-title="AIF 2025"] .aif-detail{padding:20px 28px!important}
+ .aif-detail h2{font-size:35px!important;margin:7px 0 8px!important}
+ .aif-detail .big-lead{font-size:12.5px!important;margin-bottom:9px!important}
+ .aif-role{padding:9px 11px;margin-bottom:8px}
+ .aif-role strong{font-size:14px}.aif-role p{font-size:10.5px}
+ .aif-grid{gap:6px;margin-bottom:7px}.aif-grid>div{padding:8px}.aif-grid p{font-size:9.6px}.aif-grid b{font-size:9px}
+ .aif-signature{padding:7px 9px;font-size:10px}
+}
+</style>
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -2181,7 +2221,7 @@
         <div class="kpi-grid three">
           <div class="kpi"><strong>240</strong><span>jeunes concernés</span></div>
           <div class="kpi"><strong>4</strong><span>conseillers utilisateurs</span></div>
-          <div class="kpi"><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
+          <div class="kpi"><strong>+40 <i class="pct">%</i></strong><span>de mobilisation des jeunes</span></div>
         </div>
       </section>
 
@@ -2197,9 +2237,9 @@
       <section class="kpi-panel kpi-navy">
         <div class="kpi-head"><span class="kpi-num">04</span><div><small>PILOTAGE DE LA PERFORMANCE</small><b>FTAE — RÉSULTATS DU PLAN D’ACTION À 6 MOIS</b></div></div>
         <div class="kpi-grid three">
-          <div class="kpi"><strong>35 % → 85 %</strong><span>de suivi réalisé</span></div>
+          <div class="kpi"><strong>35 <i class="pct">%</i> → 85 <i class="pct">%</i></strong><span>de suivi réalisé</span></div>
           <div class="kpi"><strong>+50</strong><span>points de progression</span></div>
-          <div class="kpi"><strong>+3 %</strong><span>sur l’indicateur FTAE</span></div>
+          <div class="kpi"><strong>+3 <i class="pct">%</i></strong><span>sur l’indicateur FTAE</span></div>
         </div>
       </section>
 
@@ -2274,7 +2314,7 @@
       <div class="padlet-kpis-current">
         <div><strong>240</strong><span>jeunes concernés</span></div>
         <div><strong>4</strong><span>conseillers utilisateurs</span></div>
-        <div><strong>+40 %</strong><span>de mobilisation des jeunes</span></div>
+        <div><strong>+40 <i class="pct">%</i></strong><span>de mobilisation des jeunes</span></div>
       </div>
       <div class="padlet-impact-current">
         <small>UN OUTIL AU SERVICE DE L'AUTONOMIE</small>
@@ -2355,9 +2395,20 @@
     </div>
   </section>
 
-  <section class="page split feature-page proof-spread cover-proof" data-title="AIF 2025">
-    <div class="paper proof-cover" style="--proof-image:url('assets/aif-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2025 · AIF</span><h2>Rendre la règle mobilisable.</h2></div></div>
-    <div class="paper proof-detail"><span class="chapter">COMPRENDRE · STRUCTURER · SÉCURISER</span><h2>De la complexité à l'application immédiate.</h2><p class="big-lead">Transformer une matière réglementaire dense en un support clair, structuré et directement utilisable par les conseillers.</p><div class="mini-steps"><p><b>Comprendre</b> la règle et ses points de vigilance.</p><p><b>Structurer</b> l'information pour faciliter la lecture.</p><p><b>Rendre accessible</b> pour sécuriser les pratiques.</p></div></div>
+  <section class="page split feature-page proof-spread cover-proof aif-page" data-title="AIF 2025">
+    <div class="paper proof-cover aif-cover" style="--proof-image:url('assets/aif-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2025 · AIF</span><h2>Rendre la règle mobilisable.</h2></div></div>
+    <div class="paper proof-detail aif-detail">
+      <span class="chapter">COMPRENDRE · STRUCTURER · SÉCURISER</span>
+      <h2>De la complexité à l'application immédiate.</h2>
+      <p class="big-lead">Transformer une matière réglementaire dense en un support clair, structuré et directement mobilisable par les conseillers.</p>
+      <div class="aif-role"><small>RÔLE DE RÉFÉRENTE FORMATION</small><strong>Faire monter le collectif en compétences.</strong><p>Conception du support et animation auprès des collègues pour rendre la réglementation compréhensible, concrète et applicable dans les pratiques.</p></div>
+      <div class="aif-grid">
+        <div><b>01 · CONCEVOIR</b><p>Participer aux démultiplications avec les responsables réglementaires, s'approprier le contenu et créer un support pédagogique clair.</p></div>
+        <div><b>02 · TRANSMETTRE</b><p>Préparer l'animation, expliciter les points de vigilance et accompagner l'appropriation par le collectif.</p></div>
+        <div><b>03 · CONTRIBUER</b><p>Participer aux réunions de l'équipe de direction et prendre régulièrement le rôle de manager d'accueil, le matin comme l'après-midi.</p></div>
+      </div>
+      <div class="aif-signature"><b>Une même logique :</b> comprendre la règle, la traduire en repères utiles et sécuriser sa mise en œuvre.</div>
+    </div>
   </section>
 
   <section class="page split feature-page proof-spread cover-proof" data-title="Livret partenaires 2026"><img class="proof-bg-image" src="assets/bg-partenaires.png" alt="">
