@@ -1,16 +1,14 @@
-PORTFOLIO — VERSION FINALE AVEC PORTRAIT
+CORRECTIF — CLÔTURE + COPYRIGHT
 
-Cette version reprend le ZIP de clôture bleue et intègre le portrait transmis
-dans la dernière page.
+Modifications :
+- page de clôture rééquilibrée ;
+- portrait conservé à droite ;
+- copyright déplacé sous le portrait, aligné à droite ;
+- copyright ajouté sur la page de couverture, en bas à droite ;
+- aucune illustration ajoutée.
 
-Elle contient également :
-- la page « Manager, pour quoi faire ? » ;
-- la suppression des deux anciennes pages « Ma vision » ;
-- la page de clôture bleue ;
-- la mention « Candidate à la fonction de Manager de proximité » ;
-- le copyright ;
-- les recommandations PDF et les autres éléments du dossier assets.
+Version cumulative : elle conserve les recommandations PDF et l'ensemble des assets précédents.
 
 À intégrer :
 - index.html
-- le dossier assets complet.
+- le dossier assets complet si vous repartez de ce ZIP.

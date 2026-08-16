@@ -2482,6 +2482,77 @@
 .closing-photo-placeholder{width:min(100%,390px);aspect-ratio:4/5;border-radius:24px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06)}
 .closing-copyright{position:absolute;left:clamp(50px,5vw,86px);bottom:24px;font-size:10.5px;letter-spacing:.03em;color:rgba(255,255,255,.55)}
 </style>
+
+<style id="correctif-cloture-copyright">
+/* --- PAGE DE CLÔTURE : mise en page rééquilibrée --- */
+.closing-page .closing-paper{
+  padding:clamp(44px,4.3vw,72px)!important;
+  grid-template-columns:minmax(0,1.15fr) minmax(300px,.72fr)!important;
+  gap:clamp(34px,4vw,68px)!important;
+  align-items:center!important;
+}
+.closing-copy{
+  align-self:center!important;
+  max-width:760px!important;
+}
+.closing-copy h2{
+  font-size:clamp(47px,4vw,70px)!important;
+  line-height:1.01!important;
+  margin:0 0 20px!important;
+}
+.closing-lead{
+  font-size:clamp(17px,1.28vw,22px)!important;
+  line-height:1.48!important;
+  margin-bottom:24px!important;
+}
+.closing-signature{
+  margin-top:20px!important;
+  padding-top:18px!important;
+}
+.closing-values{
+  margin-top:18px!important;
+}
+.closing-photo-wrap{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:12px!important;
+  align-self:center!important;
+}
+.closing-photo{
+  width:min(100%,365px)!important;
+  max-height:500px!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
+.closing-copyright{
+  position:static!important;
+  width:min(100%,365px)!important;
+  text-align:right!important;
+  font-size:10.5px!important;
+  line-height:1.3!important;
+  color:rgba(255,255,255,.60)!important;
+  margin-top:2px!important;
+}
+
+/* --- COUVERTURE : copyright discret en bas à droite --- */
+.page.cover{
+  position:relative!important;
+}
+.cover-copyright{
+  position:absolute!important;
+  right:clamp(24px,3vw,48px)!important;
+  bottom:18px!important;
+  z-index:5!important;
+  font-size:10px!important;
+  letter-spacing:.02em!important;
+  color:rgba(255,255,255,.58)!important;
+  text-align:right!important;
+  pointer-events:none!important;
+}
+</style>
+
 </head>
 <body>
 <div class="progress"><span></span></div>
@@ -2532,6 +2603,7 @@
         <img src="assets/portrait.png" alt="Portrait de Sandrine Paparemborde Maumy">
       </div>
     </div>
+  <div class="cover-copyright">© 2026 Sandrine Paparemborde Maumy — Tous droits réservés.</div>
   </section>
 
   <section class="page action-systemique-page" data-title="Ma manière d’agir">
@@ -3015,8 +3087,7 @@
 <p class="closing-lead">Ce portfolio raconte un parcours fait d’initiatives, de coopération, de transmission et de responsabilités progressivement prises.<br><br>Aujourd’hui, je souhaite mettre cette expérience au service d’une équipe, contribuer à sa réussite et continuer à grandir avec elle dans la fonction de manager.</p>
 <div class="closing-signature"><strong>Sandrine Paparemborde Maumy</strong><span>Candidate à la fonction de Manager de proximité</span></div>
 <div class="closing-values"><span>Faire grandir</span><span>Fédérer</span><span>Donner du sens</span></div></div>
-<div class="closing-photo-wrap"><img class="closing-photo" src="assets/portrait-sandrine-paparemborde-maumy.png" alt="Portrait de Sandrine Paparemborde Maumy"></div>
-<div class="closing-copyright">© 2026 Sandrine Paparemborde Maumy — Tous droits réservés.</div></div></section>
+<div class="closing-photo-wrap"><img class="closing-photo" src="assets/portrait-sandrine-paparemborde-maumy.png" alt="Portrait de Sandrine Paparemborde Maumy"><div class="closing-copyright">© 2026 Sandrine Paparemborde Maumy — Tous droits réservés.</div></div></div></section>
 
 
 
