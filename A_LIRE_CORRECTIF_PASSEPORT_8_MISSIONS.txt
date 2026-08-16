@@ -1,0 +1,6 @@
+CORRECTIF PASSEPORT — VISUEL 8 MISSIONS
+
+- Le visuel PDF/QR n'est plus utilisé comme image de couverture.
+- La capture de Mon Passeport Avenir Pro avec les 8 missions est utilisée à la place.
+- L'image est affichée en entier, centrée et sans recadrage.
+- Aucun autre correctif de page n'a été ajouté dans ce ZIP.
