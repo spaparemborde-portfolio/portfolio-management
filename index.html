@@ -2014,43 +2014,44 @@
 </style>
 
 
-<style id="correctifs-aif-et-largeur-20260816">
-/* Davantage d'espace au contenu, tout en conservant le visuel fondu */
+<style id="correctif-structurel-aif-ftae-avenir-20260816">
+/* Plus d'espace utile au contenu : la zone visuelle devient un accent, non une demi-page. */
 .page.active[data-title="FTAE 2026"],
 .page.active[data-title="Avenir Pro 2025"]{grid-template-columns:27% 73% !important}
-.page.active[data-title="FTAE 2026"] .ftae-proof-cover,
-.page.active[data-title="FTAE 2026"] .proof-bg-image{background-position:48% center !important;object-position:48% center !important}
-.page.active[data-title="Avenir Pro 2025"] .avenir-pro-cover::before{background-position:50% center !important}
+.page.active[data-title="FTAE 2026"] .ftae-proof-detail,
+.page.active[data-title="Avenir Pro 2025"] .avenir-pro-detail{padding-left:clamp(28px,2.25vw,42px)!important;padding-right:clamp(28px,2.25vw,42px)!important}
+.page.active[data-title="FTAE 2026"] .ftae-proof-cover{background-position:49% center!important}
+.page.active[data-title="Avenir Pro 2025"] .avenir-pro-cover::before{background-position:52% center!important}
 
-/* Chiffres clés : le symbole % devient secondaire visuellement */
-.keyfigures-single-page .kpi strong .pct{font-size:.62em!important;font-style:normal!important;vertical-align:.12em!important;font-weight:900!important}
+/* Chiffres clés : le signe % reste visuellement secondaire par rapport au nombre. */
+.keyfigures-single-page .percent-sign{font-size:.62em!important;font-weight:850!important;vertical-align:.12em!important;letter-spacing:0!important}
 
-/* AIF : image mieux cadrée et espace éditorial renforcé */
-.page.active[data-title="AIF 2025"]{grid-template-columns:31% 69% !important}
-.page.active[data-title="AIF 2025"] .aif-cover{background-size:contain!important;background-repeat:no-repeat!important;background-position:center center!important;background-color:#dfe5ea!important}
-.page.active[data-title="AIF 2025"] .aif-detail{padding:clamp(28px,2.5vw,46px) clamp(34px,3vw,56px)!important;overflow:hidden!important}
-.aif-detail h2{font-size:clamp(39px,3.3vw,55px)!important;line-height:1.02!important;margin:10px 0 13px!important}
-.aif-detail .big-lead{font-size:clamp(15px,1.08vw,19px)!important;line-height:1.42!important;margin:0 0 15px!important}
-.aif-role{padding:13px 15px;border-left:4px solid #0aa0a7;border-radius:12px;background:#edf7f7;margin-bottom:12px}
-.aif-role small{display:block;color:#078e97;font-size:10px;font-weight:900;letter-spacing:.1em;margin-bottom:4px}
-.aif-role strong{display:block;color:#092d59;font-size:17px;line-height:1.2;margin-bottom:4px}
-.aif-role p{margin:0;color:#526a82;font-size:13px;line-height:1.35}
-.aif-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:11px}
-.aif-grid>div{padding:12px;border:1px solid #d9e4ea;border-radius:12px;background:#fff}
-.aif-grid b{display:block;color:#087f8b;font-size:11px;line-height:1.15;margin-bottom:6px}
-.aif-grid p{margin:0;color:#526a82;font-size:12px;line-height:1.35}
-.aif-signature{padding:10px 13px;border-radius:11px;background:#f0f5f8;color:#526a82;font-size:12.5px;line-height:1.35}
-.aif-signature b{color:#0b315e}
+/* AIF : montrer l'illustration en entier et centrer la page sur la montée en compétences. */
+.page.active.aif-development-page{grid-template-columns:32% 68%!important;overflow:hidden!important}
+.aif-development-cover{position:relative!important;background-image:none!important;background:#edf1f5!important;overflow:hidden!important}
+.aif-development-cover::before{content:"";position:absolute;inset:18px 12px 118px 12px;background-image:url('assets/aif-cover.png');background-size:contain;background-repeat:no-repeat;background-position:center center;z-index:0}
+.aif-development-cover .cover-wash{position:absolute!important;inset:0!important;background:linear-gradient(to bottom,rgba(8,35,77,0) 42%,rgba(8,35,77,.08) 58%,rgba(8,35,77,.88) 100%)!important;z-index:1!important}
+.aif-development-cover .cover-label{z-index:2!important;left:clamp(28px,2.4vw,46px)!important;right:24px!important;bottom:clamp(28px,3.2vh,46px)!important}
+.aif-development-cover .cover-label h2{font-size:clamp(34px,3vw,50px)!important;line-height:1.02!important}
+.aif-development-detail{padding:clamp(28px,2.4vw,44px) clamp(32px,2.8vw,52px)!important;overflow:hidden!important}
+.aif-development-detail .chapter{font-size:clamp(11px,.78vw,14px)!important}
+.aif-development-detail>h2{font-size:clamp(37px,3.05vw,52px)!important;line-height:1.01!important;margin:12px 0 12px!important;max-width:980px!important}
+.aif-development-detail .big-lead{font-size:clamp(15px,1.05vw,18px)!important;line-height:1.38!important;margin:0 0 16px!important;max-width:940px!important}
+.aif-levers{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;margin-top:10px!important}
+.aif-levers article{display:flex!important;gap:9px!important;min-width:0!important;padding:14px!important;border:1px solid #cbdde8!important;border-top:3px solid #08a0a7!important;border-radius:14px!important;background:#fff!important}
+.aif-levers article>span{display:grid!important;place-items:center!important;flex:0 0 28px!important;width:28px!important;height:28px!important;border-radius:9px!important;background:#e8f7f7!important;color:#078e98!important;font-size:10px!important;font-weight:900!important}
+.aif-levers b{display:block!important;color:#08234d!important;font-size:clamp(14px,.96vw,17px)!important;margin-bottom:6px!important}
+.aif-levers p{margin:0!important;color:#536a83!important;font-size:clamp(11.5px,.8vw,14px)!important;line-height:1.35!important}
+.aif-positioning{margin-top:12px!important;padding:13px 16px!important;border-left:4px solid #08a0a7!important;border-radius:12px!important;background:#eaf6f7!important}
+.aif-positioning small{display:block!important;color:#078e98!important;font-size:10px!important;font-weight:900!important;letter-spacing:.12em!important;margin-bottom:4px!important}
+.aif-positioning b{color:#08234d!important;font-size:clamp(13px,.9vw,16px)!important;line-height:1.3!important}
 @media (min-width:1051px) and (max-height:820px){
- .page.active[data-title="FTAE 2026"],.page.active[data-title="Avenir Pro 2025"]{grid-template-columns:26% 74% !important}
- .page.active[data-title="AIF 2025"]{grid-template-columns:29% 71% !important}
- .page.active[data-title="AIF 2025"] .aif-detail{padding:20px 28px!important}
- .aif-detail h2{font-size:35px!important;margin:7px 0 8px!important}
- .aif-detail .big-lead{font-size:12.5px!important;margin-bottom:9px!important}
- .aif-role{padding:9px 11px;margin-bottom:8px}
- .aif-role strong{font-size:14px}.aif-role p{font-size:10.5px}
- .aif-grid{gap:6px;margin-bottom:7px}.aif-grid>div{padding:8px}.aif-grid p{font-size:9.6px}.aif-grid b{font-size:9px}
- .aif-signature{padding:7px 9px;font-size:10px}
+ .page.active.aif-development-page{grid-template-columns:30% 70%!important}
+ .aif-development-cover::before{inset:12px 8px 102px 8px}
+ .aif-development-detail{padding:20px 26px!important}
+ .aif-development-detail>h2{font-size:36px!important;margin:7px 0 8px!important}
+ .aif-development-detail .big-lead{font-size:13px!important;margin-bottom:9px!important}
+ .aif-levers{gap:7px!important}.aif-levers article{padding:9px!important}.aif-levers p{font-size:10px!important}.aif-positioning{margin-top:8px!important;padding:9px 12px!important}
 }
 </style>
 </head>
@@ -2221,7 +2222,7 @@
         <div class="kpi-grid three">
           <div class="kpi"><strong>240</strong><span>jeunes concernés</span></div>
           <div class="kpi"><strong>4</strong><span>conseillers utilisateurs</span></div>
-          <div class="kpi"><strong>+40 <i class="pct">%</i></strong><span>de mobilisation des jeunes</span></div>
+          <div class="kpi"><strong>+40 <span class="percent-sign">%</span></strong><span>de mobilisation des jeunes</span></div>
         </div>
       </section>
 
@@ -2237,9 +2238,9 @@
       <section class="kpi-panel kpi-navy">
         <div class="kpi-head"><span class="kpi-num">04</span><div><small>PILOTAGE DE LA PERFORMANCE</small><b>FTAE — RÉSULTATS DU PLAN D’ACTION À 6 MOIS</b></div></div>
         <div class="kpi-grid three">
-          <div class="kpi"><strong>35 <i class="pct">%</i> → 85 <i class="pct">%</i></strong><span>de suivi réalisé</span></div>
+          <div class="kpi"><strong>35 <span class="percent-sign">%</span> → 85 <span class="percent-sign">%</span></strong><span>de suivi réalisé</span></div>
           <div class="kpi"><strong>+50</strong><span>points de progression</span></div>
-          <div class="kpi"><strong>+3 <i class="pct">%</i></strong><span>sur l’indicateur FTAE</span></div>
+          <div class="kpi"><strong>+3 <span class="percent-sign">%</span></strong><span>sur l’indicateur FTAE</span></div>
         </div>
       </section>
 
@@ -2314,7 +2315,7 @@
       <div class="padlet-kpis-current">
         <div><strong>240</strong><span>jeunes concernés</span></div>
         <div><strong>4</strong><span>conseillers utilisateurs</span></div>
-        <div><strong>+40 <i class="pct">%</i></strong><span>de mobilisation des jeunes</span></div>
+        <div><strong>+40 <span class="percent-sign">%</span></strong><span>de mobilisation des jeunes</span></div>
       </div>
       <div class="padlet-impact-current">
         <small>UN OUTIL AU SERVICE DE L'AUTONOMIE</small>
@@ -2395,19 +2396,21 @@
     </div>
   </section>
 
-  <section class="page split feature-page proof-spread cover-proof aif-page" data-title="AIF 2025">
-    <div class="paper proof-cover aif-cover" style="--proof-image:url('assets/aif-cover.png')"><div class="cover-wash"></div><div class="cover-label"><span>2025 · AIF</span><h2>Rendre la règle mobilisable.</h2></div></div>
-    <div class="paper proof-detail aif-detail">
-      <span class="chapter">COMPRENDRE · STRUCTURER · SÉCURISER</span>
-      <h2>De la complexité à l'application immédiate.</h2>
-      <p class="big-lead">Transformer une matière réglementaire dense en un support clair, structuré et directement mobilisable par les conseillers.</p>
-      <div class="aif-role"><small>RÔLE DE RÉFÉRENTE FORMATION</small><strong>Faire monter le collectif en compétences.</strong><p>Conception du support et animation auprès des collègues pour rendre la réglementation compréhensible, concrète et applicable dans les pratiques.</p></div>
-      <div class="aif-grid">
-        <div><b>01 · CONCEVOIR</b><p>Participer aux démultiplications avec les responsables réglementaires, s'approprier le contenu et créer un support pédagogique clair.</p></div>
-        <div><b>02 · TRANSMETTRE</b><p>Préparer l'animation, expliciter les points de vigilance et accompagner l'appropriation par le collectif.</p></div>
-        <div><b>03 · CONTRIBUER</b><p>Participer aux réunions de l'équipe de direction et prendre régulièrement le rôle de manager d'accueil, le matin comme l'après-midi.</p></div>
+  <section class="page split feature-page proof-spread cover-proof aif-development-page" data-title="AIF 2025">
+    <div class="paper proof-cover aif-development-cover" style="--proof-image:url('assets/aif-cover.png')">
+      <div class="cover-wash"></div>
+      <div class="cover-label"><span>2025 · RÉFÉRENTE FORMATION</span><h2>Faire grandir les compétences.</h2></div>
+    </div>
+    <div class="paper proof-detail aif-development-detail">
+      <span class="chapter">TRANSMETTRE · ACCOMPAGNER · AUTONOMISER</span>
+      <h2>Développer les compétences et l’autonomie du collectif.</h2>
+      <p class="big-lead">Concevoir, transmettre et sécuriser pour faire gagner les collègues en autonomie.</p>
+      <div class="aif-levers">
+        <article><span>01</span><div><b>S’approprier</b><p>Participer aux démultiplications avec les responsables réglementaires, préparer les contenus et identifier les points de vigilance.</p></div></article>
+        <article><span>02</span><div><b>Transmettre</b><p>Créer des supports directement mobilisables — dont l’AIF — puis préparer et animer les temps de montée en compétences auprès du collectif.</p></div></article>
+        <article><span>03</span><div><b>Accompagner</b><p>Prendre régulièrement le rôle de manager d’accueil, matin et après-midi, pour soutenir les pratiques et l’autonomie au quotidien.</p></div></article>
       </div>
-      <div class="aif-signature"><b>Une même logique :</b> comprendre la règle, la traduire en repères utiles et sécuriser sa mise en œuvre.</div>
+      <div class="aif-positioning"><small>UNE MÊME FINALITÉ</small><b>Transformer l’expertise en repères simples, utilisables et sécurisants pour le collectif.</b></div>
     </div>
   </section>
 
