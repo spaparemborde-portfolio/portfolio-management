@@ -1,5 +1,1 @@
-Remplacer uniquement index.html.
-Polices de la page Autres réalisations agrandies.
-Page Autres réalisations déplacée juste avant Ma vision du management.
-Aucun asset ajouté ou modifié.
-La page Ma vision du management reste intacte pour la prochaine étape.
+Remplacer uniquement index.html. Aucun asset ajouté ou modifié.
